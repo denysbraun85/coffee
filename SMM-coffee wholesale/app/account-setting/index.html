@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>Account setting</title>
+    <link rel="stylesheet" type="text/css" href="../libs/slick-1.8.0/slick-1.8.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../libs/slick-1.8.0/slick-1.8.0/slick/slick-theme.css"/>
+    <link type="text/css" rel="stylesheet" href="../libs/flaviusmatis-simplePagination.js-e32c66e/simplePagination.css"/>
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap-sass-3.3.7/assets/javascripts/bootstrap.min.js">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header>
+    <!----Modal registration-->
+    <div id="registration-modal" class="modal">
+        <div class="linePreloader"></div>
+        <div class="modal-contant" id="simpleModal">
+            <div class="modal-container-1">
+                <p class="modal-text-1"><b>Please log in to use account tools:</b></p>
+                <form class="input-container"  method="post">
+                    <label for="emails"><input id="emails" type="email"  placeholder="Email"></label>
+                    <label for="passw"><input id="passw" type="password"  placeholder="Password"></label>
+                    <button class="modal-button" id="modal-button" >Login</button>
+                </form>
+                <p class="modal-text-2" id="modal-text-2">Please supply your username and password.</p>
+                <p class="modal-text-3"><a href="#">forgot password?</a></p>
+            </div>
+            <div class="modal-container-2">
+                <span class="close" id="close">×</span>
+                <p class="modal-text-1"><b>I don't have account:</b></p>
+                <button class="modal-button" id="registration-but">Register</button>
+            </div>
+        </div>
+    </div>
+    <nav class="navigation">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/header/logoSmall.png" alt="logo"></a>
+        </div>
+        <div class="menu-header">
+            <ul>
+                <li class="menu-item-1"><a href="../about-company/index.html">COMPANY</a></li>
+                <li class="menu-item-2"><a href="../items/index.html">COFFEE</a></li>
+                <li class="menu-item-3"><a href="../partnership/index.html">PARTNERSHIP</a></li>
+                <li class="menu-item-4"><a href="../news/index.html">NEWS</a></li>
+                <li class="menu-item-5"><a href="../contacts/index.html">CONTACTS</a></li>
+            </ul>
+        </div>
+        <div class="registration-block">
+            <p class="registration-block-item-1"><a href="../account-setting/index.html" class="account">Account <img class="red-point" src="../img/header/red-point.png" alt=""></a></p>
+            <button class="registration-block-item-2"><a href="#" class="reg">Login</a><img class="log-img" id="log-img" src="../img/header/log-out-hover.png" alt="log-out"></button>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="head-text-container">
+        <div class="shadow-container">
+            <p class="text-1">COFFEE</p>
+        </div>
+    </div>
+        <div class="main-information-container">
+
+            <div id="wrap">
+
+                <div class="container-nav-tabs">
+                    <div class="container-head-sidebar">
+                        <p class="text-2">account settings</p>
+                    </div>
+                    <div id="tab1" class="tab selected">Personal \ Company Info</div>
+                    <div id="tab2" class="tab">Change password</div>
+                    <div id="tab3" class="tab">Items wishlist</div>
+                    <div id="tab4" class="tab">Mailing offers</div>
+                    <div id="tab5" class="tab">FAQ</div>
+                </div>
+
+
+                <div id="container">
+                    <div id="slide" class="">
+                        <div id="first" class="box">
+                            <div class="container-head-tab">
+                                <p class="empty"></p>
+                                <p class="text-3">Personal information</p>
+                                <p class="empty"></p>
+                            </div>
+                            <div class="personal-info-container">
+                                <div class="input-container-1">
+                                    <div class="group" id="salutation-container">
+                                        <input type="text" id="salutation" title="This is required" required="required"/>
+                                        <label for="salutation">Salutation*</label>
+                                    </div>
+                                    <div class="group" id="first-name-container">
+                                        <input type="text" id="first-name" title="This is required" required="required"/>
+                                        <label for="first-name">First Name*</label>
+                                    </div>
+                                    <div class="group" id="surname-container">
+                                        <input type="text" id="surname" title="This is required" required="required"/>
+                                        <label for="surname">Surname*</label>
+                                    </div>
+                                </div>
+                                <div class="input-container-2">
+                                    <div class="group" id="email-container">
+                                        <input type="text" id="email" title="Your E-mail needed for Log in and can't be changed" required="required"/>
+                                        <label for="email">Email <img id="lock" src="../img/main/lock.png" alt="lock"></label>
+                                    </div>
+                                    <div class="group" id="function-container">
+                                        <input type="text" id="function" required="required"/>
+                                        <label for="function">Function</label>
+                                    </div>
+                                </div>
+                                <div class="input-container-3">
+                                    <div class="group" id="phone-number-container">
+                                        <input type="number" id="phone"  required="required"/>
+                                        <label for="phone">Phone number</label>
+                                        <input type="button" id="more_fields" onclick="add_fields();" value=" + add phone number"/>
+                                    </div>
+                                    <div class="group" id="website-container">
+                                        <input type="email" id="website" required="required"/>
+                                        <label for="website">Website</label>
+                                        <input type="button" id="more_fields-web" onclick="add_fields2();" value=" + add website"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-head-tab" id="company-information">
+                                <p class="empty"></p>
+                                <p class="text-3">Company information</p>
+                                <p class="empty"></p>
+                            </div>
+                            <div class="company-information-container">
+                                <div class="input-container-4">
+                                <div class="group" id="registration-number-container">
+                                    <input type="number" id="reg-number" maxlength="6" required="required"/>
+                                    <label for="reg-number">Company registration number</label>
+                                </div>
+                                <div class="group" id="vat-container">
+                                    <input type="number" id="vat" maxlength="10" required="required"/>
+                                    <label for="vat">VAT number*</label>
+                                </div>
+                                </div>
+                                <div class="input-container-5">
+                                    <div class="group" id="company-name-container">
+                                        <input type="text" id="name"  required="required"/>
+                                        <label for="name">Company name</label>
+                                    </div>
+                                    <div class="group" id="company-email-container">
+                                        <input type="email" id="company-email" required="required"/>
+                                        <label for="company-email">Company E-mail</label>
+                                    </div>
+                                </div>
+                                <form class="input-container-6">
+                                    <div class="group" id="post-code-container">
+                                        <input type="number" id="code" aria-valuemax="6" maxlength="6" max="6" required="required"/>
+                                        <label for="code">Post code</label>
+                                    </div>
+                                    <div class="group" id="adress-container">
+                                        <input type="text" id="adress" required="required"/>
+                                        <label for="adress">Adress</label>
+                                        <input type="button" id="more_adress" onclick="add_fields3();" value=" + add adress"/>
+                                    </div>
+                                </form>
+                                <div class="input-container-3">
+                                    <div class="group" id="phone-number-container-2">
+                                        <input type="number" id="phone-2"  required="required"/>
+                                        <label for="phone-2">Phone number</label>
+                                        <input type="button" id="more_fields-2" onclick="add_fields4();" value=" + add phone number"/>
+                                    </div>
+                                    <div class="group" id="website-container-2">
+                                        <input type="email" id="website-2" required="required"/>
+                                        <label for="website-2">Website</label>
+                                        <input type="button" id="more_fields-web-2" onclick="add_fields5();" value=" + add website"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check-box-container">
+                                <p class="text-7">I want to get mail with offers on:</p>
+                                <div class="container-check">
+                                    <input type="radio" name="mails" id="mails-1"><label for="mails-1" id="lab">Personal E-mail</label>
+                                    <input type="radio" name="mails" id="mails-2"><label for="mails-2">Company E-mail</label>
+                                </div>
+                            </div>
+                            <p class="text-8"><b class="red">*</b> This information we need from you in order to process your orders well</p>
+                            <button class="save-settings-button" type="button">SAVE SETTINGS</button>
+                        </div>
+                        <div id="second" class="box">
+                            <div class="container-head-tab">
+                                <p class="empty"></p>
+                                <p class="text-3">Change password</p>
+                                <p class="empty"></p>
+                            </div>
+                            <form class="password-container">
+                                <div class="group" id="password">
+                                    <input type="password" id="pass"  required="required"/>
+                                    <label for="pass">Password*</label>
+                                </div>
+                                <div class="group" id="new-password">
+                                    <input type="password" id="new-pass"  required="required"/>
+                                    <label for="new-pass">New password*</label>
+                                </div>
+                                <div class="group" id="repeat-password">
+                                    <input type="password" id="rep-pass"   required="required"/>
+                                    <label for="rep-pass">Repeat password*</label>
+                                </div>
+                                <button class="save-pass" type="submit">SAVE</button>
+                            </form>
+                        </div>
+                        <div id="third" class="box">
+                            <div class="container-head-tab">
+                                <p class="empty"></p>
+                                <p class="text-3">Items wishlist</p>
+                                <p class="empty"></p>
+                            </div>
+                            <div class="container-apply">
+                                <p class="text-4">List of items you can fastly make and send our manager for easement of futher cooperation</p>
+                                <button class="got-it-button">GOT IT</button>
+                            </div>
+                            <div class="brand-container">
+                                <p class="text-5">Choose brand:</p>
+                                <ul class="brand-list">
+                                    <li><input type="radio" name="brand" id="brand-1"><label for="brand-1">Lavazza</label></li>
+                                    <li><input type="radio" name="brand" id="brand-2"><label for="brand-2">Dallmayr</label></li>
+                                    <li><input type="radio" name="brand" id="brand-3"><label for="brand-3">Kimbo</label></li>
+                                    <li><input type="radio" name="brand" id="brand-4"><label for="brand-4">Eilles</label></li>
+                                    <li><input type="radio" name="brand" id="brand-5"><label for="brand-5">Gimoka</label></li>
+                                    <li><input type="radio" name="brand" id="brand-6"><label for="brand-6">Movenpick</label></li>
+                                </ul>
+                            </div>
+                            <div class="item-container">
+                                <p class="text-5">Choose item:</p>
+                                <ul class="item-list">
+                                    <li><input type="checkbox" name="item" id="item-1"><label for="item-1">Lavazza Qualita Rossa 1kg (ground)</label></li>
+                                    <li><input type="checkbox" name="item" id="item-2"><label for="item-2">Lavazza Qualita Oro (beans)</label></li>
+                                    <li><input type="checkbox" name="item" id="item-3"><label for="item-3">Lavazza Black Pack 1kg (beans)</label></li>
+                                    <li><input type="checkbox" name="item" id="item-4"><label for="item-4">Lavazza Crema Dolce (beans)</label></li>
+                                    <li><input type="checkbox" name="item" id="item-5"><label for="item-5">Lavazza Qualita Oro (ground)</label></li>
+                                    <li><input type="checkbox" name="item" id="item-6"><label for="item-6">Lavazza Pienaroma (beans)</label></li>
+                                    <li><input type="checkbox" name="item" id="item-7"><label for="item-7">Lavazza Crema e Gusto (beans)</label></li>
+                                    <li><input type="checkbox" name="item" id="item-8"><label for="item-8">Lavazza Caffe Espresso (beans)</label></li>
+                                </ul>
+                                <p class="text-6">Select at least one item</p>
+                                <button type="submit" class="send">SEND</button>
+                            </div>
+                        </div>
+                        <div id="four" class="box">
+                            <div class="container-head-tab">
+                                <p class="empty"></p>
+                                <p class="text-3">Mailing offers</p>
+                                <p class="empty"></p>
+                            </div>
+                            <div class="choose-brand-container">
+                                <div class="main-check-container">
+                                    <p class="text-9">I want get on my E-mail new offers with (choose brand):</p>
+                                    <span class="main-check-box"><input type="checkbox" id="all-brands-check"><label for="all-brands-check">All brands</label></span>
+                                    <button type="reset" id="reset-checkbox-button">CLEAR ALL</button>
+                                </div>
+                            </div>
+                            <div class="brand-check-box-container">
+                                <input type="checkbox" id="check-1"><label for="check-1">Lavazza</label>
+                                <input type="checkbox" id="check-2"><label for="check-2">De Roccis</label>
+                                <input type="checkbox" id="check-3"><label for="check-3">Dallmayr</label>
+                                <input type="checkbox" id="check-4"><label for="check-4">Alvorada</label>
+                                <input type="checkbox" id="check-5"><label for="check-5">Kimbo</label>
+                                <input type="checkbox" id="check-6"><label for="check-6">Eilles</label>
+                                <input type="checkbox" id="check-7"><label for="check-7">Gimoka</label>
+                                <input type="checkbox" id="check-8"><label for="check-8">Movenpick</label>
+                            </div>
+                            <div class="last-offers-container">
+                                <div class="head-text-container-bottom">
+                                    <div class="head-text-left">
+                                        <p class="text-5">Last news</p>
+                                    </div>
+                                    <div class="head-text-right">
+                                        <p class="text-6-2"><a href="../news/index.html">back to all news <img src="../img/main/ic_keyboard_arrow_left_black_18px.png" alt="ic_keyboard_arrow_left_black_18px"></a></p>
+                                    </div>
+                                </div>
+                                <div class="tab-container-left-1">
+                                    <img src="../img/main/food-beans-coffee-drink.png" alt="food-beans-coffee-drink">
+                                    <div class="container-inside-1">
+                                        <div class="container-text-1">
+                                            <h1 class="head-text-top">Italian Best New Coffee of 2015 Wonderful Event.</h1>
+                                            <p class="text-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisdolore magna aliqua. Ut enim ad minim
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisdolore magna aliqua.</p>
+                                            <div class="container-social-share">
+                                                <img class="social-share-img1" src="../img/main/sharing-interface.png" alt="sharing-interface">
+                                                <img class="social-share-img2" src="../img/main/love.png" alt="love">
+                                                <img class="social-share-img3" src="../img/main/ic_reply_black_18px.png" alt="ic_reply_black_18px">
+                                            </div>
+                                        </div>
+                                        <div class="container-tags">
+                                            <p class="text-15">Tags: <a class="text-16" href="../items/index.html">logistic</a>, <a class="text-16" href="../items/index.html">wholesale</a>, <a class="text-16" href="../items/index.html">beans</a>, <a class="text-16" href="../items/index.html">coffee</a>
+                                                <a class="text-16" href="../items/index.html">...</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-container-left-1">
+                                    <img src="../img/main/food-beans-coffee-drink.png" alt="food-beans-coffee-drink">
+                                    <div class="container-inside-1">
+                                        <div class="container-text-1">
+                                            <h1 class="head-text-top">Italian Best New Coffee of 2015 Wonderful Event.</h1>
+                                            <p class="text-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisdolore magna aliqua. Ut enim ad minim
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisdolore magna aliqua.</p>
+                                            <div class="container-social-share">
+                                                <img class="social-share-img1" src="../img/main/sharing-interface.png" alt="sharing-interface">
+                                                <img class="social-share-img2" src="../img/main/love.png" alt="love">
+                                                <img class="social-share-img3" src="../img/main/ic_reply_black_18px.png" alt="ic_reply_black_18px">
+                                            </div>
+                                        </div>
+                                        <div class="container-tags">
+                                            <p class="text-15">Tags: <a class="text-16" href="../items/index.html">logistic</a>, <a class="text-16" href="../items/index.html">wholesale</a>, <a class="text-16" href="../items/index.html">beans</a>, <a class="text-16" href="../items/index.html">coffee</a>
+                                                <a class="text-16" href="../items/index.html">...</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-container-left-1">
+                                    <img src="../img/main/food-beans-coffee-drink.png" alt="food-beans-coffee-drink">
+                                    <div class="container-inside-1">
+                                        <div class="container-text-1">
+                                            <h1 class="head-text-top">Italian Best New Coffee of 2015 Wonderful Event.</h1>
+                                            <p class="text-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisdolore magna aliqua. Ut enim ad minim
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisdolore magna aliqua.</p>
+                                            <div class="container-social-share">
+                                                <img class="social-share-img1" src="../img/main/sharing-interface.png" alt="sharing-interface">
+                                                <img class="social-share-img2" src="../img/main/love.png" alt="love">
+                                                <img class="social-share-img3" src="../img/main/ic_reply_black_18px.png" alt="ic_reply_black_18px">
+                                            </div>
+                                        </div>
+                                        <div class="container-tags">
+                                            <p class="text-15">Tags: <a class="text-16" href="../items/index.html">logistic</a>, <a class="text-16" href="../items/index.html">wholesale</a>, <a class="text-16" href="../items/index.html">beans</a>, <a class="text-16" href="../items/index.html">coffee</a>
+                                                <a class="text-16" href="../items/index.html">...</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="five" class="box">TAB FIVE</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</main>
+<footer>
+    <div class="bottom-information-container">
+        <p class="info-text-11">В© 2017 all right reserved</p>
+        <p class="info-text-12"><a href="../index.html"><img src="../img/footer/minilogo.png" alt="minilogo"></a></p>
+        <p class="info-text-13">SMM. Wholesale coffee</p>
+    </div>
+</footer>
+
+<script src="../libs/jq-1.12.4.js"></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+<script type="text/javascript" src="../libs/slick-1.8.0/slick-1.8.0/slick/slick.min.js"></script>
+<script src="../libs/flaviusmatis-simplePagination.js-e32c66e/jquery.simplePagination.js"></script>
+<script src="./js/script.js"></script>
+
+
+</body>
+</html>

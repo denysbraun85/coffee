@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>SMM</title>
+    <link rel="stylesheet" type="text/css" href="./libs/slick-1.8.0/slick-1.8.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./libs/slick-1.8.0/slick-1.8.0/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <!----Modal registration-->
+        <div id="registration-modal" class="modal">
+            <div class="linePreloader"></div>
+            <div class="modal-contant" id="simpleModal">
+                <div class="modal-container-1">
+                    <p class="modal-text-1"><b>Please log in to use account tools:</b></p>
+                    <form class="input-container"  method="post">
+                        <label for="email"><input id="email" type="email"  placeholder="Email"></label>
+                        <label for="passw"><input id="passw" type="password"  placeholder="Password"></label>
+                        <button class="modal-button" id="modal-button" >Login</button>
+                    </form>
+                    <p class="modal-text-2" id="modal-text-2">Please supply your username and password.</p>
+                    <p class="modal-text-3"><a href="#">forgot password?</a></p>
+                </div>
+                <div class="modal-container-2">
+                    <span class="close" id="close">×</span>
+                    <p class="modal-text-1"><b>I don't have account:</b></p>
+                    <button class="modal-button" id="registration-but">Register</button>
+                </div>
+            </div>
+        </div>
+        <nav class="navigation">
+            <div class="logo">
+                <a href="#"><img src="./img/header/logoSmall.png" alt="logo"></a>
+            </div>
+            <div class="menu-header">
+                <ul>
+                    <li class="menu-item-1"><a href="./about-company/index.html">COMPANY</a></li>
+                    <li class="menu-item-2"><a href="./items/index.html">COFFEE</a></li>
+                    <li class="menu-item-3"><a href="./partnership/index.html">PARTNERSHIP</a></li>
+                    <li class="menu-item-4"><a href="./news/index.html">NEWS</a></li>
+                    <li class="menu-item-5"><a href="./contacts/index.html">CONTACTS</a></li>
+                </ul>
+            </div>
+            <div class="registration-block">
+                <a href="./account-setting/index.html" class="account">Account</a>
+                <a href="#" class="log-in"><button class="span-off" id="span-off"><b>Log in</b></button><img class="log-img" src="./img/header/log-out-.png" alt="log-out"></a>
+
+                <a href="#" class="en">EN</a>
+            </div>
+        </nav>
+        <div class="preload-container">
+            <div class="transition-container">
+                <div class="container-text-top">
+                    <p class="text-trans-1">SMM<img src="./img/header/logoBig.png" alt="logoBig"></p>
+                </div>
+                <img class="line" src="./img/header/line.png" alt="line">
+                <div class="container-text-bottom">
+                    <p class="text-trans-3"><b>import-export</b></p>
+                    <p class="text-trans-4"><b>wholesale coffee</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll">
+            <div class="animate-circle">
+                <img class="circle-icon" src="./img/header/circle.png" alt="circle">
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container-menu-main">
+        <nav class="navigation">
+            <div class="logo">
+                <a href="#"><img src="./img/header/logoSmall.png" alt="logo"></a>
+            </div>
+            <div class="menu-header">
+                <ul>
+                    <li class="menu-item-1"><a href="./about-company/index.html">COMPANY</a></li>
+                    <li class="menu-item-2"><a href="./items/index.html">COFFEE</a></li>
+                    <li class="menu-item-3"><a href="./partnership/index.html">PARTNERSHIP</a></li>
+                    <li class="menu-item-4"><a href="./news/index.html">NEWS</a></li>
+                    <li class="menu-item-5"><a href="./contacts/index.html">CONTACTS</a></li>
+                </ul>
+            </div>
+            <div class="registration-block">
+                <a href="./account-setting/index.html" class="account">Account</a>
+                <a href="#" class="log-in"><button class="span-off"><b>Log in</b></button><img class="log-img" src="./img/header/log-out-.png" alt="log-out"></a>
+                <a href="#" class="en">EN</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container-coffee">
+        <div class="container-coffee-left">
+            <p><a href="./items/index.html" class="container-coffee-item-1" >GROUND COFFEE</a></p>
+        </div>
+        <div class="container-coffee-right">
+            <p><a href="./items/index.html" class="container-coffee-item-2">COFFEE BEANS</a></p>
+        </div>
+    </div>
+    <div class="slider-container">
+        <div class="container-wrapper">
+            <p class="slider-container-text"><b>World coffee brands:</b></p>
+            <div class="slider-1">
+                <div class="slider-img-1">
+                    <p><a href="./items/index.html"><img id="lavazza" src="./img/main/lavazza-black.png" alt="lavazza"></a></p>
+                </div>
+                <div class="slider-img-2">
+                    <p><a href="./items/index.html"><img id="kimbo" src="./img/main/kimbo-black.png" alt="kimbo"></a></p>
+                </div>
+                <div class="slider-img-3">
+                    <p><a href="./items/index.html"><img  src="./img/main/eilles.png" alt="eilles"></a></p>
+                </div>
+                <div class="slider-img-4">
+                    <p><a href="./items/index.html"><img src="./img/main/dalmayr.png" alt="dalmayr"></a></p>
+                </div>
+                <div class="slider-img-5">
+                    <p><a href="./items/index.html"><img src="./img/main/gimoka.png" alt="gimoka"></a></p>
+                </div>
+                <div class="slider-img-6">
+                    <p><a href="./items/index.html"><img id="movenpick" src="./img/main/movenpick-black.png" alt="movenpick"></a></p>
+                </div>
+                <div class="slider-img-7">
+                    <p><a href="./items/index.html"><img src="./img/main/lavazza-black.png" alt="lavazza"></a></p>
+                </div>
+                <div class="slider-img-8">
+                    <p><a href="./items/index.html"><img src="./img/main/kimbo-black.png" alt="kimbo"></a></p>
+                </div>
+            </div>
+            <p class="view-button"><a href="./items/index.html">view all coffee</a></p>
+        </div>
+    </div>
+    <div class="tabs-container">
+        <div class="tabs-text-container">
+            <p><a href="./account-setting/index.html">Register </a> your own account and get acces to prices and other useful tools: </p>
+        </div>
+            <div class="tabs">
+                <div class="tabs-left">
+                    <div class="tabs-text-inside">
+                        <p class="tabs-text-1">ACCOUNT ADVANTAGES</p>
+                        <p class="tabs-text-2">(choose for details)</p>
+                    </div>
+                    <ul class="tab-list">
+                        <li id="tab1" class="tab">
+                            <input id="tabs-img1" class="tabs-img" type="radio" name="radio-button-tabs" checked><label for="tabs-img1"><a href="#a"  id="aa">see all actual prices in catalog</a></label>
+                        </li>
+                        <li id="tab2" class="tab">
+                           <input id="tabs-img2" class="tabs-img" type="radio" name="radio-button-tabs"><label for="tabs-img2"><a href="#b" id="bb">make fast wishlist with interested items  and send it to manager</a></label>
+                        </li>
+                        <li id="tab3" class="tab">
+                          <input id="tabs-img3" class="tabs-img" type="radio" name="radio-button-tabs"><label for="tabs-img3"><a href="#c" id="cc">configure mailing settings to keep abreast of the latest offers</a></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabs-content" id="slide">
+                    <div id="a">
+                        <img src="./img/main/wish-list.png" alt="wish-list">
+                    </div>
+                    <div id="b">
+                        <img src="./img/main/wish-list-2.png" alt="wish-list">
+                    </div>
+                    <div id="c">
+                        <img src="./img/main/wish-list-3.png" alt="wish-list">
+                    </div>
+                </div>
+            </div>
+    </div>
+    <img class="main-bottom-2-img" src="./img/main/Coffee-Beans-PNG-.png" alt="Coffee-Beans">
+    <img class="main-bottom-img" src="./img/main/line-main.png" alt="line-main">
+</main>
+<footer>
+    <div class="container-information">
+        <div class="container-information-left">
+            <div class="wrapper-container-information-left">
+                <p class="info-text-1">PARTNERSHIP</p>
+                <p class="info-text-2">if you are intersted in cooperation on </p>
+                <p class="info-text-3">import-export world brand coffee</p>
+                <p class="info-text-4"><a href="./partnership/index.html" class="container-information-button" ><b>view info</b></a></p>
+            </div>
+        </div>
+        <div class="container-information-right">
+            <div class="wrapper-container-information-right">
+                <p class="info-text-5">CONTACT US</p>
+                <p class="info-text-6">MILANO (MI) VIA LIPARI 9, 20144</p>
+                <p class="info-text-7">VAT-number 08089650967</p>
+                <p class="info-text-8"><b>+39 320 636 03 24</b> - English speaking manager</p>
+                <p class="info-text-9"><b>+39 320 636 03 24</b> - Italian speaking manager</p>
+                <p class="info-text-10"><a href="#" class="container-information-link">INFO@SMMITALIA.IT</a></p>
+                <div class="social-network-contacts">
+                    <div class="container-image-1">
+                        <a href="https://www.google.com"><img src="./img/footer/google-plus-effect.png" alt="google-plus"></a>
+                    </div>
+                    <div class="container-image-2">
+                        <a href="https://www.linkedin.com"><img src="./img/footer/linkedin-effect.png" alt="linkedin"></a>
+                    </div>
+                    <div class="container-image-3">
+                        <a href="https://www.facebook.com"><img src="./img/footer/facebook-effect.png" alt="facebook"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-information-container">
+        <p class="info-text-11">© 2017 all right reserved</p>
+        <p class="info-text-12"><a href="index.html"><img src="./img/footer/minilogo.png" alt="minilogo"></a></p>
+        <p class="info-text-13">SMM. Wholesale coffee</p>
+    </div>
+</footer>
+
+<script src="./libs/jq-1.12.4.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./libs/slick-1.8.0/slick-1.8.0/slick/slick.min.js"></script>
+<script src="./js/script.js"></script>
+
+</body>
+</html>

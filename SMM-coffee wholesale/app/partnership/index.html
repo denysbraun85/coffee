@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>Partnership</title>
+    <link rel="stylesheet" type="text/css" href="../libs/slick-1.8.0/slick-1.8.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../libs/slick-1.8.0/slick-1.8.0/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header>
+    <!----Modal registration-->
+    <div id="registration-modal" class="modal">
+        <div class="linePreloader"></div>
+        <div class="modal-contant" id="simpleModal">
+            <div class="modal-container-1">
+                <p class="modal-text-1"><b>Please log in to use account tools:</b></p>
+                <form class="input-container"  method="post">
+                    <label for="emails"><input id="emails" type="email"  placeholder="Email"></label>
+                    <label for="passw"><input id="passw" type="password"  placeholder="Password"></label>
+                    <button class="modal-button" id="modal-button" >Login</button>
+                </form>
+                <p class="modal-text-2" id="modal-text-2">Please supply your username and password.</p>
+                <p class="modal-text-3"><a href="#">forgot password?</a></p>
+            </div>
+            <div class="modal-container-2">
+                <span class="close" id="close">×</span>
+                <p class="modal-text-1"><b>I don't have account:</b></p>
+                <button class="modal-button" id="registration-but">Register</button>
+            </div>
+        </div>
+    </div>
+    <nav class="navigation">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/header/logoSmall.png" alt="logo"></a>
+        </div>
+        <div class="menu-header">
+            <ul>
+                <li class="menu-item-1"><a href="../about-company/index.html">COMPANY</a></li>
+                <li class="menu-item-2"><a href="../items/index.html">COFFEE</a></li>
+                <li class="menu-item-3"><a href="../partnership/index.html">PARTNERSHIP</a></li>
+                <li class="menu-item-4"><a href="../news/index.html">NEWS</a></li>
+                <li class="menu-item-5"><a href="../contacts/index.html">CONTACTS</a></li>
+            </ul>
+        </div>
+        <div class="registration-block">
+            <p class="registration-block-item-1"><a href="#" class="account">Account <img class="red-point" src="../img/header/red-point.png" alt=""></a></p>
+            <button class="registration-block-item-2"><a href="#" class="reg">Login</a><img class="log-img" id="log-img" src="../img/header/log-out-hover.png" alt="log-out"></button>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="head-text-container">
+        <div class="shadow-container">
+            <p class="text-1">PARTNERSHIP</p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="main-information-container">
+            <div class="main-text-container">
+                <p class="text-2">we are interested in partnership with...</p>
+                <p class="text-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                    ipsum quia dolor sit amet, consectetur, adipisci velit, se.</p>
+                <p class="text-4">as a partner, we can offer you:</p>
+            </div>
+            <div class="advantages-containers">
+                <div class="advantages-containers-layer-1">
+                    <div class="advantages-container-1">
+                        <img class="center" src="../img/main/coffee.png" alt="coffee" id="seed">
+                        <p class="text-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="advantages-container-2">
+                        <img class="center" src="../img/main/truck.png" alt="truck" id="truck">
+                        <p class="text-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="advantages-container-3">
+                        <img class="center" src="../img/main/box.png" alt="box">
+                        <p class="text-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="advantages-container-4">
+                        <img class="center" src="../img/main/form.png" alt="form">
+                        <p class="text-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="message-container">
+            <p class="text-13">If you are interested in our company as a partner, <a href="../contacts/index.html">please contact us</a></p>
+            <p class="text-14">or email through the form below</p>
+            <div class="form-container">
+                <div class="form-on-top">
+                    <div class="group">
+                        <input type="text" id="name" required="required"/>
+                        <label for="name">Your Name \ Company </label>
+                    </div>
+                    <div class="group">
+                        <input type="email" id="email" required="required"/>
+                        <label for="email">Your E-mail </label>
+                    </div>
+                </div>
+                <div class="group" id="group-message">
+                    <input type="text" id="message" maxlength="150" required="required"/>
+                    <label for="message">Your message </label>
+                    <p id="count" class="count-area"></p>
+                </div>
+                <div class="group" id="code-container">
+                    <div class="random-code">
+                        <p id="code-number" class="code-paragraph">168539</p>
+                        <img  class="code-container-img" onclick="randomInteger (100000, 999999)" src="../img/main/ic_refresh_black_18px.png" alt="ic_refresh_black_18px">
+                    </div>
+                    <input type="number"  min="1" max="9" id="code"  oninput=" if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                           maxlength = "6" required="required"/>
+                    <label for="code">Image Verification</label>
+                </div>
+            </div>
+            <div id="button-plane">
+                <button type="submit" class="send-button" id="send-button"><a href="#" class="send">SEND MESSAGE</a></button>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="bottom-information-container">
+        <p class="info-text-11">В© 2017 all right reserved</p>
+        <p class="info-text-12"><a href="../index.html"><img src="../img/footer/minilogo.png" alt="minilogo"></a></p>
+        <p class="info-text-13">SMM. Wholesale coffee</p>
+        <img class="main-bottom-img-1" src="../img/main/Coffee-Beans-fixed.png" alt="Coffee-Beans">
+        <img class="main-bottom-img-2" src="../img/main/Coffee-Beans-mirror.png" alt="Coffee-Bean">
+    </div>
+</footer>
+
+<script src="../libs/jq-1.12.4.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../libs/slick-1.8.0/slick-1.8.0/slick/slick.min.js"></script>
+<script src="./js/script.js"></script>
+
+
+</body>
+</html>

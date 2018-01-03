@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>Contacts</title>
+    <link rel="stylesheet" type="text/css" href="../libs/slick-1.8.0/slick-1.8.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../libs/slick-1.8.0/slick-1.8.0/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header>
+    <!----Modal registration-->
+    <div id="registration-modal" class="modal">
+        <div class="linePreloader"></div>
+        <div class="modal-contant" id="simpleModal">
+            <div class="modal-container-1">
+                <p class="modal-text-1"><b>Please log in to use account tools:</b></p>
+                <form class="input-container"  method="post">
+                    <label for="emails"><input id="emails" type="email"  placeholder="Email"></label>
+                    <label for="passw"><input id="passw" type="password"  placeholder="Password"></label>
+                    <button class="modal-button" id="modal-button" >Login</button>
+                </form>
+                <p class="modal-text-2" id="modal-text-2">Please supply your username and password.</p>
+                <p class="modal-text-3"><a href="#">forgot password?</a></p>
+            </div>
+            <div class="modal-container-2">
+                <span class="close" id="close">×</span>
+                <p class="modal-text-1"><b>I don't have account:</b></p>
+                <button class="modal-button" id="registration-but">Register</button>
+            </div>
+        </div>
+    </div>
+    <nav class="navigation">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/header/logoSmall.png" alt="logo"></a>
+        </div>
+        <div class="menu-header">
+            <ul>
+                <li class="menu-item-1"><a href="../about-company/index.html">COMPANY</a></li>
+                <li class="menu-item-2"><a href="../items/index.html">COFFEE</a></li>
+                <li class="menu-item-3"><a href="../partnership/index.html">PARTNERSHIP</a></li>
+                <li class="menu-item-4"><a href="../news/index.html">NEWS</a></li>
+                <li class="menu-item-5"><a href="../contacts/index.html">CONTACTS</a></li>
+            </ul>
+        </div>
+        <div class="registration-block">
+            <p class="registration-block-item-1"><a href="../account-setting/index.html" class="account">Account <img class="red-point" src="../img/header/red-point.png" alt=""></a></p>
+            <button class="registration-block-item-2"><a href="#" class="reg">Login</a><img class="log-img" id="log-img" src="../img/header/log-out-hover.png" alt="log-out"></button>
+        </div>
+    </nav>
+</header>
+<main id="main">
+    <div class="head-text-container">
+        <div class="shadow-container">
+            <p class="text-1">CONTACTS</p>
+        </div>
+    </div>
+    <div class="main-information-container">
+        <div class="text-information-container">
+            <div class="container-1">
+                <p class="info-text-2">You’ve got questions</p>
+            </div>
+            <div class="container-2">
+                <p class="info-text-3">we’ve got answers</p>
+            </div>
+            <div class="container-3">
+                <div class="form-container">
+                    <div class="group" id="name-container">
+                        <input type="text" id="name" required="required"/>
+                        <label for="name">Your Name \ Company </label>
+                    </div>
+                    <div class="group" id="email-container">
+                        <input type="email" id="email" required="required"/>
+                        <label for="email">Your E-mail </label>
+                    </div>
+                    <div class="group" id="group-message">
+                        <input type="text" id="message" maxlength="150" required="required"/>
+                        <label for="message">Your message </label>
+                        <p id="count" class="count-area"></p>
+                    </div>
+                    <div class="group" id="code-container">
+                        <div class="random-code">
+                            <p id="code-number" class="code-paragraph">168539</p>
+                            <img  class="code-container-img" onclick="randomInteger (100000, 999999)" src="../img/main/ic_refresh_black_18px.png" alt="ic_refresh_black_18px">
+                        </div>
+                        <input type="number"  min="1" max="9" id="code"  oninput=" if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                               maxlength = "6" required="required"/>
+                        <label for="code" id="label-code-input">Image Verification</label>
+                    </div>
+                    <div id="button-plane">
+                        <button type="submit" class="send-button" id="send-button"><a href="#" class="send">SEND MESSAGE</a></button>
+                    </div>
+                </div>
+                <div class="info-container">
+                    <p class="info-text-5">SMM<img src="../img/header/logoSmall.png" alt="logo"></p>
+                    <p class="info-text-14">import-export</p>
+                    <p class="info-text-15">wholesale coffee</p>
+                    <p class="info-text-6">MILANO (MI) VIA LIPARI 9, 20144</p>
+                    <p class="info-text-7">VAT-number 08089650967</p>
+                    <p class="info-text-8"><b>+39 320 636 03 24</b> - English speaking manager</p>
+                    <p class="info-text-9"><b>+39 320 636 03 24</b> - Italian speaking manager</p>
+                    <p class="info-text-10"><a href="#" class="container-information-link">INFO@SMMITALIA.IT</a></p>
+                    <p class="info-text-16">SMM.SRL (skype ID)</p>
+                    <div class="social-network-contacts">
+                        <div class="container-image-1">
+                            <a href="https://www.google.com"><img src="../img/footer/google-plus-effect.png" alt="google-plus"></a>
+                        </div>
+                        <div class="container-image-2">
+                            <a href="https://www.linkedin.com"><img src="../img/footer/linkedin-effect.png" alt="linkedin"></a>
+                        </div>
+                        <div class="container-image-3">
+                            <a href="https://www.facebook.com"><img src="../img/footer/facebook-effect.png" alt="facebook"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <div class="bottom-information-container">
+        <p class="info-text-11">В© 2017 all right reserved</p>
+        <p class="info-text-12"><a href="../index.html"><img src="../img/footer/minilogo.png" alt="minilogo"></a></p>
+        <p class="info-text-13">SMM. Wholesale coffee</p>
+    </div>
+</footer>
+
+<script src="../libs/jq-1.12.4.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../libs/slick-1.8.0/slick-1.8.0/slick/slick.min.js"></script>
+<script src="./js/script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+@import "import-css";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+@import "media";

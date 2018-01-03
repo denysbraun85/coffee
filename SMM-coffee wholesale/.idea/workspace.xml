@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fd366286-f803-4f6e-a8dd-98dcc1fcb864" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="js-practica">
+      <favorite_root url="file://$PROJECT_DIR$/app/about-company/css/style.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/app/about-company/js/script.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/app/about-company/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/app/css/style.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/app/js/script.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/app/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/account-setting/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="658">
+              <caret line="46" column="90" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="46" selection-end-column="90" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/about-company/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1169">
+              <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/contacts/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="125" column="54" lean-forward="false" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/items/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-584">
+              <caret line="320" column="65" lean-forward="false" selection-start-line="320" selection-start-column="65" selection-end-line="320" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/news/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="486" column="54" lean-forward="false" selection-start-line="486" selection-start-column="54" selection-end-line="486" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/partnership/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="131" column="54" lean-forward="false" selection-start-line="131" selection-start-column="54" selection-end-line="131" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Frontend. Заняття 2. Перші теги HTML, програма Adobe Photoshop.html" pinned="false" current-in-tab="true">
+        <entry file="file://D:/Уроки/Frontend. Заняття 2. Перші теги HTML, програма Adobe Photoshop.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>head-text-right</find>
+      <find>text-6</find>
+      <find>.container-inside-1</find>
+      <find>container-tags</find>
+      <find>.text-15</find>
+      <find>container-inside</find>
+      <find>head-text-container-bottom</find>
+      <find>.box</find>
+      <find>container-text-1</find>
+      <find>container-inside-1</find>
+      <find>head-text-top</find>
+      <find>text-14</find>
+      <find>container-social-share</find>
+      <find>social-share-img1</find>
+      <find>social-share-img2</find>
+      <find>social-share-img</find>
+      <find>container-text</find>
+      <find>.last-offers-container</find>
+      <find>brand-list</find>
+      <find>all-brands-check</find>
+      <find>.brand-list li label</find>
+      <find>.group input</find>
+      <find>.tab label:before</find>
+      <find>.brand-check-box-container</find>
+      <find>tab-list</find>
+      <find>log-img</find>
+      <find>menu-item-1</find>
+      <find>.prev</find>
+      <find>.text-7</find>
+      <find>prev</find>
+    </findStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Downloads/Jquery-Pagination/js/pagination.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/js/scripts.js" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$USER_HOME$/Downloads/_ Frontend. Заняття 39. Домашнє завданн.html" />
+        <option value="$PROJECT_DIR$/app/js/new.js" />
+        <option value="$USER_HOME$/Downloads/Script.js" />
+        <option value="$USER_HOME$/Downloads/Part 20..html" />
+        <option value="$PROJECT_DIR$/app/Part 20..html" />
+        <option value="$USER_HOME$/Downloads/Frontend. Заняття 22..html" />
+        <option value="$USER_HOME$/Downloads/Frontend. Заняття 54. Пркатика по jQuery, завдання..html" />
+        <option value="$PROJECT_DIR$/app/Frontend. Заняття 54. Пркатика по jQuery, завдання..html" />
+        <option value="$PROJECT_DIR$/../54/Frontend. Заняття 54. Пркатика по jQuery, завдання..html" />
+        <option value="$PROJECT_DIR$/app/js/Script.js" />
+        <option value="$PROJECT_DIR$/../54qqqq/Frontend. Заняття 54. Пркатика по jQuery, завданняqqqqqqqqqqqqqqqqqqq..html" />
+        <option value="$PROJECT_DIR$/../54qqqq/script.js" />
+        <option value="$PROJECT_DIR$/app/jsonTwo.json" />
+        <option value="$PROJECT_DIR$/app/Frontend. Заняття 22..html" />
+        <option value="$PROJECT_DIR$/app/css/about-company/style.css" />
+        <option value="$PROJECT_DIR$/app/pages/about-company/index.html" />
+        <option value="$PROJECT_DIR$/about-company/index.html" />
+        <option value="$PROJECT_DIR$/app/views/about-company/index.html" />
+        <option value="$PROJECT_DIR$/app/partnership/js/script.js" />
+        <option value="$PROJECT_DIR$/app/partnership/css/style.css" />
+        <option value="$PROJECT_DIR$/app/contacts/css/style.css" />
+        <option value="$PROJECT_DIR$/app/contacts/js/script.js" />
+        <option value="$PROJECT_DIR$/app/about-company/css/style.css" />
+        <option value="$PROJECT_DIR$/app/about-company/js/script.js" />
+        <option value="$USER_HOME$/Downloads/Jquery-Pagination/index.html" />
+        <option value="$USER_HOME$/Downloads/Jquery-Pagination/Jquery-Pagination/css/pagination.css" />
+        <option value="$USER_HOME$/Downloads/Jquery-Pagination/js/pagination.js" />
+        <option value="$PROJECT_DIR$/app/items/js/script.js" />
+        <option value="$PROJECT_DIR$/app/news/js/script.js" />
+        <option value="$PROJECT_DIR$/app/account-setting/css/style.css" />
+        <option value="$PROJECT_DIR$/app/account-setting/js/script.js" />
+        <option value="$PROJECT_DIR$/app/css/style.css" />
+        <option value="$PROJECT_DIR$/app/js/script.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/account-setting/index.html" />
+        <option value="$PROJECT_DIR$/app/about-company/index.html" />
+        <option value="$PROJECT_DIR$/app/contacts/index.html" />
+        <option value="$PROJECT_DIR$/app/items/index.html" />
+        <option value="$PROJECT_DIR$/app/items/css/style.css" />
+        <option value="$PROJECT_DIR$/app/news/css/style.css" />
+        <option value="$PROJECT_DIR$/app/news/index.html" />
+        <option value="$PROJECT_DIR$/app/partnership/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1134" />
+    <option name="height" value="570" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CssUnknownTarget</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/about-company/css/style.css" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Tanya/Desktop/js-practica/app/Frontend. Заняття 22..html" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tanya\Desktop\SMM-coffee wholesale\app\css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.new.js">
+    <configuration name="new.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="new.js" working-dir="$PROJECT_DIR$/app/js" />
+    <configuration name="scripts.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="scripts.js" working-dir="$PROJECT_DIR$/app/js" />
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration name="default" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>default</task>
+      </tasks>
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration name="start" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>start</task>
+      </tasks>
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration name="watch" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>watch</task>
+      </tasks>
+      <arguments />
+      <envs />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Gulp.js.start" />
+      <item index="1" class="java.lang.String" itemvalue="Gulp.js.default" />
+      <item index="2" class="java.lang.String" itemvalue="Gulp.js.watch" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.scripts.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.new.js" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Gulp.js.default" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.scripts.js" />
+        <item index="2" class="java.lang.String" itemvalue="Gulp.js.start" />
+        <item index="3" class="java.lang.String" itemvalue="Gulp.js.watch" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.new.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd366286-f803-4f6e-a8dd-98dcc1fcb864" name="Default" comment="" />
+      <created>1500300793185</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1500300793185</updated>
+      <workItem from="1500300794774" duration="282000" />
+      <workItem from="1500393371000" duration="46000" />
+      <workItem from="1501324118083" duration="1255000" />
+      <workItem from="1501330165122" duration="3172000" />
+      <workItem from="1501420809279" duration="859000" />
+      <workItem from="1501602357873" duration="1305000" />
+      <workItem from="1501660783443" duration="4690000" />
+      <workItem from="1501774990662" duration="4874000" />
+      <workItem from="1501831737490" duration="2916000" />
+      <workItem from="1501868974800" duration="1562000" />
+      <workItem from="1501871619690" duration="3373000" />
+      <workItem from="1501924470705" duration="3621000" />
+      <workItem from="1502032653078" duration="4097000" />
+      <workItem from="1502092822007" duration="5366000" />
+      <workItem from="1502124496613" duration="3558000" />
+      <workItem from="1502208110717" duration="2839000" />
+      <workItem from="1502379429033" duration="3176000" />
+      <workItem from="1502623520886" duration="12164000" />
+      <workItem from="1502698455151" duration="2313000" />
+      <workItem from="1502811053429" duration="5033000" />
+      <workItem from="1502984326331" duration="5220000" />
+      <workItem from="1503044638230" duration="4320000" />
+      <workItem from="1503064926895" duration="4752000" />
+      <workItem from="1503134095461" duration="6154000" />
+      <workItem from="1503306404887" duration="1559000" />
+      <workItem from="1503332677634" duration="51000" />
+      <workItem from="1503332897285" duration="6640000" />
+      <workItem from="1503340233976" duration="196000" />
+      <workItem from="1503401987956" duration="686000" />
+      <workItem from="1503416895609" duration="5000" />
+      <workItem from="1503416948866" duration="4564000" />
+      <workItem from="1503512080944" duration="2168000" />
+      <workItem from="1503583547043" duration="902000" />
+      <workItem from="1503589400567" duration="4243000" />
+      <workItem from="1503738896503" duration="656000" />
+      <workItem from="1503740920025" duration="5189000" />
+      <workItem from="1503826007028" duration="4343000" />
+      <workItem from="1503919983984" duration="2891000" />
+      <workItem from="1503946513565" duration="2562000" />
+      <workItem from="1503987267683" duration="1862000" />
+      <workItem from="1504021305698" duration="5898000" />
+      <workItem from="1504118390409" duration="2950000" />
+      <workItem from="1504194048949" duration="2665000" />
+      <workItem from="1504438913708" duration="51000" />
+      <workItem from="1504439083096" duration="57000" />
+      <workItem from="1504439774188" duration="11869000" />
+      <workItem from="1504512116735" duration="2839000" />
+      <workItem from="1504625575320" duration="5758000" />
+      <workItem from="1504723209906" duration="3789000" />
+      <workItem from="1504798498201" duration="1984000" />
+      <workItem from="1504800800552" duration="885000" />
+      <workItem from="1504801963183" duration="1562000" />
+      <workItem from="1504849501497" duration="5044000" />
+      <workItem from="1504948463887" duration="5127000" />
+      <workItem from="1505109427033" duration="1729000" />
+      <workItem from="1505116112350" duration="2384000" />
+      <workItem from="1505129897156" duration="1047000" />
+      <workItem from="1505403935044" duration="4902000" />
+      <workItem from="1505727154392" duration="40000" />
+      <workItem from="1505728845390" duration="29000" />
+      <workItem from="1505728975533" duration="1200000" />
+      <workItem from="1505835973635" duration="3113000" />
+      <workItem from="1505932073694" duration="3334000" />
+      <workItem from="1506009081531" duration="4350000" />
+      <workItem from="1506062255553" duration="4710000" />
+      <workItem from="1506262884508" duration="5042000" />
+      <workItem from="1506440518752" duration="1025000" />
+      <workItem from="1506533273409" duration="6419000" />
+      <workItem from="1506613616196" duration="3259000" />
+      <workItem from="1506699868703" duration="5194000" />
+      <workItem from="1506852809219" duration="9576000" />
+      <workItem from="1506932689449" duration="10625000" />
+      <workItem from="1507019041326" duration="7963000" />
+      <workItem from="1507045522992" duration="5482000" />
+      <workItem from="1507060221008" duration="630000" />
+      <workItem from="1507138169445" duration="9154000" />
+      <workItem from="1507218830573" duration="5184000" />
+      <workItem from="1507311739500" duration="11565000" />
+      <workItem from="1507367329568" duration="5419000" />
+      <workItem from="1507402027671" duration="4648000" />
+      <workItem from="1507458301033" duration="6042000" />
+      <workItem from="1507536897350" duration="6429000" />
+      <workItem from="1507650394132" duration="693000" />
+      <workItem from="1507651385830" duration="63000" />
+      <workItem from="1507652064490" duration="4030000" />
+      <workItem from="1507708305070" duration="1524000" />
+      <workItem from="1507710520427" duration="786000" />
+      <workItem from="1507743429037" duration="3290000" />
+      <workItem from="1507822554230" duration="4903000" />
+      <workItem from="1507918607048" duration="3017000" />
+      <workItem from="1507973705167" duration="2262000" />
+      <workItem from="1508075480836" duration="11028000" />
+      <workItem from="1508255263396" duration="10000" />
+      <workItem from="1508255317150" duration="4261000" />
+      <workItem from="1508350266517" duration="7626000" />
+      <workItem from="1508414404298" duration="2928000" />
+      <workItem from="1508427608803" duration="5220000" />
+      <workItem from="1508526422916" duration="44000" />
+      <workItem from="1508526636943" duration="8858000" />
+      <workItem from="1508577089727" duration="4891000" />
+      <workItem from="1508609882119" duration="6218000" />
+      <workItem from="1508747339281" duration="1176000" />
+      <workItem from="1508860041796" duration="4480000" />
+      <workItem from="1508961164381" duration="2293000" />
+      <workItem from="1509033672598" duration="3701000" />
+      <workItem from="1509194306436" duration="641000" />
+      <workItem from="1509216967530" duration="1810000" />
+      <workItem from="1509452783249" duration="12000" />
+      <workItem from="1509471781660" duration="2820000" />
+      <workItem from="1509561282569" duration="9805000" />
+      <workItem from="1509732826721" duration="10902000" />
+      <workItem from="1509824992482" duration="5673000" />
+      <workItem from="1509884427745" duration="4268000" />
+      <workItem from="1509959543531" duration="6111000" />
+      <workItem from="1510605643960" duration="47000" />
+      <workItem from="1510605725181" duration="15000" />
+      <workItem from="1510771975406" duration="6788000" />
+      <workItem from="1510860429708" duration="1902000" />
+      <workItem from="1511162910203" duration="191000" />
+      <workItem from="1511164014048" duration="9734000" />
+      <workItem from="1511244976364" duration="4440000" />
+      <workItem from="1511293779208" duration="440000" />
+      <workItem from="1512830143846" duration="7023000" />
+      <workItem from="1512903998733" duration="6582000" />
+      <workItem from="1513020576156" duration="7309000" />
+      <workItem from="1513086546964" duration="4864000" />
+      <workItem from="1513115159151" duration="2900000" />
+      <workItem from="1513157301034" duration="13225000" />
+      <workItem from="1513245211970" duration="17236000" />
+      <workItem from="1513331148773" duration="38000" />
+      <workItem from="1513331289447" duration="8451000" />
+      <workItem from="1513453188984" duration="5462000" />
+      <workItem from="1513513747204" duration="19976000" />
+      <workItem from="1513621152775" duration="6499000" />
+      <workItem from="1513675729086" duration="12927000" />
+      <workItem from="1513693849811" duration="17004000" />
+      <workItem from="1513765161622" duration="22060000" />
+      <workItem from="1513868862076" duration="11108000" />
+      <workItem from="1513946558109" duration="18070000" />
+      <workItem from="1514052320871" duration="9271000" />
+      <workItem from="1514130569028" duration="12418000" />
+      <workItem from="1514197583230" duration="13535000" />
+      <workItem from="1514232664843" duration="4872000" />
+      <workItem from="1514237707989" duration="3109000" />
+      <workItem from="1514287238449" duration="8475000" />
+      <workItem from="1514320595251" duration="6459000" />
+      <workItem from="1514378684001" duration="7853000" />
+      <workItem from="1514389975599" duration="7416000" />
+      <workItem from="1514451166116" duration="7083000" />
+      <workItem from="1514567551691" duration="5353000" />
+      <workItem from="1514624968156" duration="18566000" />
+      <workItem from="1514728603216" duration="6634000" />
+      <workItem from="1514761861516" duration="601000" />
+      <workItem from="1514822957093" duration="15001000" />
+      <workItem from="1514889875942" duration="6577000" />
+      <workItem from="1514920403925" duration="7476000" />
+      <workItem from="1514956494657" duration="9006000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="785776000" />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27922815" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27846673" sideWeight="0.49702382" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19830777" sideWeight="0.37469587" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280363" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16129032" sideWeight="0.50490195" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16145833" sideWeight="0.49509802" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.4920635" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19830777" sideWeight="0.375" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27941176" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27941176" sideWeight="0.49702382" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19866072" sideWeight="0.37469587" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16145833" sideWeight="0.50490195" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16145833" sideWeight="0.49509802" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.4920635" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19866072" sideWeight="0.375" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../54qqqq/script.js" />
+    <entry file="file://$PROJECT_DIR$/app/json.txt" />
+    <entry file="file://$PROJECT_DIR$/app/jsonTwo.json" />
+    <entry file="file://$PROJECT_DIR$/app/Frontend. Заняття 22..html" />
+    <entry file="file://$PROJECT_DIR$/app/sass/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/about-company/style.css" />
+    <entry file="file://$PROJECT_DIR$/app/pages/about-company/style.css" />
+    <entry file="file://$PROJECT_DIR$/app/pages/about-company/index.html" />
+    <entry file="file://$PROJECT_DIR$/app/about-company/style.css" />
+    <entry file="file://$PROJECT_DIR$/about-company/style.css" />
+    <entry file="file://$PROJECT_DIR$/about-company/index.html" />
+    <entry file="file://$PROJECT_DIR$/app/views/about-company/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/gulp-sass/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="186" column="8" lean-forward="true" selection-start-line="186" selection-start-column="8" selection-end-line="186" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/КУРСИ/РЕАЛЬНАЯ КУРСОВАЯ/SMM-coffee wholesale - contacts/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="41" column="31" lean-forward="true" selection-start-line="40" selection-start-column="15" selection-end-line="45" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="1297" column="10" lean-forward="false" selection-start-line="1297" selection-start-column="0" selection-end-line="1309" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/TEMP/Rar$EXa0.118/index2.html" />
+    <entry file="file://C:/TEMP/Rar$EXa0.839/index.html" />
+    <entry file="file://C:/TEMP/Rar$DIa0.043/style.css" />
+    <entry file="file://$USER_HOME$/Downloads/animate (1).css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="1369" column="0" lean-forward="false" selection-start-line="1369" selection-start-column="0" selection-end-line="1386" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partnership/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="507" column="18" lean-forward="false" selection-start-line="507" selection-start-column="18" selection-end-line="507" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partnership/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="98" column="12" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="98" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/contacts/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="554" column="1" lean-forward="true" selection-start-line="545" selection-start-column="0" selection-end-line="554" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/contacts/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="69" column="45" lean-forward="false" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Jquery-Pagination/Jquery-Pagination/js/pagination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Jquery-Pagination/Jquery-Pagination/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Jquery-Pagination/css/pagination.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-101">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Jquery-Pagination/Jquery-Pagination/css/pagination.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Jquery-Pagination/js/pagination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Jquery-Pagination/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2898">
+          <caret line="138" column="7" lean-forward="false" selection-start-line="138" selection-start-column="7" selection-end-line="138" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/TEMP/Rar$EXa0.774/fedecarg-jquery-paginate-ec56cdb/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2891">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/items/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="99" column="13" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="99" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/about-company/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="528" column="0" lean-forward="false" selection-start-line="528" selection-start-column="0" selection-end-line="531" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/about-company/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="96" column="12" lean-forward="false" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/news/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="130" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="210" column="57" lean-forward="true" selection-start-line="210" selection-start-column="57" selection-end-line="210" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="682" column="10" lean-forward="true" selection-start-line="682" selection-start-column="10" selection-end-line="682" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="223" column="50" lean-forward="true" selection-start-line="223" selection-start-column="50" selection-end-line="223" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/account-setting/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="914" column="46" lean-forward="false" selection-start-line="914" selection-start-column="46" selection-end-line="914" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/account-setting/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="312" column="72" lean-forward="false" selection-start-line="312" selection-start-column="72" selection-end-line="312" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/contacts/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="125" column="54" lean-forward="false" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/items/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="537" column="17" lean-forward="false" selection-start-line="537" selection-start-column="17" selection-end-line="537" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/items/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-584">
+          <caret line="320" column="65" lean-forward="false" selection-start-line="320" selection-start-column="65" selection-end-line="320" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/about-company/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1169">
+          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/news/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="486" column="54" lean-forward="false" selection-start-line="486" selection-start-column="54" selection-end-line="486" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/news/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="527" column="17" lean-forward="false" selection-start-line="527" selection-start-column="17" selection-end-line="527" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/account-setting/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="46" column="90" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="46" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partnership/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="131" column="54" lean-forward="false" selection-start-line="131" selection-start-column="54" selection-end-line="131" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Уроки/Frontend. Заняття 2. Перші теги HTML, програма Adobe Photoshop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
