@@ -1,5 +1,5 @@
-
- $(document).ready(function(){              //slider for main page
+//Slider for main page
+ $(document).ready(function(){
      $('.slider-1').slick({
          slidesToShow: 6,
          slidesToScroll: 1,
@@ -9,9 +9,8 @@
  });
  });
 
-
-
- $(".social-share-img1").bind("click", function() {                         //change picture for social needs
+//Change picture for social buttons
+ $(".social-share-img1").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/sharing-interface.png")
          ? "../img/main/sharing-interface-red.png"
          : "../img/main/sharing-interface.png";
@@ -24,9 +23,8 @@
      $(this).attr("src", src);
  });
 
-
-
- $(".scroll").click(function(){                             // scroll on picture
+//Scroll on picture
+ $(".scroll").click(function(){
      $("html, body").animate({scrollTop: $(".navigation").height()+ 700 },"slow");
 
      return false;});
@@ -39,15 +37,17 @@
 //     })
 // });
 
- jQuery(function(f) {           //scroll show and hide nav menu
+//Scroll show and hide nav menu
+ jQuery(function(f) {
      var element = f('.container-menu-main');
      f(window).scroll(function () {
-         element['fade' + (f(this).scrollTop() > 600 ? 'In' : 'Out')](500);
+         element['fade' + (f(this).scrollTop() > 600 ? 'In' : 'Out')](1200);
      })
 
  });
 
-$(function () {                    // tabs on main page
+//Tabs on main page
+$(function () {
     var tabContent = $('.tabs-content > div');
     tabContent.hide().filter(':first').fadeIn('slow');
     $('.tabs  li:first a').addClass('selected');
@@ -64,42 +64,6 @@ $(function () {                    // tabs on main page
     })
 });
 
-
- // $(".tab").bind("click", function() {     // change check picture on tabs main page
- //     var src = ($('.tabs-img').attr("src") === "../img/main/type.png")
- //         ? "../img/main/type_copy_red.png"
- //         : "../img/main/type.png";
- //     $(this).attr("src", src);
- // });
-
-
-
-
-
- $(function() {
-     $("input[id='message']").keyup(function countRemainingChars(){     //count for message  NEED TO FIX
-         var maxchars = 150;
-         var number = $("input[id='message']").val().length;
-         if(number <= maxchars){
-             $("#count").html(maxchars-number + '/' + 150);
-         }
-         if(number === maxchars) {
-             $("#count").attr({ maxlength: maxchars});
-         }
-     });
- });
-
-
- function randomInteger(min, max) {                                 //random code for verification
-     var write = document.getElementById('code-number');
-     var rand = min - 0.5 + Math.random() * (max - min + 1);
-     rand = Math.round(rand);
-     write.innerHTML = rand;
-     return rand;
- }
-
-//randomInteger (100000, 999999);
-
  //function validateEmail(){
  //    //var emailReg = /^([\w]+@([\w-]+\.)+[\w-]{2,4})?$/;
  //    var inputEmail = document.getElementById('email').value;
@@ -112,13 +76,6 @@ $(function () {                    // tabs on main page
  //        inputMail.style.opacity = '1';
  //    }
  //}
-
-// $('.modal-button').on('click', function (){          //something wrong with this code
-//         $('.modal-text-2').css("opacity", "1");
-//         console.log('safdfsf');
-// });
-
-
 
 //Modal window for MAIN PAGE
  function modalMain() {
@@ -241,5 +198,11 @@ $('#aa').on('click', function () {
          ? "./img/main/movenpick.png"
          : "./img/main/movenpick-black.png";
      $(this).attr("src", src);
+ });
+
+ //Transition function for preloader on modal window
+ $('#modal-button').on('click',function () {
+     $('#linePreloader').toggleClass("lineClick");
+    console.log('bvhdfabvdffd');
  });
 
