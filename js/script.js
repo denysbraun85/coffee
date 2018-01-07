@@ -29,22 +29,15 @@
 
      return false;});
 
-
-// $(document).ready(function(){    // scroll for all document
-//     $(window).scroll(function(){
-//         var bo = $("body").scrollTop();
-//         if ( bo > 200 ) $(".container-menu-main").animate({'opacity':'1'},500);
-//     })
-// });
-
 //Scroll show and hide nav menu
- jQuery(function(f) {
-     var element = f('.container-menu-main');
-     f(window).scroll(function () {
-         element['fade' + (f(this).scrollTop() > 600 ? 'In' : 'Out')](1200);
-     })
-
- });
+$(window).scroll(function(){
+    var top = $(window).scrollTop();
+    if( top > 695) {
+        $(".container-menu-main").css('visibility', 'visible');
+    } else {
+        $(".container-menu-main").css('visibility', 'hidden');
+    }
+});
 
 //Tabs on main page
 $(function () {
@@ -206,3 +199,53 @@ $('#aa').on('click', function () {
     console.log('bvhdfabvdffd');
  });
 
+//Scroll on all page
+if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+window.onmousewheel = document.onmousewheel = wheel;
+
+function wheel(event) {
+    var delta = 0;
+    if (event.wheelDelta) delta = event.wheelDelta / 120;
+    else if (event.detail) delta = -event.detail / 3;
+
+    handle(delta);
+    if (event.preventDefault) event.preventDefault();
+    event.returnValue = false;
+}
+
+function handle(delta) {
+    var time = 1000;
+    var distance = 300;
+
+    $('html, body').stop().animate({
+        scrollTop: $(window).scrollTop() - (distance * delta)
+    }, time );
+}
+
+//Function for validation form on modal menu
+$('#modal-button').on('click',function () {
+     var email = $('#email').val();
+     var password = $('#passw').val();
+     var error = $('#modal-text-2');
+
+     if(email == '' || password == ''){
+         error.css('visibility','visible');
+         console.log('there is empty inputs here');
+     }else{
+         error.css('visibility','hidden');
+     }
+});
+
+//Function to get scroll down on click Log In button and scroll up if you want to close modal window
+$('.log-img').click(function(){
+    $("html, body").animate({ scrollTop: 700 }, 600);
+    return false;
+});
+$('#span-off').click(function(){
+    $("html, body").animate({ scrollTop: 700 }, 600);
+    return false;
+});
+$('#close').on('click', function () {
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+});

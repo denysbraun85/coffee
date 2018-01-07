@@ -82,15 +82,17 @@ header{
 }
 .modal{
     display: none;
-    position: absolute;
+    /*position: absolute;*/
+    position: fixed;
     left: 0;
     right: 0;
-    top: 75px;
+    top: 61px;
     height: 122px;
     background: #3e3d3d;
     box-shadow: 0 2px 5px -2px #000 inset;
     padding: 2px 0;
     overflow: hidden;
+    z-index: 25;
 }
 .modal-contant{
     max-width: 1000px;
@@ -98,7 +100,7 @@ header{
     margin-right: auto;
     display: flex;
     animation-name:modalopen;
-    animation-duration:1s;
+    animation-duration:2s;
 }
 @keyframes modalopen{
     from{ opacity: 0}
@@ -161,15 +163,12 @@ header{
     margin-left: 15px;
     outline: none;
 }
-.modal-button:focus #modal-text-2{
-    opacity: 1;
-}
 .modal-button:hover{
     cursor: pointer;
     border-color: #adadad;
 }
 .modal-text-2{
-    display: none;
+    visibility: hidden;
     position: absolute;
     color: #ef524b;
     font-size: 11px;
@@ -484,6 +483,9 @@ main{
     left: 250px;
 }
 .container-menu-main{
+visibility: hidden;
+    position: fixed;
+    top: 0;
     width: 100%;
     padding-top: 11px;
     padding-bottom: 10px;
@@ -493,6 +495,7 @@ main{
    /* position: fixed;
     top: 192px;
     visibility: hidden;*/
+    z-index: 26;
 }
 /*---Menu after scroll---*/
 .navigation{
