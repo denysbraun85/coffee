@@ -131,6 +131,7 @@ header{
     display: block;
     padding: 5px 0;
     max-width: 570px;
+    cursor: pointer;
 }
 .modal-text-3 a{
     color: #fff;
@@ -146,9 +147,17 @@ header{
 #email{
     margin-right: 10px;
     color: #2d2b2b;
+    width: 184px;
+}
+.widthEmail{
+    min-width: 387.5px;
+    display: inline-flex;
 }
 #passw{
     color: #2d2b2b;
+}
+.hide-passw{
+    display: none;
 }
 .modal-button{
     width: 94px;
@@ -161,7 +170,6 @@ header{
     font-weight: bold;
     font-size: 14px;
     margin-left: 15px;
-    outline: none;
 }
 .modal-button:hover{
     cursor: pointer;
@@ -732,6 +740,17 @@ visibility: hidden;
     z-index: 5;
 }
 /*---main end---*/
+/*Stop scroll*/
+/*-----------=========need to fix stop scroll============---------------*/
+/*html .noscroll{*/
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*top:0;*/
+    /*left: 0;*/
+    /*height: 100%;*/
+    /*overflow-y: scroll !important;*/
+    /*z-index: 10;*/
+/*}*/
 /*---footer start---*/
 .container-information{
   overflow: hidden;

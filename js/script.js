@@ -1,3 +1,4 @@
+//-----------------------------------===============================
 //Slider for main page
  $(document).ready(function(){
      $('.slider-1').slick({
@@ -8,7 +9,7 @@
          arrows: false
  });
  });
-
+//-----------------------------------===============================
 //Change picture for social buttons
  $(".social-share-img1").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/sharing-interface.png")
@@ -22,7 +23,7 @@
          : "../img/main/love.png";
      $(this).attr("src", src);
  });
-
+//-----------------------------------===============================
 //Scroll on picture
  $(".scroll").click(function(){
      $("html, body").animate({scrollTop: $(".navigation").height()+ 700 },"slow");
@@ -38,7 +39,7 @@ $(window).scroll(function(){
         $(".container-menu-main").css('visibility', 'hidden');
     }
 });
-
+//-----------------------------------===============================
 //Tabs on main page
 $(function () {
     var tabContent = $('.tabs-content > div');
@@ -56,7 +57,7 @@ $(function () {
         return false;
     })
 });
-
+//-----------------------------------===============================
  //function validateEmail(){
  //    //var emailReg = /^([\w]+@([\w-]+\.)+[\w-]{2,4})?$/;
  //    var inputEmail = document.getElementById('email').value;
@@ -69,7 +70,7 @@ $(function () {
  //        inputMail.style.opacity = '1';
  //    }
  //}
-
+//-----------------------------------===============================
 //Modal window for MAIN PAGE
  function modalMain() {
      // Get modal element
@@ -109,7 +110,7 @@ $(function () {
      }
  }
  modalMain();
-
+//-----------------------------------===============================
  //Modal window for REST OF PAGES
     function ModalAll() {
         // Get modal element
@@ -119,7 +120,8 @@ $(function () {
         var modalImgAll = document.getElementsByClassName('log-img')[0];
         // Get close button
         var closeBtnAll = document.getElementById('close');
-        //var header = document.getElementById('header');   //Why this is wrong?
+        // Get filter
+        var filter = document.getElementsByTagName('main')[0];
 
         // Listen for open click
         // modalBtnAll.addEventListener('click', openModalAll);
@@ -129,28 +131,60 @@ $(function () {
         closeBtnAll.addEventListener('click', closeModalAll);
         // Listen for outside click
         window.addEventListener('click', outsideClickAll);
-
-        // Function to open modal
+//----------------=====================----------------------------
+//         // Function to open modal
+//         function openModalAll(){
+//             modalAll.style.display = 'block';
+//
+//         }
+//
+//         // Function to close modal
+//         function closeModalAll(){
+//             modalAll.style.display = 'none';
+//         }
+//
+//         // Function to close modal if outside click
+//         function outsideClickAll(e){
+//             if(e.target === modalAll){
+//                 modalAll.style.display = 'none';
+//             }
+//         }
         function openModalAll(){
             modalAll.style.display = 'block';
-            //header.style.background = "rgba(0,0,0,0)";        //the same shit
+            //Get dark background filter for page
+            filter.style.filter = 'brightness(50%)';
+            filter.style.backgroundColor = 'rgba(0,0,0,.3)';
+            //Get scroll OFF
+            var curScrollTop = $(window).scrollTop();
+            $('html').toggleClass('noscroll').css('top', '-' + curScrollTop + 'px');
+
         }
 
         // Function to close modal
         function closeModalAll(){
             modalAll.style.display = 'none';
+            filter.style.filter = 'none';
+            //Get OFF dark background filter for page
+            filter.style.backgroundColor = 'rgba(0,0,0,0)';
+            //Get  scroll ON
+            $('html').toggleClass('noscroll');
         }
 
         // Function to close modal if outside click
         function outsideClickAll(e){
             if(e.target === modalAll){
                 modalAll.style.display = 'none';
+                filter.style.filter = 'none';
+                //Get OFF dark background filter for page
+                filter.style.backgroundColor = 'rgba(0,0,0,0)';
+                //Get  scroll ON
+                $('html').toggleClass('noscroll');
             }
         }
+ //-----------------========================------------------------------
     }
  ModalAll();
-
-
+//-----------------------------------===============================
 // Function for main page tabs/ When you will make click on list element you will change picture on the right of the tabs. Also it will be change picture list
 $('#aa').on('click', function () {
     $('#tabs-img1').attr('checked', true);
@@ -169,8 +203,7 @@ $('#aa').on('click', function () {
      $('#tabs-img2').attr('checked', false);
      $('#tabs-img3').attr('checked', true);
  });
-
-
+//-----------------------------------===============================
 //Function change slider pictures when mouse hover
  $("#lavazza").on("hover", function() {     // change check picture on tabs main page
      var src = ($('#lavazza').attr("src") === "./img/main/lavazza-black.png")
@@ -192,13 +225,13 @@ $('#aa').on('click', function () {
          : "./img/main/movenpick-black.png";
      $(this).attr("src", src);
  });
-
+//-----------------------------------===============================
  //Transition function for preloader on modal window
  $('#modal-button').on('click',function () {
      $('#linePreloader').toggleClass("lineClick");
     console.log('bvhdfabvdffd');
  });
-
+//-----------------------------------===============================
 //Scroll on all page
 if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 window.onmousewheel = document.onmousewheel = wheel;
@@ -214,14 +247,14 @@ function wheel(event) {
 }
 
 function handle(delta) {
-    var time = 1000;
-    var distance = 300;
+    var time = 900;
+    var distance = 400;
 
     $('html, body').stop().animate({
         scrollTop: $(window).scrollTop() - (distance * delta)
     }, time );
 }
-
+//-----------------------------------===============================
 //Function for validation form on modal menu
 $('#modal-button').on('click',function () {
      var email = $('#email').val();
@@ -235,7 +268,7 @@ $('#modal-button').on('click',function () {
          error.css('visibility','hidden');
      }
 });
-
+//-----------------------------------===============================
 //Function to get scroll down on click Log In button and scroll up if you want to close modal window
 $('.log-img').click(function(){
     $("html, body").animate({ scrollTop: 700 }, 600);
@@ -249,3 +282,17 @@ $('#close').on('click', function () {
     $("html, body").animate({ scrollTop: 0 }, 600);
     return false;
 });
+//-----------------------------------===============================
+//Function to open and close input password on modal window in case when user forgot password
+$('.modal-text-3').on('click',function () {
+    $(this).text(function(i, v){
+        return v === 'forgot password?' ? 'back to Log in' : 'forgot password?'
+    });
+    $('#modalText-1').text(function(i, v){
+        return v === 'Please log in to use account tools:' ? 'To get new password please send your registered e-mail.' : 'Please log in to use account tools:'
+    });
+
+    $('#passw').toggleClass('hide-passw');
+    $('#email').toggleClass('widthEmail');
+});
+//-----------------------------------===============================
