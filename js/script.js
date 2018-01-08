@@ -77,7 +77,10 @@ $(function () {
      var modal = document.getElementById('registration-modal');
      // Get open modal button
      var modalBtn = document.getElementById('span-off');
+     var modalBtnMenu = document.getElementsByClassName('span-off')[1];
      var modalImg = document.getElementsByClassName('log-img')[0];
+     var modalImgMenu = document.getElementsByClassName('log-img')[1];
+
      // Get close button
      var closeBtn = document.getElementById('close');
      //var header = document.getElementById('header');   //Why this is wrong?
@@ -85,6 +88,8 @@ $(function () {
      // Listen for open click
      modalBtn.addEventListener('click', openModal);
      modalImg.addEventListener('click', openModal);
+     modalBtnMenu.addEventListener('click', openModal);
+     modalImgMenu.addEventListener('click', openModal);
 
      // Listen for close click
      closeBtn.addEventListener('click', closeModal);
@@ -248,7 +253,7 @@ function wheel(event) {
 
 function handle(delta) {
     var time = 900;
-    var distance = 400;
+    var distance = 450;
 
     $('html, body').stop().animate({
         scrollTop: $(window).scrollTop() - (distance * delta)
@@ -296,3 +301,43 @@ $('.modal-text-3').on('click',function () {
     $('#email').toggleClass('widthEmail');
 });
 //-----------------------------------===============================
+//Scroll show and hide footer back on top button
+$(window).scroll(function(){
+    var top = $(window).scrollTop();
+    if( top > 1450) {
+        $(".container-back-to-top-1024px").css('visibility', 'visible');
+    } else {
+        $(".container-back-to-top-1024px").css('visibility', 'hidden');
+    }
+});
+//-----------------------------------===============================
+//Function to get on top when user will make a click on arrow up icon or under this icon text
+$('.back-icon').on('click', function () {
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+});
+
+$('.back-text').on('click', function () {
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+});
+//-----------------------------------===============================
+//Scroll show and hide nav
+$(window).scroll(function(){
+    var top = $(window).scrollTop();
+    if( top > 710) {
+        $(".container-menu-nav-1024px").css('visibility', 'visible');
+    } else {
+        $(".container-menu-nav-1024px").css('visibility', 'hidden');
+    }
+});
+//-----------------------------------===============================
+//Scroll show and hide nav
+$(window).scroll(function(){
+    var top = $(window).scrollTop();
+    if( top > 50) {
+        $("#top-container-menu-nav-1024px").css('visibility', 'hidden');
+    } else {
+        $("#top-container-menu-nav-1024px").css('visibility', 'visible');
+    }
+});

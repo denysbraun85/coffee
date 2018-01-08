@@ -887,3 +887,269 @@ visibility: hidden;
   padding-top: 27px;
 }
 /*---footer end---*/
+/*----------------------------------------------------------------------------------continue here!!!!!!!!!!*/
+.side-bar-container{
+    display: none;
+    max-width: 275px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3e3c3d;
+    /*display: flex;*/
+    flex-direction: column;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=180, Color=#52494C)";/*IE 8*/
+    -moz-box-shadow: 2px 0 0 #413C39, 1px 0 0 #52494C;/*FF 3.5+*/
+    -webkit-box-shadow: 2px 0 0 #413C39, 1px 0 0 #52494C;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 2px 0 0 #413C39, 1px 0 0 #52494C;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Color=#52494C); /*IE 5.5-7*/
+}
+.container-push{
+    max-width: 245px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 41px;
+}
+.container-head-logo{
+    max-width: 145px;
+    width: 100%;
+}
+.head-logo-top{
+    display: flex;
+    border-bottom: 1px solid #cccacb;
+}
+.head-logo-text-1{
+    font-size: 46px;
+    color: #cbcbcb;
+}
+.head-logo-icon{
+    width: 35px;
+    height: 32px;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 2px;
+}
+.container-head-logo{
+    margin-left: auto;
+    margin-right: auto;
+}
+.head-logo-bottom{
+    text-align: center;
+    margin-top: 6px;
+    color: #cbcbcb;
+    text-transform: uppercase;
+}
+.head-logo-text-3{
+    margin-top: 5px;
+}
+.pages{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 64px;
+    max-width: 105px;
+    text-align: center;
+}
+.pages li{
+    display: block;
+    padding-bottom: 23px;
+}
+.pages li:last-child{
+    padding-bottom: 0;
+}
+.pages  a{
+    color: #cbcbcb;
+}
+.pages  ul li a:hover{
+    color: #FFFFFF;
+}
+.container-language{
+    margin-top: 70px;
+    width: 100%;
+    border-top: 1px solid #7e7c7d;
+    border-bottom: 1px solid #7e7c7d;
+    box-sizing: border-box;
+    display: flex;
+}
+.head-logo-text-4{
+    color: #7e7c7d;
+    padding-left: 29px;
+    line-height: 51px;
+}
+.head-logo-text-5{
+    color: #FFFFFF;
+    margin-left: 11px;
+    margin-top: 11px;
+    margin-bottom: 10px;
+    padding: 8px 7px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.social-links{
+    max-width: 105px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 27px auto 24px;
+}
+.head-logo-text-6{
+    color: #7e7c7d;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+}
+/*-----------================Media css=================------------*/
+/*---------min width 1024px----------*/
+@media only screen and (min-width: 1024px) {
+    /*/----------main-------------*/
+.container-menu-nav-1024px{
+    display: none;
+}
+.container-back-to-top-1024px{
+    display: none;
+}
+/*======================================================================================================================================================================*/
+.side-bar-container{
+    /*display: none;*/
+}
+}
+
+@media only screen and (max-width: 1024px) {
+/*/----------Header-------------*/
+.navigation{
+    display: none;
+}
+.container-menu-main{
+    display: none;
+}
+#top-container-menu-nav-1024px{
+    visibility: visible;
+}
+.side-bar-container{
+    display: none;
+}
+/*/----------Main-------------*/
+.container-menu-nav-1024px{
+    display: block;
+    max-width: 1024px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #2c2c2c;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=0, Color=#1F1816)";/*IE 8*/
+    -moz-box-shadow: 0 2px 0 #2B211F, 0 1px 0 #1F1816;/*FF 3.5+*/
+    -webkit-box-shadow: 0 2px 0 #2B211F, 0 1px 0 #1F1816;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 0 2px 0 #2B211F, 0 1px 0 #1F1816;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Color=#1F1816); /*IE 5.5-7*/
+    max-height: 52px;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 26;
+}
+.container-menu-inside{
+    display: flex;
+    max-width: 964px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-content: center;
+}
+.container-centre-logo{
+    display: flex;
+}
+.mini-logo-text{
+    color: #FFFFFF;
+    font-size: 41px;
+    max-width: 95px;
+    padding-left: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.mini-logo-text a{
+    color: #FFFFFF;
+}
+.three-lines-icon, .user-log-icon{
+    display: block;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+.mini-logo{
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+.main-bottom-2-img{
+    left: 0;
+}
+/*/----------Footer-------------*/
+.container-information{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    width: 100%;
+    height: auto;
+}
+.container-information-left{
+    width: 100%;
+    background: url("../img/main/warehouse-1024px.png") no-repeat;
+    background-size: cover;
+}
+.wrapper-container-information-left{
+    margin: auto;
+    padding-top: 98px;
+    padding-bottom: 98px;
+}
+.info-text-1{
+    margin-top: 0;
+}
+.container-information-right{
+    width: 100%;
+    background: url("../img/main/coffee-1024px.png") no-repeat;
+    background-size: cover;
+}
+.wrapper-container-information-right{
+    margin: auto;
+    padding-top: 52px;
+    padding-bottom: 47px;
+}
+.info-text-5{
+    margin-top: 0;
+}
+.bottom-information-container{
+    display: none;
+}
+.container-back-to-top-1024px{
+    display: inline-flex;
+    max-width: 1024px;
+    width: 100%;
+    background-color: #2d2b2b;
+    padding-bottom: 2px;
+    visibility: hidden;
+}
+.container-back-inside{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 66px;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+.back-icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+.back-text{
+    font-size: 13px;
+    color: #FFFFFF;
+    padding-top: 7px;
+    cursor: pointer;
+}
+/*/----------Sidebar 1024px-------------*/
+
+}
