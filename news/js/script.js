@@ -1,3 +1,4 @@
+//----------------------------------------------------=====================================================
  //Modal window for REST OF PAGES
  function ModalAll() {
      // Get modal element
@@ -9,6 +10,7 @@
      var closeBtnAll = document.getElementById('close');
      // Get filter
      var filter = document.getElementsByClassName('main-information-container')[0];
+     var mainen = document.getElementsByTagName('main')[0];
 
      // Listen for open click
      modalBtnAll.addEventListener('click', openModalAll);
@@ -23,7 +25,9 @@
      function openModalAll(){
          modalAll.style.display = 'block';
          //Get dark background filter for page
-         filter.style.backgroundColor = 'rgba(0,0,0,.3)';
+          mainen.style.backgroundColor = 'rgba(62,62,62,.5)';
+          $('.main-information-container').addClass('back');
+
          //Get scroll OFF
          var curScrollTop = $(window).scrollTop();
          $('html').toggleClass('noscroll').css('top', '-' + curScrollTop + 'px');
@@ -35,7 +39,8 @@
          modalAll.style.display = 'none';
          filter.style.filter = 'none';
          //Get OFF dark background filter for page
-         filter.style.backgroundColor = 'rgba(0,0,0,0)';
+         mainen.style.backgroundColor = 'rgba(0,0,0,0)';
+         $('.main-information-container').removeClass('back');
          //Get  scroll ON
          $('html').toggleClass('noscroll');
      }
@@ -46,7 +51,9 @@
              modalAll.style.display = 'none';
              filter.style.filter = 'none';
              //Get OFF dark background filter for page
+             mainen.style.backgroundColor = 'rgba(0,0,0,0)';
              filter.style.backgroundColor = 'rgba(0,0,0,0)';
+             $('.main-information-container').removeClass('back');
              //Get  scroll ON
              $('html').toggleClass('noscroll');
          }
@@ -54,6 +61,7 @@
  }
  ModalAll();
 
+//----------------------------------------------------=====================================================
 //Pagination function
  var nombrePage = $(".page").length;
 
@@ -81,6 +89,8 @@
 
  showPage(0);
 
+//----------------------------------------------------=====================================================
+//Pagination function 2
  var nombrePage2 = $(".page").length;
 
  showPage2 = function(pagination) {
@@ -107,6 +117,7 @@
 
  showPage2(0);
 
+//----------------------------------------------------=====================================================
  //Change icon to share
  $(".social-share-img1").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/sharing-interface.png")
@@ -121,7 +132,7 @@
      $(this).attr("src", src);
  });
 
-
+//----------------------------------------------------=====================================================
  //Change icon to love
  $(".social-share-img2").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/love.png")
@@ -136,32 +147,33 @@
      $(this).attr("src", src);
  });
 
- //Pagination function
- var nombrePage = $(".page").length;
-
- showPage = function(pagination) {
-     if (pagination < 0 || pagination >= nombrePage) return;
-
-     $(".page").hide().eq(pagination).show();
-     $("#pagin li").removeClass("active").eq(pagination).addClass("active");
- };
-
- // Go to Left
- $(".prev").click(function() {
-     showPage($("#pagin ul .active").index() - 1);
- });
-
- // Go to Right
- $(".next").click(function() {
-     showPage($("#pagin ul .active").index() + 1);
- });
-
- $("#pagin ul a").click(function(e) {
-     e.preventDefault();
-     showPage($(this).parent().index());
- });
-
- showPage(0);
+//----------------------------------------------------=====================================================2
+//  //Pagination function
+//  var nombrePage = $(".page").length;
+//
+//  showPage = function(pagination) {
+//      if (pagination < 0 || pagination >= nombrePage) return;
+//
+//      $(".page").hide().eq(pagination).show();
+//      $("#pagin li").removeClass("active").eq(pagination).addClass("active");
+//  };
+//
+//  // Go to Left
+//  $(".prev").click(function() {
+//      showPage($("#pagin ul .active").index() - 1);
+//  });
+//
+//  // Go to Right
+//  $(".next").click(function() {
+//      showPage($("#pagin ul .active").index() + 1);
+//  });
+//
+//  $("#pagin ul a").click(function(e) {
+//      e.preventDefault();
+//      showPage($(this).parent().index());
+//  });
+//
+//  showPage(0);
 
  // $('.tabbable-panel').each(function(i, elm) {                //tabs for news page
  //
@@ -201,36 +213,103 @@
  //     });
  // });
 
+//----------------------------------------------------=====================================================
  // Tabs on main page
  $(function () {
      var tabContent = $('.tab-content > div');
      tabContent.hide().filter(':first').fadeIn('slow');
      $('#tabs  li:first a').addClass('selected');
+     $('#tabs  li:nth-child(2) a').removeClass('selected');
+     $('#tabs  li:nth-child(3) a').removeClass('selected');
+     $('#tabs  li:first').addClass('selected');
 
-     $('#tabs  a').click(function () {
+
+     $('#tabs  li:nth-child(2) a').click(function () {
          tabContent.hide();
          tabContent.filter(this.hash).fadeIn('slow');
          $('#tabs  li:first a').removeClass('selected');
+         $('#tabs  li:nth-child(3) a').removeClass('selected');
          $(this).addClass('selected');
+         $('#tabs  li:first').removeClass('selected');
+         $('#tabs  li:nth-child(3)').removeClass('selected');
+         $('#tabs  li:nth-child(2)').addClass('selected');
 
          return false;
-     })
+     });
+
+     $('#tabs  li:nth-child(3) a').click(function () {
+         tabContent.hide();
+         tabContent.filter(this.hash).fadeIn('slow');
+         $('#tabs  li:first a').removeClass('selected');
+         $('#tabs  li:nth-child(2) a').removeClass('selected');
+         $(this).addClass('selected');
+         $('#tabs  li:first').removeClass('selected');
+         $('#tabs  li:nth-child(2)').removeClass('selected');
+         $('#tabs  li:nth-child(3)').addClass('selected');
+
+         return false;
+     });
+
+     $('#tabs  li:nth-child(1) a').click(function () {
+         tabContent.hide();
+         tabContent.filter(this.hash).fadeIn('slow');
+         $('#tabs  li:nth-child(2) a').removeClass('selected');
+         $('#tabs  li:nth-child(3) a').removeClass('selected');
+         $(this).addClass('selected');
+         $('#tabs  li:nth-child(2)').removeClass('selected');
+         $('#tabs  li:nth-child(3)').removeClass('selected');
+         $('#tabs  li:first').addClass('selected');
+
+         return false;
+     });
      // $('.selected').css('border-bottom','4px solid #ef524b','box-sizing','border-box')
  });
 
+//-----------------------------------===============================
+//Scroll on all page
+$(function() {
 
+    jQuery.scrollSpeed(100, 800);
 
+});
 
- // var tabs = document.getElementsByClassName('Tab');
+//-----------------------------------===============================
+//Transition function for preloader on modal window
+$('#modal-button').on('click',function () {
+    $('#linePreloader').toggleClass("lineClick");
+    console.log('bvhdfabvdffd');
+});
 
- // Array.prototype.forEach.call(tabs, function(tab) {
- //     tab.addEventListener('click', setActiveClass);
- // });
+//-----------------------------------===============================
+//Function for validation form on modal menu
+var email = $('#email').val();
+var password = $('#passw').val();
+var error = $('#modal-text-2');
 
- // function setActiveClass(evt) {
- //     Array.prototype.forEach.call(tabs, function(tab) {
- //         tab.classList.remove('active');
- //     });
+function myInterval() {
 
- //     evt.currentTarget.classList.add('active');
- // }
+    if(email == '' || password == ''){
+        error.css('visibility','visible');
+        console.log('there is empty inputs here');
+    }else{
+        error.css('visibility','hidden');
+    }
+}
+
+$('#modal-button').on('click',function () {
+    setInterval(myInterval,5000);
+});
+
+//-----------------------------------===============================
+//Function to open and close input password on modal window in case when user forgot password
+$('.modal-text-3').on('click',function () {
+    $(this).text(function(i, v){
+        return v === 'forgot password?' ? 'back to Log in' : 'forgot password?'
+    });
+    $('#modalText-1').text(function(i, v){
+        return v === 'Please log in to use account tools:' ? 'To get new password please send your registered e-mail.' : 'Please log in to use account tools:'
+    });
+
+    $('#passw').toggleClass('hide-passw');
+    $('#email').toggleClass('widthEmail');
+});

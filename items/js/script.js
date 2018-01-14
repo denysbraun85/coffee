@@ -9,6 +9,8 @@
      var closeBtnAll = document.getElementById('close');
      // Get filter
      var filter = document.getElementsByClassName('wrapper')[0];
+     var lolll = document.getElementsByTagName('body')[0];
+
 
      // Listen for open click
      modalBtnAll.addEventListener('click', openModalAll);
@@ -23,11 +25,15 @@
      function openModalAll(){
          modalAll.style.display = 'block';
          //Get dark background filter for page
-         filter.style.backgroundColor = 'rgba(0,0,0,.3)';
+            filter.style.backgroundColor = 'rgba(62,62,62,.5)';
+         $('.item-container').addClass('back');
+         // $('.main-information-container').addClass('back');              not right
+
+
          //Get scroll OFF
          var curScrollTop = $(window).scrollTop();
          $('html').toggleClass('noscroll').css('top', '-' + curScrollTop + 'px');
-
+//==================================================================================================================================================================
      }
 
      // Function to close modal
@@ -38,6 +44,8 @@
          filter.style.backgroundColor = 'rgba(0,0,0,0)';
          //Get  scroll ON
          $('html').toggleClass('noscroll');
+         $('.item-container').removeClass('back');
+         // $('.main-information-container').removeClass('back');               not right
      }
 
      // Function to close modal if outside click
@@ -49,6 +57,8 @@
              filter.style.backgroundColor = 'rgba(0,0,0,0)';
              //Get  scroll ON
              $('html').toggleClass('noscroll');
+             $('.item-container').removeClass('back');
+             // $('.main-information-container').removeClass('back');               not right
          }
      }
  }
@@ -71,7 +81,7 @@
 
 
 
-
+//----------------------------------------------------===============================================================
 //Pagination function
  var nombrePage = $(".page").length;
 
@@ -99,8 +109,7 @@
 
  showPage(0);
 
-
-
+ //----------------------------------------------------===============================================================
 //Text collapse-1
  $(document).ready(function(){
      $("#arrow-up").click(function(){
@@ -108,14 +117,23 @@
      })
  });
 
+ //----------------------------------------------------===============================================================
 //Change arrow up and down for text collapse-1
  $("#arrow-up").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/downwards-arrow-key-down.png")
          ? "../img/main/downwards-arrow-key.png"
          : "../img/main/downwards-arrow-key-down.png";
      $(this).attr("src", src);
+
  });
 
+ //----------------------------------------------------===============================================================
+ //Change arrow up and down position
+$('#arrow-up').on('click',function () {
+    $(this).toggleClass('arrow-up-down');
+});
+
+ //----------------------------------------------------===============================================================
  //Display none for word "more" for collapse-2
  $(document).ready(function(){
      $(".img-arrow-up").click(function(){
@@ -123,6 +141,7 @@
      })
  });
 
+ //----------------------------------------------------===============================================================
  //Text collapse-2
  $(document).ready(function(){
      $(".img-arrow-up").click(function(){
@@ -130,6 +149,7 @@
      })
  });
 
+ //----------------------------------------------------===============================================================
  //Change arrow up and down for text collapse-2
  $(".img-arrow-up").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/downwards-arrow-key-down.png")
@@ -138,6 +158,7 @@
      $(this).attr("src", src);
  });
 
+ //----------------------------------------------------===============================================================
  //Change icon to share
  $(".soc-img-1").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/sharing-interface.png")
@@ -146,6 +167,7 @@
      $(this).attr("src", src);
  });
 
+ //----------------------------------------------------===============================================================
  //Change icon to love
  $(".soc-img-2").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/love.png")
@@ -154,6 +176,7 @@
      $(this).attr("src", src);
  });
 
+ //----------------------------------------------------===============================================================
 //Filter by type GROUND COFFEE
  $(document).ready(function () {
 
@@ -175,6 +198,7 @@
 
      });
 
+ //----------------------------------------------------===============================================================
  //Filter by type COFFEE BEANS
  $(document).ready(function () {
 
@@ -204,6 +228,7 @@
 
  });
 
+ //----------------------------------------------------===============================================================
  //Filter by BRAND
 
 $(document).ready(function () {
@@ -286,6 +311,54 @@ $(document).ready(function () {
     });
 });
 
+ //-----------------------------------===============================
+ //Scroll on all page
+ $(function() {
+
+     jQuery.scrollSpeed(100, 800);
+
+ });
+
+ //-----------------------------------===============================
+ //Transition function for preloader on modal window
+ $('#modal-button').on('click',function () {
+     $('#linePreloader').toggleClass("lineClick");
+     console.log('bvhdfabvdffd');
+ });
+
+ //-----------------------------------===============================
+ //Function for validation form on modal menu
+ var email = $('#email').val();
+ var password = $('#passw').val();
+ var error = $('#modal-text-2');
+
+ function myInterval() {
+
+     if(email == '' || password == ''){
+         error.css('visibility','visible');
+         console.log('there is empty inputs here');
+     }else{
+         error.css('visibility','hidden');
+     }
+ }
+
+ $('#modal-button').on('click',function () {
+     setInterval(myInterval,5000);
+ });
+
+ //-----------------------------------===============================
+ //Function to open and close input password on modal window in case when user forgot password
+ $('.modal-text-3').on('click',function () {
+     $(this).text(function(i, v){
+         return v === 'forgot password?' ? 'back to Log in' : 'forgot password?'
+     });
+     $('#modalText-1').text(function(i, v){
+         return v === 'Please log in to use account tools:' ? 'To get new password please send your registered e-mail.' : 'Please log in to use account tools:'
+     });
+
+     $('#passw').toggleClass('hide-passw');
+     $('#email').toggleClass('widthEmail');
+ });
 
 
 

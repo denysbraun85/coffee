@@ -13,17 +13,17 @@
 <header>
     <!----Modal registration-->
     <div id="registration-modal" class="modal">
-        <div class="linePreloader"></div>
+        <div class="linePreloader" id="linePreloader"></div>
         <div class="modal-contant" id="simpleModal">
             <div class="modal-container-1">
-                <p class="modal-text-1"><b>Please log in to use account tools:</b></p>
+                <p class="modal-text-1" id="modalText-1"><b>Please log in to use account tools:</b></p>
                 <form class="input-container"  method="post">
-                    <label for="emails"><input id="emails" type="email"  placeholder="Email"></label>
+                    <label for="email"><input id="email" type="email"  placeholder="Email"></label>
                     <label for="passw"><input id="passw" type="password"  placeholder="Password"></label>
-                    <button class="modal-button" id="modal-button" >Login</button>
+                    <button class="modal-button" id="modal-button" type="button">Login</button>
                 </form>
                 <p class="modal-text-2" id="modal-text-2">Please supply your username and password.</p>
-                <p class="modal-text-3"><a href="#">forgot password?</a></p>
+                <p class="modal-text-3">forgot password?</p>
             </div>
             <div class="modal-container-2">
                 <span class="close" id="close">×</span>
@@ -32,6 +32,7 @@
             </div>
         </div>
     </div>
+    <!------------------------->
     <nav class="navigation">
         <div class="logo">
             <a href="../account-setting/index.html"><img src="../img/header/logoSmall.png" alt="logo"></a>
@@ -112,7 +113,7 @@
                         <label for="name">Your Name \ Company </label>
                     </div>
                     <div class="group">
-                        <input type="email" id="email" required="required"/>
+                        <input type="emails" id="emails" required="required"/>
                         <label for="email">Your E-mail </label>
                     </div>
                 </div>
@@ -148,9 +149,11 @@
 </footer>
 
 <script src="../libs/jq-1.12.4.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="../libs/slick-1.8.0/slick-1.8.0/slick/slick.min.js"></script>
+<script src="../libs/jQuery-Plugin-For-Smooth-Mouse-Scrolling-scrollSpeed/jQuery.scrollSpeed.js"></script>
 <script src="./js/script.js"></script>
 
 

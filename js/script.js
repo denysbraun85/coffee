@@ -238,40 +238,54 @@ $('#aa').on('click', function () {
  });
 //-----------------------------------===============================
 //Scroll on all page
-if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
-window.onmousewheel = document.onmousewheel = wheel;
+$(function() {
 
-function wheel(event) {
-    var delta = 0;
-    if (event.wheelDelta) delta = event.wheelDelta / 120;
-    else if (event.detail) delta = -event.detail / 3;
+    jQuery.scrollSpeed(100, 800);
 
-    handle(delta);
-    if (event.preventDefault) event.preventDefault();
-    event.returnValue = false;
-}
+});
 
-function handle(delta) {
-    var time = 900;
-    var distance = 450;
+//Not good scroll but he can exist
 
-    $('html, body').stop().animate({
-        scrollTop: $(window).scrollTop() - (distance * delta)
-    }, time );
-}
+// if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+// window.onmousewheel = document.onmousewheel = wheel;
+//
+// function wheel(event) {
+//     var delta = 0;
+//     if (event.wheelDelta) delta = event.wheelDelta / 120;
+//     else if (event.detail) delta = -event.detail / 3;
+//
+//     handle(delta);
+//     if (event.preventDefault) event.preventDefault();
+//     event.returnValue = false;
+// }
+
+// function handle(delta) {
+//     var time = 100;
+//     var distance = 200;
+//
+//     $('html, body').stop().animate({
+//         scrollTop: $(window).scrollTop() - (distance * delta)
+//     }, time );
+// }
+
 //-----------------------------------===============================
 //Function for validation form on modal menu
-$('#modal-button').on('click',function () {
-     var email = $('#email').val();
-     var password = $('#passw').val();
-     var error = $('#modal-text-2');
+var email = $('#email').val();
+var password = $('#passw').val();
+var error = $('#modal-text-2');
 
-     if(email == '' || password == ''){
-         error.css('visibility','visible');
-         console.log('there is empty inputs here');
-     }else{
-         error.css('visibility','hidden');
-     }
+function myInterval() {
+
+    if(email == '' || password == ''){
+        error.css('visibility','visible');
+        console.log('there is empty inputs here');
+    }else{
+        error.css('visibility','hidden');
+    }
+}
+
+$('#modal-button').on('click',function () {
+     setInterval(myInterval,5000);
 });
 //-----------------------------------===============================
 //Function to get scroll down on click Log In button and scroll up if you want to close modal window
@@ -300,6 +314,8 @@ $('.modal-text-3').on('click',function () {
     $('#passw').toggleClass('hide-passw');
     $('#email').toggleClass('widthEmail');
 });
+
+
 //-----------------------------------===============================
 //Scroll show and hide footer back on top button
 $(window).scroll(function(){
@@ -340,4 +356,14 @@ $(window).scroll(function(){
     } else {
         $("#top-container-menu-nav-1024px").css('visibility', 'visible');
     }
+});
+
+
+
+$(document).ready(function(){
+    $('.three-lines-icon').click(function(){
+        console.log('click motherfucker!!!');
+        $(this).toggleClass('move-right');
+        $('.side-bar-container').toggleClass('active');
+    });
 });

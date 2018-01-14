@@ -1,6 +1,7 @@
-
+//-----------------------------------------------------------=============================================
+//Count for message  NEED TO FIX
  $(function() {
-     $("input[id='message']").keyup(function countRemainingChars(){     //count for message  NEED TO FIX
+     $("input[id='message']").keyup(function countRemainingChars(){
          var maxchars = 150;
          var number = $("input[id='message']").val().length;
          if(number <= maxchars){
@@ -12,8 +13,9 @@
      });
  });
 
-
- function randomInteger(min, max) {                                 //random code for verification
+//-----------------------------------------------------------=============================================
+//Random code for verification
+ function randomInteger(min, max) {
      var write = document.getElementById('code-number');
      var rand = min - 0.5 + Math.random() * (max - min + 1);
      rand = Math.round(rand);
@@ -24,6 +26,8 @@
 
 //randomInteger (100000, 999999);
 
+//-----------------------------------------------------------=============================================
+//Function for validation Email
  //function validateEmail(){
  //    //var emailReg = /^([\w]+@([\w-]+\.)+[\w-]{2,4})?$/;
  //    var inputEmail = document.getElementById('email').value;
@@ -37,11 +41,13 @@
  //    }
  //}
 
-// $('.modal-button').on('click', function (){          //something wrong with this code
+//something wrong with this code
+// $('.modal-button').on('click', function (){
 //         $('.modal-text-2').css("opacity", "1");
 //         console.log('safdfsf');
 // });
 
+//-----------------------------------------------------------=============================================
  //Modal window for REST OF PAGES
  function ModalAll() {
      // Get modal element

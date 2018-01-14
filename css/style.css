@@ -150,7 +150,7 @@ header{
     width: 184px;
 }
 .widthEmail{
-    min-width: 387.5px;
+    min-width: 388px;
     display: inline-flex;
 }
 #passw{
@@ -198,6 +198,7 @@ header{
     cursor: pointer;
     color: #adadad;
 }
+
 /*--Menu--*/
 .menu-header{
   max-width: 417px;
@@ -274,10 +275,14 @@ header{
 /*---Website logo---*/
 .preload-container{
     max-width: 580px;
-    margin-top: 218px;
+    /*margin-top: 218px;*/
     margin-left: auto;
     margin-right: auto;
     /*margin-bottom: 286px;*/
+    position: absolute;
+    left: 0;
+    top: 40%;
+    right: 0;
 }
 .container-text-top{
     max-height: 67px;
@@ -448,9 +453,14 @@ max-width: 580px;
     max-width: 47px;
     height: 66px;
     background: url("../img/header/scrollCircle.png") no-repeat;
-    width: 47px;
-    position: relative;
-    margin: 200px auto 46px;
+    width: 100%;
+    /*position: relative;*/
+    /*margin: 200px auto 46px;*/
+    margin: auto;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
 }
 .circle-icon {
     position: absolute;
@@ -473,6 +483,16 @@ max-width: 580px;
 .scroll:hover{
     cursor: pointer;
 }
+/*Stop scroll*/
+/*html.noscroll{*/
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*top:0;*/
+    /*left: 0;*/
+    /*height: 100%;*/
+    /*overflow-y: scroll !important;*/
+    /*z-index: 1000;*/
+/*}*/
 /*---header end---*/
 /*---main start---*/
 main{
@@ -740,17 +760,6 @@ visibility: hidden;
     z-index: 5;
 }
 /*---main end---*/
-/*Stop scroll*/
-/*-----------=========need to fix stop scroll============---------------*/
-/*html .noscroll{*/
-    /*position: fixed;*/
-    /*width: 100%;*/
-    /*top:0;*/
-    /*left: 0;*/
-    /*height: 100%;*/
-    /*overflow-y: scroll !important;*/
-    /*z-index: 10;*/
-/*}*/
 /*---footer start---*/
 .container-information{
   overflow: hidden;
@@ -870,7 +879,6 @@ visibility: hidden;
 }
 .bottom-information-container img{
   padding-top: 14px;
-  padding-bottom: 13px;
 }
 .info-text-11{
   text-transform: uppercase;
@@ -878,6 +886,9 @@ visibility: hidden;
   color: #ffffff;
   padding-right: 16px;
   padding-top: 27px;
+}
+.info-text-12{
+    padding-bottom: 13px;
 }
 .info-text-13{
   text-transform: uppercase;
@@ -887,27 +898,46 @@ visibility: hidden;
   padding-top: 27px;
 }
 /*---footer end---*/
-/*----------------------------------------------------------------------------------continue here!!!!!!!!!!*/
+/*---------------------------------------SIDEBAR ALL-------------------------------------------continue here!!!!!!!!!!*/
+.menu-bar{
+    max-width: 1024px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    /*display: none;*/
+}
 .side-bar-container{
-    display: none;
     max-width: 275px;
     width: 100%;
     overflow: hidden;
     background-color: #3e3c3d;
-    /*display: flex;*/
+    display: flex;
     flex-direction: column;
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=180, Color=#52494C)";/*IE 8*/
     -moz-box-shadow: 2px 0 0 #413C39, 1px 0 0 #52494C;/*FF 3.5+*/
     -webkit-box-shadow: 2px 0 0 #413C39, 1px 0 0 #52494C;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
     box-shadow: 2px 0 0 #413C39, 1px 0 0 #52494C;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Color=#52494C); /*IE 5.5-7*/
+    height: 100%;
+    position:fixed;
+    top:0;
+    left:-275px;
+    transition:linear 0.4s;
+    visibility: hidden;
+
+}
+.move-right{
+    margin-left: 263px;
+}
+.active{
+    left:0;
+    transition:linear 0.4s;
 }
 .container-push{
     max-width: 245px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 41px;
+    margin: 41px auto;
 }
 .container-head-logo{
     max-width: 145px;
@@ -999,40 +1029,11 @@ visibility: hidden;
     text-align: center;
     font-size: 12px;
 }
-/*-----------================Media css=================------------*/
-/*---------min width 1024px----------*/
-@media only screen and (min-width: 1024px) {
-    /*/----------main-------------*/
+/*===============================*/
 .container-menu-nav-1024px{
     display: none;
-}
-.container-back-to-top-1024px{
-    display: none;
-}
-/*======================================================================================================================================================================*/
-.side-bar-container{
-    /*display: none;*/
-}
-}
-
-@media only screen and (max-width: 1024px) {
-/*/----------Header-------------*/
-.navigation{
-    display: none;
-}
-.container-menu-main{
-    display: none;
-}
-#top-container-menu-nav-1024px{
-    visibility: visible;
-}
-.side-bar-container{
-    display: none;
-}
-/*/----------Main-------------*/
-.container-menu-nav-1024px{
-    display: block;
     max-width: 1024px;
+    /*max-width: 749px;*/
     width: 100%;
     overflow: hidden;
     background-color: #2c2c2c;
@@ -1042,9 +1043,9 @@ visibility: hidden;
     box-shadow: 0 2px 0 #2B211F, 0 1px 0 #1F1816;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Color=#1F1816); /*IE 5.5-7*/
     max-height: 52px;
-    visibility: hidden;
-    position: fixed;
-    top: 0;
+    /*visibility: hidden;*/
+    /*position: fixed;*/
+    /*top: 0;*/
     z-index: 26;
 }
 .container-menu-inside{
@@ -1055,6 +1056,12 @@ visibility: hidden;
     margin-right: auto;
     justify-content: space-between;
     align-content: center;
+}
+.three-lines-icon{
+
+}
+.three-lines-icon .move-right{
+
 }
 .container-centre-logo{
     display: flex;
@@ -1072,7 +1079,6 @@ visibility: hidden;
 }
 .three-lines-icon, .user-log-icon{
     display: block;
-    height: fit-content;
     margin-top: auto;
     margin-bottom: auto;
     cursor: pointer;
@@ -1081,9 +1087,36 @@ visibility: hidden;
     padding-top: 6px;
     padding-bottom: 5px;
 }
-.main-bottom-2-img{
-    left: 0;
+/*.main-bottom-2-img{*/
+    /*left: 0;*/
+/*}*/
+
+/*---------------------------------------SIDEBAR ALL-------------------------------------------continue here!!!!!!!!!!*/
+/*-----------================Media css=================------------*/
+/*---------min width 1024px----------*/
+@media only screen and (min-width: 1024px) {
+    /*/----------main-------------*/
+/*.container-back-to-top-1024px{*/
+    /*display: none;*/
+/*}*/
 }
+/*======================================================================================================================================================================*/
+@media only screen and (max-width: 1024px) {
+/*/----------Header-------------*/
+.navigation{
+    display: none;
+}
+.container-menu-main{
+    display: none;
+}
+#top-container-menu-nav-1024px{
+    visibility: visible;
+}
+/*.side-bar-container{*/
+    /*display: none;*/
+/*}*/
+/*/----------Main-------------*/
+
 /*/----------Footer-------------*/
 .container-information{
     overflow: hidden;

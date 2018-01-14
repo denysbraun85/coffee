@@ -1,4 +1,5 @@
- //Modal window for REST OF PAGES
+//-----------------------------------===============================
+//Modal window for REST OF PAGES
  function ModalAll() {
      // Get modal element
      var modalAll = document.getElementById('registration-modal');
@@ -9,6 +10,7 @@
      var closeBtnAll = document.getElementById('close');
      // Get filter
      var filter = document.getElementById('wrap');
+     var mainen = document.getElementsByTagName('main')[0];
 
      // Listen for open click
      modalBtnAll.addEventListener('click', openModalAll);
@@ -23,7 +25,10 @@
      function openModalAll(){
          modalAll.style.display = 'block';
          //Get dark background filter for page
-         filter.style.backgroundColor = 'rgba(0,0,0,.3)';
+         // filter.style.backgroundColor = 'rgba(0,0,0,.3)';
+         mainen.style.backgroundColor = 'rgba(62,62,62,.5)';
+         $('.main-information-container').addClass('back');
+
          //Get scroll OFF
          var curScrollTop = $(window).scrollTop();
          $('html').toggleClass('noscroll').css('top', '-' + curScrollTop + 'px');
@@ -36,6 +41,8 @@
          filter.style.filter = 'none';
          //Get OFF dark background filter for page
          filter.style.backgroundColor = 'rgba(0,0,0,0)';
+         mainen.style.backgroundColor = 'rgba(0,0,0,0)';
+         $('.main-information-container').removeClass('back');
          //Get  scroll ON
          $('html').toggleClass('noscroll');
      }
@@ -47,6 +54,8 @@
              filter.style.filter = 'none';
              //Get OFF dark background filter for page
              filter.style.backgroundColor = 'rgba(0,0,0,0)';
+             mainen.style.backgroundColor = 'rgba(0,0,0,0)';
+             $('.main-information-container').removeClass('back');
              //Get  scroll ON
              $('html').toggleClass('noscroll');
          }
@@ -54,6 +63,7 @@
  }
  ModalAll();
 
+//-----------------------------------===============================
 //Tabs
  $("#tab1").click(moveToFirst);
  $("#tab2").click(moveToSecond);
@@ -92,7 +102,7 @@
  }
 
 
-//
+//-----------------------------------===============================
 // //Check for tab-3
 //  if($(".item-list li input").is(":checked")) {
 //      $('.text-6').css('display','block');
@@ -106,7 +116,7 @@
 //
 //  }
 
-
+//-----------------------------------===============================
 //Add phone number
  function add_fields() {
      var input = 1;
@@ -168,6 +178,7 @@
      more_fields.style.marginTop = '40px';
  }
 
+//-----------------------------------===============================
  //Change icon to share
  $(".social-share-img1").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/sharing-interface.png")
@@ -176,6 +187,7 @@
      $(this).attr("src", src);
  });
 
+//-----------------------------------===============================
  //Change icon to love
  $(".social-share-img2").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/love.png")
@@ -184,6 +196,7 @@
      $(this).attr("src", src);
  });
 
+//-----------------------------------===============================
  //Check for brands, all clear
  $("#all-brands-check").change(function() {
      if(this.checked) {
@@ -211,6 +224,7 @@
 
  });
 
+//-----------------------------------===============================
  //Functions for brand list. When you want change the brand all you need is click on one fo 6 brand and you will see the short list below
  $("#brand-1").change(function() {
      if(this.checked) {
@@ -338,9 +352,8 @@
      }
  });
 
-
- //Password function
-
+//-----------------------------------===============================
+//Password function
  $('.save-pass').on('click',function () {
      var oldPassword = $("#pass").val();
      var password = $("#new-pass").val();
@@ -375,3 +388,51 @@
       }
  });
 
+ //-----------------------------------===============================
+ //Scroll on all page
+ $(function() {
+
+     jQuery.scrollSpeed(100, 800);
+
+ });
+
+ //-----------------------------------===============================
+ //Transition function for preloader on modal window
+ $('#modal-button').on('click',function () {
+     $('#linePreloader').toggleClass("lineClick");
+     console.log('bvhdfabvdffd');
+ });
+
+ //-----------------------------------===============================
+ //Function for validation form on modal menu
+ var email = $('#email').val();
+ var password = $('#passw').val();
+ var error = $('#modal-text-2');
+
+ function myInterval() {
+
+     if(email == '' || password == ''){
+         error.css('visibility','visible');
+         console.log('there is empty inputs here');
+     }else{
+         error.css('visibility','hidden');
+     }
+ }
+
+ $('#modal-button').on('click',function () {
+     setInterval(myInterval,5000);
+ });
+
+ //-----------------------------------===============================
+ //Function to open and close input password on modal window in case when user forgot password
+ $('.modal-text-3').on('click',function () {
+     $(this).text(function(i, v){
+         return v === 'forgot password?' ? 'back to Log in' : 'forgot password?'
+     });
+     $('#modalText-1').text(function(i, v){
+         return v === 'Please log in to use account tools:' ? 'To get new password please send your registered e-mail.' : 'Please log in to use account tools:'
+     });
+
+     $('#passw').toggleClass('hide-passw');
+     $('#email').toggleClass('widthEmail');
+ });
