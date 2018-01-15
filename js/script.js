@@ -362,8 +362,23 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
     $('.three-lines-icon').click(function(){
-        console.log('click motherfucker!!!');
+
+        $('.side-bar-container').toggleClass('ground-grey');
+        $('.menu-bar').toggleClass('background-grey-color');
         $(this).toggleClass('move-right');
-        $('.side-bar-container').toggleClass('active');
+        // $('.side-bar-container').toggleClass('active');
+        $('html').toggleClass('noscroll');
+
     });
 });
+
+// $(document).ready(function(){
+//     $('#lines').click(function(){
+//
+//         $('.side-bar-container').toggleClass('ground-grey');
+//         $('.menu-bar').toggleClass('background-grey-color');
+//         $(this).toggleClass('move-right');
+//         // $('.side-bar-container').toggleClass('active');
+//         $('html').toggleClass('noscroll');
+//     });
+// });

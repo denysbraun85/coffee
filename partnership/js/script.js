@@ -1,6 +1,7 @@
-
+//-----------------------------------===============================
+//Count for message
  $(function() {
-     $("input[id='message']").keyup(function countRemainingChars(){     //count for message  NEED TO FIX
+     $("input[id='message']").keyup(function countRemainingChars(){
          var maxchars = 150;
          var number = $("input[id='message']").val().length;
          if(number <= maxchars){
@@ -12,8 +13,9 @@
      });
  });
 
-
- function randomInteger(min, max) {                                 //random code for verification
+//-----------------------------------===============================
+//Random code for verification
+ function randomInteger(min, max) {
      var write = document.getElementById('code-number');
      var rand = min - 0.5 + Math.random() * (max - min + 1);
      rand = Math.round(rand);
@@ -24,6 +26,7 @@
 
 //randomInteger (100000, 999999);
 
+//-----------------------------------===============================
  //function validateEmail(){
  //    //var emailReg = /^([\w]+@([\w-]+\.)+[\w-]{2,4})?$/;
  //    var inputEmail = document.getElementById('email').value;
@@ -37,11 +40,14 @@
  //    }
  //}
 
-// $('.modal-button').on('click', function (){          //something wrong with this code
+//-----------------------------------===============================
+//something wrong with this code
+// $('.modal-button').on('click', function (){
 //         $('.modal-text-2').css("opacity", "1");
 //         console.log('safdfsf');
 // });
 
+//-----------------------------------===============================
  //Modal window for REST OF PAGES
  function ModalAll() {
      // Get modal element
@@ -98,7 +104,54 @@
  }
  ModalAll();
 
+ //-----------------------------------===============================
+ //Scroll on all page
+ $(function() {
 
+     jQuery.scrollSpeed(100, 800);
+
+ });
+
+ //-----------------------------------===============================
+ //Transition function for preloader on modal window
+ $('#modal-button').on('click',function () {
+     $('#linePreloader').toggleClass("lineClick");
+     console.log('bvhdfabvdffd');
+ });
+
+ //-----------------------------------===============================
+ //Function for validation form on modal menu
+ var email = $('#email').val();
+ var password = $('#passw').val();
+ var error = $('#modal-text-2');
+
+ function myInterval() {
+
+     if(email == '' || password == ''){
+         error.css('visibility','visible');
+         console.log('there is empty inputs here');
+     }else{
+         error.css('visibility','hidden');
+     }
+ }
+
+ $('#modal-button').on('click',function () {
+     setInterval(myInterval,5000);
+ });
+
+ //-----------------------------------===============================
+ //Function to open and close input password on modal window in case when user forgot password
+ $('.modal-text-3').on('click',function () {
+     $(this).text(function(i, v){
+         return v === 'forgot password?' ? 'back to Log in' : 'forgot password?'
+     });
+     $('#modalText-1').text(function(i, v){
+         return v === 'Please log in to use account tools:' ? 'To get new password please send your registered e-mail.' : 'Please log in to use account tools:'
+     });
+
+     $('#passw').toggleClass('hide-passw');
+     $('#email').toggleClass('widthEmail');
+ });
 
 
 

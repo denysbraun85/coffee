@@ -105,6 +105,53 @@
  }
  ModalAll();
 
+//Scroll on all page
+$(function() {
+
+    jQuery.scrollSpeed(100, 800);
+
+});
+
+//-----------------------------------===============================
+//Transition function for preloader on modal window
+$('#modal-button').on('click',function () {
+    $('#linePreloader').toggleClass("lineClick");
+    console.log('bvhdfabvdffd');
+});
+
+//-----------------------------------===============================
+//Function for validation form on modal menu
+var email = $('#email').val();
+var password = $('#passw').val();
+var error = $('#modal-text-2');
+
+function myInterval() {
+
+    if(email == '' || password == ''){
+        error.css('visibility','visible');
+        console.log('there is empty inputs here');
+    }else{
+        error.css('visibility','hidden');
+    }
+}
+
+$('#modal-button').on('click',function () {
+    setInterval(myInterval,5000);
+});
+
+//-----------------------------------===============================
+//Function to open and close input password on modal window in case when user forgot password
+$('.modal-text-3').on('click',function () {
+    $(this).text(function(i, v){
+        return v === 'forgot password?' ? 'back to Log in' : 'forgot password?'
+    });
+    $('#modalText-1').text(function(i, v){
+        return v === 'Please log in to use account tools:' ? 'To get new password please send your registered e-mail.' : 'Please log in to use account tools:'
+    });
+
+    $('#passw').toggleClass('hide-passw');
+    $('#email').toggleClass('widthEmail');
+});
 
 
 

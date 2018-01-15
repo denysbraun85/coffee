@@ -483,16 +483,7 @@ max-width: 580px;
 .scroll:hover{
     cursor: pointer;
 }
-/*Stop scroll*/
-/*html.noscroll{*/
-    /*position: fixed;*/
-    /*width: 100%;*/
-    /*top:0;*/
-    /*left: 0;*/
-    /*height: 100%;*/
-    /*overflow-y: scroll !important;*/
-    /*z-index: 1000;*/
-/*}*/
+
 /*---header end---*/
 /*---main start---*/
 main{
@@ -898,14 +889,39 @@ visibility: hidden;
   padding-top: 27px;
 }
 /*---footer end---*/
-/*---------------------------------------SIDEBAR ALL-------------------------------------------continue here!!!!!!!!!!*/
+
+/*-----------================Media css=================------------*/
+/*---------min width 1024px----------*/
+@media only screen and (min-width: 1024px) {
+    /*/----------main-------------*/
+.container-back-to-top-1024px{
+    display: none;
+}
+}
+/*======================================================================================================================================================================*/
+@media only screen and (max-width: 1024px) {
+/*/----------Header-------------*/
+.navigation{
+    display: none;
+}
+.container-menu-main{
+    display: none;
+}
+#top-container-menu-nav-1024px{
+    visibility: visible;
+}
+.side-bar-container{
+    display: none;
+}
+/*/----------Header-------------*/
+/*---------Side bar--------*/
 .menu-bar{
     max-width: 1024px;
     width: 100%;
     overflow: hidden;
     display: flex;
     position: relative;
-    /*display: none;*/
+    height: 100%;
 }
 .side-bar-container{
     max-width: 275px;
@@ -920,12 +936,58 @@ visibility: hidden;
     box-shadow: 2px 0 0 #413C39, 1px 0 0 #52494C;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Color=#52494C); /*IE 5.5-7*/
     height: 100%;
-    position:fixed;
+    /*position:fixed;*/
     top:0;
     left:-275px;
-    transition:linear 0.4s;
+    /*transition:linear 0.4s;*/
     visibility: hidden;
+    z-index: 3000;
+    /*transition: linear 0.2s;*/
+    /*transition: all 0.3s ease-in-out;*/
+    /*-webkit-transition: all 0.3s ease-in-out;*/
+    moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
 
+    transition: all 0.1s ease;
+
+}
+.ground-grey{
+   visibility: visible;
+    /*transition: linear 0.2s;*/
+    /*transition: all 0.1s ease-in-out;*/
+    /*-webkit-transition: all 0.1s ease-in-out;*/
+    moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+
+    transition: all 0.1s ease;
+}
+.background-grey-color{
+    background: rgba(93, 92, 92, 0.5);
+    z-index: 3;
+    moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+
+    transition: all 0.1s ease;
+
+    /*transition: all 0.2s ease-in-out;*/
+    /*-webkit-transition: all 0.2s ease-in-out;*/
+
+}
+.three-lines-icon{
+    position: absolute;
+    bottom: 50%;
+    top: 50%;
+    z-index: 99999;
+    moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+
+    transition: all 0.1s ease;
+    /*transition: all 0.2s ease-in-out;*/
+    /*-webkit-transition: all 0.2s ease-in-out;*/
 }
 .move-right{
     margin-left: 263px;
@@ -942,6 +1004,9 @@ visibility: hidden;
 .container-head-logo{
     max-width: 145px;
     width: 100%;
+}
+.pages-list{
+    display: block;
 }
 .head-logo-top{
     display: flex;
@@ -1031,7 +1096,6 @@ visibility: hidden;
 }
 /*===============================*/
 .container-menu-nav-1024px{
-    display: none;
     max-width: 1024px;
     /*max-width: 749px;*/
     width: 100%;
@@ -1043,10 +1107,10 @@ visibility: hidden;
     box-shadow: 0 2px 0 #2B211F, 0 1px 0 #1F1816;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Color=#1F1816); /*IE 5.5-7*/
     max-height: 52px;
-    /*visibility: hidden;*/
-    /*position: fixed;*/
-    /*top: 0;*/
-    z-index: 26;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 2600;
 }
 .container-menu-inside{
     display: flex;
@@ -1056,15 +1120,19 @@ visibility: hidden;
     margin-right: auto;
     justify-content: space-between;
     align-content: center;
+    z-index: 2600;
+    position: relative;
 }
-.three-lines-icon{
 
-}
-.three-lines-icon .move-right{
-
-}
 .container-centre-logo{
     display: flex;
+    margin: auto;
+}
+
+.wrapper-grey{
+    max-width: 1024px;
+    width: 100%;
+    background: rgba(93, 92, 92, 0.5);
 }
 .mini-logo-text{
     color: #FFFFFF;
@@ -1087,34 +1155,20 @@ visibility: hidden;
     padding-top: 6px;
     padding-bottom: 5px;
 }
-/*.main-bottom-2-img{*/
-    /*left: 0;*/
-/*}*/
+.main-bottom-2-img{
+left: 0;
+}
 
-/*---------------------------------------SIDEBAR ALL-------------------------------------------continue here!!!!!!!!!!*/
-/*-----------================Media css=================------------*/
-/*---------min width 1024px----------*/
-@media only screen and (min-width: 1024px) {
-    /*/----------main-------------*/
-/*.container-back-to-top-1024px{*/
-    /*display: none;*/
-/*}*/
+/*Stop scroll*/
+html.noscroll{
+position: fixed;
+width: 100%;
+top:0;
+left: 0;
+height: 100%;
+overflow-y: scroll !important;
+z-index: 1000;
 }
-/*======================================================================================================================================================================*/
-@media only screen and (max-width: 1024px) {
-/*/----------Header-------------*/
-.navigation{
-    display: none;
-}
-.container-menu-main{
-    display: none;
-}
-#top-container-menu-nav-1024px{
-    visibility: visible;
-}
-/*.side-bar-container{*/
-    /*display: none;*/
-/*}*/
 /*/----------Main-------------*/
 
 /*/----------Footer-------------*/
