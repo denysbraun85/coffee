@@ -1,4 +1,4 @@
-//-----------------------------------===============================
+//-----------------------------------===============================Full
 //Slider for main page
  $(document).ready(function(){
      $('.slider-1').slick({
@@ -9,7 +9,7 @@
          arrows: false
  });
  });
-//-----------------------------------===============================
+//-----------------------------------===============================Full
 //Change picture for social buttons
  $(".social-share-img1").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/sharing-interface.png")
@@ -23,7 +23,7 @@
          : "../img/main/love.png";
      $(this).attr("src", src);
  });
-//-----------------------------------===============================
+//-----------------------------------===============================Full
 //Scroll on picture
  $(".scroll").click(function(){
      $("html, body").animate({scrollTop: $(".navigation").height()+ 700 },"slow");
@@ -39,7 +39,7 @@ $(window).scroll(function(){
         $(".container-menu-main").css('visibility', 'hidden');
     }
 });
-//-----------------------------------===============================
+//-----------------------------------===============================Full
 //Tabs on main page
 $(function () {
     var tabContent = $('.tabs-content > div');
@@ -57,7 +57,7 @@ $(function () {
         return false;
     })
 });
-//-----------------------------------===============================
+//-----------------------------------===============================Full
  //function validateEmail(){
  //    //var emailReg = /^([\w]+@([\w-]+\.)+[\w-]{2,4})?$/;
  //    var inputEmail = document.getElementById('email').value;
@@ -70,7 +70,7 @@ $(function () {
  //        inputMail.style.opacity = '1';
  //    }
  //}
-//-----------------------------------===============================
+//-----------------------------------===============================Full
 //Modal window for MAIN PAGE
  function modalMain() {
      // Get modal element
@@ -80,16 +80,22 @@ $(function () {
      var modalBtnMenu = document.getElementsByClassName('span-off')[1];
      var modalImg = document.getElementsByClassName('log-img')[0];
      var modalImgMenu = document.getElementsByClassName('log-img')[1];
+     //Get open modal on 1024px
+     var modal1024px = document.getElementsByClassName('user-log-icon')[0];
+     var modal1024pxTwo = document.getElementsByClassName('user-log-icon')[1];
+
 
      // Get close button
      var closeBtn = document.getElementById('close');
-     //var header = document.getElementById('header');   //Why this is wrong?
+
 
      // Listen for open click
      modalBtn.addEventListener('click', openModal);
      modalImg.addEventListener('click', openModal);
      modalBtnMenu.addEventListener('click', openModal);
      modalImgMenu.addEventListener('click', openModal);
+     modal1024px.addEventListener('click', openModal);
+     modal1024pxTwo.addEventListener('click', openModal);
 
      // Listen for close click
      closeBtn.addEventListener('click', closeModal);
@@ -99,23 +105,25 @@ $(function () {
      // Function to open modal
      function openModal(){
          modal.style.display = 'block';
-         //header.style.background = "rgba(0,0,0,0)";        //the same shit
+         $('.menu-bar').addClass('back-grey');
      }
 
      // Function to close modal
      function closeModal(){
          modal.style.display = 'none';
+         $('.menu-bar').removeClass('back-grey');
      }
 
      // Function to close modal if outside click
      function outsideClick(e){
          if(e.target === modal){
              modal.style.display = 'none';
+             $('.menu-bar').removeClass('back-grey');
          }
      }
  }
  modalMain();
-//-----------------------------------===============================
+//-----------------------------------===============================Full
  //Modal window for REST OF PAGES
     function ModalAll() {
         // Get modal element
@@ -159,6 +167,7 @@ $(function () {
             //Get dark background filter for page
             filter.style.filter = 'brightness(50%)';
             filter.style.backgroundColor = 'rgba(0,0,0,.3)';
+            $('.menu-bar').toggleClass('back-grey');
             //Get scroll OFF
             var curScrollTop = $(window).scrollTop();
             $('html').toggleClass('noscroll').css('top', '-' + curScrollTop + 'px');
@@ -189,7 +198,7 @@ $(function () {
  //-----------------========================------------------------------
     }
  ModalAll();
-//-----------------------------------===============================
+//-----------------------------------===============================Full
 // Function for main page tabs/ When you will make click on list element you will change picture on the right of the tabs. Also it will be change picture list
 $('#aa').on('click', function () {
     $('#tabs-img1').attr('checked', true);
@@ -208,7 +217,7 @@ $('#aa').on('click', function () {
      $('#tabs-img2').attr('checked', false);
      $('#tabs-img3').attr('checked', true);
  });
-//-----------------------------------===============================
+//-----------------------------------===============================Full
 //Function change slider pictures when mouse hover
  $("#lavazza").on("hover", function() {     // change check picture on tabs main page
      var src = ($('#lavazza').attr("src") === "./img/main/lavazza-black.png")
@@ -230,13 +239,13 @@ $('#aa').on('click', function () {
          : "./img/main/movenpick-black.png";
      $(this).attr("src", src);
  });
-//-----------------------------------===============================
+//-----------------------------------===============================Full
  //Transition function for preloader on modal window
  $('#modal-button').on('click',function () {
      $('#linePreloader').toggleClass("lineClick");
     console.log('bvhdfabvdffd');
  });
-//-----------------------------------===============================
+//-----------------------------------===============================Full
 //Scroll on all page
 $(function() {
 
@@ -268,7 +277,7 @@ $(function() {
 //     }, time );
 // }
 
-//-----------------------------------===============================
+//-----------------------------------===============================Full
 //Function for validation form on modal menu
 var email = $('#email').val();
 var password = $('#passw').val();
@@ -287,7 +296,7 @@ function myInterval() {
 $('#modal-button').on('click',function () {
      setInterval(myInterval,5000);
 });
-//-----------------------------------===============================
+//-----------------------------------===============================Full
 //Function to get scroll down on click Log In button and scroll up if you want to close modal window
 $('.log-img').click(function(){
     $("html, body").animate({ scrollTop: 700 }, 600);
@@ -301,7 +310,7 @@ $('#close').on('click', function () {
     $("html, body").animate({ scrollTop: 0 }, 600);
     return false;
 });
-//-----------------------------------===============================
+//-----------------------------------===============================Full
 //Function to open and close input password on modal window in case when user forgot password
 $('.modal-text-3').on('click',function () {
     $(this).text(function(i, v){
@@ -316,7 +325,7 @@ $('.modal-text-3').on('click',function () {
 });
 
 
-//-----------------------------------===============================
+//-----------------------------------===============================1024
 //Scroll show and hide footer back on top button
 $(window).scroll(function(){
     var top = $(window).scrollTop();
@@ -326,7 +335,7 @@ $(window).scroll(function(){
         $(".container-back-to-top-1024px").css('visibility', 'hidden');
     }
 });
-//-----------------------------------===============================
+//-----------------------------------===============================1024
 //Function to get on top when user will make a click on arrow up icon or under this icon text
 $('.back-icon').on('click', function () {
     $("html, body").animate({ scrollTop: 0 }, 600);
@@ -337,7 +346,7 @@ $('.back-text').on('click', function () {
     $("html, body").animate({ scrollTop: 0 }, 600);
     return false;
 });
-//-----------------------------------===============================
+//-----------------------------------===============================1024
 //Scroll show and hide nav
 $(window).scroll(function(){
     var top = $(window).scrollTop();
@@ -347,7 +356,7 @@ $(window).scroll(function(){
         $(".container-menu-nav-1024px").css('visibility', 'hidden');
     }
 });
-//-----------------------------------===============================
+//-----------------------------------===============================1024
 //Scroll show and hide nav
 $(window).scroll(function(){
     var top = $(window).scrollTop();
@@ -358,27 +367,26 @@ $(window).scroll(function(){
     }
 });
 
-
-
-$(document).ready(function(){
-    $('.three-lines-icon').click(function(){
-
-        $('.side-bar-container').toggleClass('ground-grey');
-        $('.menu-bar').toggleClass('background-grey-color');
-        $(this).toggleClass('move-right');
-        // $('.side-bar-container').toggleClass('active');
-        $('html').toggleClass('noscroll');
-
-    });
-});
-
+//-----------------------------------===============================1024
+//Function to open left modal window and grey background on main page(old version with line img)
 // $(document).ready(function(){
-//     $('#lines').click(function(){
-//
+//     $('.three-lines-icon').click(function(){
 //         $('.side-bar-container').toggleClass('ground-grey');
 //         $('.menu-bar').toggleClass('background-grey-color');
 //         $(this).toggleClass('move-right');
-//         // $('.side-bar-container').toggleClass('active');
 //         $('html').toggleClass('noscroll');
 //     });
 // });
+
+//-----------------------------------===============================1024
+//Function to open left modal window and grey background on main page(working version with animation cross)
+ $(document).ready(function(){
+     $('.three-lines').click(function(){
+         $('.side-bar-container').toggleClass('ground-grey');
+         $('.menu-bar').toggleClass('background-grey-color');
+         $(this).toggleClass('move-right');
+         $('html').toggleClass('noscroll');
+         $(this).toggleClass('change');
+     });
+ });
+

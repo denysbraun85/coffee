@@ -897,6 +897,12 @@ visibility: hidden;
 .container-back-to-top-1024px{
     display: none;
 }
+.menu-bar{
+    display: none;
+}
+.container-menu-nav-1024px{
+    display: none;
+}
 }
 /*======================================================================================================================================================================*/
 @media only screen and (max-width: 1024px) {
@@ -914,6 +920,58 @@ visibility: hidden;
     display: none;
 }
 /*/----------Header-------------*/
+/*-------------------Lines---------------------*/
+.three-lines{
+    max-width: 28px;
+    width: 100%;
+    position: relative;
+    height: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 99999;
+    cursor: pointer;
+}
+.line-1{
+    background-color: #FFFFFF;
+    width: 28px;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+}
+.line-2{
+    background-color: #FFFFFF;
+    width: 28px;
+    height: 3px;
+    position: absolute;
+    top: 44%;
+    z-index: 99999;
+}
+.line-3{
+    background-color: #FFFFFF;
+    width: 28px;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    z-index: 99999;
+}
+.change .line-1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-8px, 6px) ;
+     z-index: 99999;
+    transition: 0.4s;
+}
+.change .line-2{
+    opacity: 0;
+     z-index: 99999;
+    transition: 0.4s;
+}
+.change .line-3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-5px, -3px) ;
+     z-index: 99999;
+    transition: 0.4s;
+}
 /*---------Side bar--------*/
 .menu-bar{
     max-width: 1024px;
@@ -948,9 +1006,7 @@ visibility: hidden;
     moz-transition: all 0.1s ease;
     -o-transition: all 0.1s ease;
     -webkit-transition: all 0.1s ease;
-
     transition: all 0.1s ease;
-
 }
 .ground-grey{
    visibility: visible;
@@ -960,7 +1016,6 @@ visibility: hidden;
     moz-transition: all 0.1s ease;
     -o-transition: all 0.1s ease;
     -webkit-transition: all 0.1s ease;
-
     transition: all 0.1s ease;
 }
 .background-grey-color{
@@ -969,12 +1024,7 @@ visibility: hidden;
     moz-transition: all 0.1s ease;
     -o-transition: all 0.1s ease;
     -webkit-transition: all 0.1s ease;
-
     transition: all 0.1s ease;
-
-    /*transition: all 0.2s ease-in-out;*/
-    /*-webkit-transition: all 0.2s ease-in-out;*/
-
 }
 .three-lines-icon{
     position: absolute;
@@ -984,13 +1034,11 @@ visibility: hidden;
     moz-transition: all 0.1s ease;
     -o-transition: all 0.1s ease;
     -webkit-transition: all 0.1s ease;
-
     transition: all 0.1s ease;
-    /*transition: all 0.2s ease-in-out;*/
-    /*-webkit-transition: all 0.2s ease-in-out;*/
 }
 .move-right{
     margin-left: 263px;
+    visibility: visible;
 }
 .active{
     left:0;
@@ -1116,17 +1164,19 @@ visibility: hidden;
     display: flex;
     max-width: 964px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: space-between;
     align-content: center;
     z-index: 2600;
     position: relative;
+    margin: auto;
+    height: 50px;
 }
 
 .container-centre-logo{
     display: flex;
     margin: auto;
+    position: absolute;
+    left: 422px;
 }
 
 .wrapper-grey{
@@ -1158,7 +1208,6 @@ visibility: hidden;
 .main-bottom-2-img{
 left: 0;
 }
-
 /*Stop scroll*/
 html.noscroll{
 position: fixed;
@@ -1168,6 +1217,31 @@ left: 0;
 height: 100%;
 overflow-y: scroll !important;
 z-index: 1000;
+}
+/*------------Registretion modal-------------------*/
+.modal{
+    display: none;
+    /* position: absolute; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 50px;
+    height: 122px;
+    background: #3e3d3d;
+    box-shadow: 0 2px 5px -2px #000 inset;
+    padding: 2px 0;
+    overflow: hidden;
+    z-index: 25;
+}
+.modal-container-1 {
+    max-width: 655px;
+    padding-right: 80px;
+    padding-left: 80px;
+    border-right: 1px solid #565656;
+}
+.back-grey{
+    background-color: rgba(62,62,62,0.5);
+    z-index: 1;
 }
 /*/----------Main-------------*/
 
