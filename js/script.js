@@ -6,7 +6,15 @@
          slidesToScroll: 1,
          autoplay: true,
          autoplaySpeed: 3000,
-         arrows: false
+         arrows: false,
+         responsive: [
+             {
+                 breakpoint: 768,
+                 settings: {
+                     slidesToShow: 4
+                 }
+             },
+             ]
  });
  });
 //-----------------------------------===============================Full
