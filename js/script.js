@@ -95,6 +95,7 @@ $(function () {
 
      // Get close button
      var closeBtn = document.getElementById('close');
+     var lines768px = document.getElementsByClassName('three-lines')[0];
 
 
      // Listen for open click
@@ -107,6 +108,7 @@ $(function () {
 
      // Listen for close click
      closeBtn.addEventListener('click', closeModal);
+     lines768px.addEventListener('click',closeModal);
      // Listen for outside click
      window.addEventListener('click', outsideClick);
 
@@ -398,3 +400,13 @@ $(window).scroll(function(){
      });
  });
 
+//-----------------------------------===============================768
+//Scroll show and hide footer back on top button
+$(window).scroll(function(){
+    var top = $(window).scrollTop();
+    if( top > 1000) {
+        $(".container-back-to-top-768px").css('visibility', 'visible');
+    } else {
+        $(".container-back-to-top-768px").css('visibility', 'hidden');
+    }
+});
