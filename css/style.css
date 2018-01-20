@@ -1922,3 +1922,139 @@ z-index: 1000;
     z-index: 99999;
 }
 }
+/*======================================================================================================================================================================*/
+@media only screen and (max-width: 343px) {
+header{
+    overflow: hidden;
+}
+}
+/*======================================================================================================================================================================*/
+@media only screen and (max-width: 320px) {
+.main-bottom-3-img{
+    display: none;
+}
+/*-------header----------*/
+.user-log-icon{
+    margin-right: 8px;
+}
+.side-bar-container{
+    max-width: 280px;
+}
+.move-right{
+    padding-left: 15px;
+    left: 281px;
+    width: 45px;
+    height: 40px;
+    margin-left: 0;
+}
+.preload-container{
+    max-width: 272px;
+    width: 100%;
+    overflow: hidden;
+}
+.text-trans-1{
+    font-size: 45px;
+    height: 42px;
+}
+.container-text-top img{
+    width: 36px;
+    height: 32px;
+}
+.container-text-bottom p{
+    font-size: 12px;
+}
+/*---------Main-----------*/
+.container-coffee{
+    display: block;
+    max-width: 320px;
+    width: 100%;
+    overflow: hidden;
+    height: 239px;
+}
+.container-coffee-left{
+    margin: 0;
+    width: 100%;
+    border-right: none;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    background-size: cover;
+}
+.container-coffee-left p{
+    margin: auto;
+    max-width: 170px;
+}
+.container-coffee-right{
+    margin: 0;
+    width: 100%;
+    border-right: none;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    background-size: cover;
+}
+.container-coffee-right p{
+    margin: auto;
+    max-width: 170px;
+}
+.tabs-text-container{
+    max-width: 257px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+}
+.tabs-text-2{
+    margin-top: 5px;
+}
+.tab-list{
+    margin-top: 17px;
+}
+.tabs-left{
+    max-width: 294px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tab1{
+    height: 24px;
+}
+#tab2{
+    height: 31px;
+}
+.tabs-content{
+    max-width: 274px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-top-width: 15px;
+}
+/*----------Modal menu-----------*/
+.modal{
+    width: 100%;
+}
+.modal-contant{
+    max-width: 225px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.modal-text-3{
+    font-size: 11px;
+    top: 120px;
+    height: 11px;
+    margin-left: 20px;
+}
+.modal-text-1{
+    font-size: 12px;
+}
+#registration-but{
+    max-width: 94px;
+    width: 100%;
+    margin-left: 0;
+}
+#modal-text-4{
+    font-size: 12px;
+    max-width: 120px;
+    width: 100%;
+}
+}

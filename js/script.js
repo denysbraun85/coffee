@@ -14,6 +14,12 @@
                      slidesToShow: 4
                  }
              },
+             {
+                 breakpoint: 320,
+                 settings: {
+                     slidesToShow: 3
+                 }
+             }
              ]
  });
  });
