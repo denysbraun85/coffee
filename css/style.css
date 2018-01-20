@@ -42,6 +42,9 @@ header ul {
 .container-back-to-top-1024px{
     display: none;
 }
+.container-back-to-top-768px{
+    display: none;
+}
 /*---header start---*/
 header{
   position: relative;
