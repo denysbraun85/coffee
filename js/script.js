@@ -91,6 +91,7 @@ $(function () {
      //Get open modal on 1024px
      var modal1024px = document.getElementsByClassName('user-log-icon')[0];
      var modal1024pxTwo = document.getElementsByClassName('user-log-icon')[1];
+     var menuBar = document.getElementsByClassName('menu-bar')[0];
 
 
      // Get close button
@@ -126,88 +127,102 @@ $(function () {
 
      // Function to close modal if outside click
      function outsideClick(e){
-         if(e.target === modal){
+         if(e.target === modal || e.target === menuBar){
+             $('#registration-modal').toggleClass('close-window-modal');
              modal.style.display = 'none';
+             $('#registration-modal').css('display','none');
              $('.menu-bar').removeClass('back-grey');
+
          }
+         // $(window).on('click', function () {
+         //     $('#registration-modal').toggleClass('close-window-modal');
+         //     $('.menu-bar').removeClass('back-grey');
+         // });
      }
+     // $('.menu-bar').onclick = function() {
+     //     modal.style.display = 'none';
+     // }
+
  }
  modalMain();
+
 //-----------------------------------===============================Full
- //Modal window for REST OF PAGES
-    function ModalAll() {
-        // Get modal element
-        var modalAll = document.getElementById('registration-modal');
-        // Get open modal button
-        var modalBtnAll = document.getElementById('log-img');
-        var modalImgAll = document.getElementsByClassName('log-img')[0];
-        // Get close button
-        var closeBtnAll = document.getElementById('close');
-        // Get filter
-        var filter = document.getElementsByTagName('main')[0];
-
-        // Listen for open click
-        // modalBtnAll.addEventListener('click', openModalAll);
-        modalImgAll.addEventListener('click', openModalAll);
-
-        // Listen for close click
-        closeBtnAll.addEventListener('click', closeModalAll);
-        // Listen for outside click
-        window.addEventListener('click', outsideClickAll);
-//----------------=====================----------------------------
-//         // Function to open modal
+//  //Modal window for REST OF PAGES
+//     function ModalAll() {
+//         // Get modal element
+//         var modalAll = document.getElementById('registration-modal');
+//         // Get open modal button
+//         var modalBtnAll = document.getElementById('log-img');
+//         var modalImgAll = document.getElementsByClassName('log-img')[0];
+//         // Get close button
+//         var closeBtnAll = document.getElementById('close');
+//         // Get filter
+//         var filter = document.getElementsByTagName('main')[0];
+//
+//         // Listen for open click
+//         // modalBtnAll.addEventListener('click', openModalAll);
+//         modalImgAll.addEventListener('click', openModalAll);
+//
+//         // Listen for close click
+//         closeBtnAll.addEventListener('click', closeModalAll);
+//         // Listen for outside click
+//         window.addEventListener('click', outsideClickAll);
+// //----------------=====================----------------------------
+// //         // Function to open modal
+// //         function openModalAll(){
+// //             modalAll.style.display = 'block';
+// //
+// //         }
+// //
+// //         // Function to close modal
+// //         function closeModalAll(){
+// //             modalAll.style.display = 'none';
+// //         }
+// //
+// //         // Function to close modal if outside click
+// //         function outsideClickAll(e){
+// //             if(e.target === modalAll){
+// //                 modalAll.style.display = 'none';
+// //             }
+// //         }
 //         function openModalAll(){
 //             modalAll.style.display = 'block';
+//             //Get dark background filter for page
+//             filter.style.filter = 'brightness(50%)';
+//             filter.style.backgroundColor = 'rgba(0,0,0,.3)';
+//             $('.menu-bar').toggleClass('back-grey');
+//             //Get scroll OFF
+//             var curScrollTop = $(window).scrollTop();
+//             $('html').toggleClass('noscroll').css('top', '-' + curScrollTop + 'px');
 //
 //         }
 //
 //         // Function to close modal
 //         function closeModalAll(){
 //             modalAll.style.display = 'none';
+//             filter.style.filter = 'none';
+//             //Get OFF dark background filter for page
+//             filter.style.backgroundColor = 'rgba(0,0,0,0)';
+//             //Get  scroll ON
+//             $('html').toggleClass('noscroll');
 //         }
 //
 //         // Function to close modal if outside click
 //         function outsideClickAll(e){
 //             if(e.target === modalAll){
 //                 modalAll.style.display = 'none';
+//                 filter.style.filter = 'none';
+//                 $('#registration-modal').toggleClass('close-window-modal');
+//                 $('#registration-modal').css('display','none');
+//                 //Get OFF dark background filter for page
+//                 filter.style.backgroundColor = 'rgba(0,0,0,0)';
+//                 //Get  scroll ON
+//                 $('html').toggleClass('noscroll');
 //             }
 //         }
-        function openModalAll(){
-            modalAll.style.display = 'block';
-            //Get dark background filter for page
-            filter.style.filter = 'brightness(50%)';
-            filter.style.backgroundColor = 'rgba(0,0,0,.3)';
-            $('.menu-bar').toggleClass('back-grey');
-            //Get scroll OFF
-            var curScrollTop = $(window).scrollTop();
-            $('html').toggleClass('noscroll').css('top', '-' + curScrollTop + 'px');
-
-        }
-
-        // Function to close modal
-        function closeModalAll(){
-            modalAll.style.display = 'none';
-            filter.style.filter = 'none';
-            //Get OFF dark background filter for page
-            filter.style.backgroundColor = 'rgba(0,0,0,0)';
-            //Get  scroll ON
-            $('html').toggleClass('noscroll');
-        }
-
-        // Function to close modal if outside click
-        function outsideClickAll(e){
-            if(e.target === modalAll){
-                modalAll.style.display = 'none';
-                filter.style.filter = 'none';
-                //Get OFF dark background filter for page
-                filter.style.backgroundColor = 'rgba(0,0,0,0)';
-                //Get  scroll ON
-                $('html').toggleClass('noscroll');
-            }
-        }
- //-----------------========================------------------------------
-    }
- ModalAll();
+//  //-----------------========================------------------------------
+//     }
+//  ModalAll();
 //-----------------------------------===============================Full
 // Function for main page tabs/ When you will make click on list element you will change picture on the right of the tabs. Also it will be change picture list
 $('#aa').on('click', function () {
