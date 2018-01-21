@@ -1156,6 +1156,16 @@ visibility: hidden;
     text-align: center;
     font-size: 12px;
 }
+.head-logo-text-1 a{
+    color: #cbcbcb;
+}
+.head-link{
+    margin-top:  auto;
+    margin-bottom:  auto;
+}
+.head-logo-bottom a{
+    color: #cbcbcb;
+}
 /*===============================*/
 .container-menu-nav-1024px{
     max-width: 1024px;
