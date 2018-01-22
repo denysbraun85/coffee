@@ -1106,11 +1106,14 @@ main{
   margin-bottom: 123px;
   max-width: 160px;
   width: 100%;
-  padding: 11px 17px 11px 16px;
 }
 #button-plane a{
   width: 129px;
   font-size:  16px;
+}
+.send-button{
+  max-width:  160px;
+  width:  100%;
 }
 .main-bottom-img-1-two{
   display: block;
@@ -1190,5 +1193,660 @@ main{
   color: #FFFFFF;
   padding-top: 7px;
   cursor: pointer;
+}
+}
+
+
+/*======================================================================================================================================================================*/
+@media only screen and (max-width: 768px) {
+  /*------Header------*/
+.container-centre-logo{
+  left: 40%;
+}
+/*----------Modal menu----------*/
+.modal{
+  max-width: 768px;
+  width: 100%;
+  overflow: hidden;
+}
+.modal-contant{
+  max-width: 705px;
+  width: 100%;
+  margin: auto;
+}
+.modal-container-1{
+  max-width: 540px;
+  padding-left: 0;
+  padding-right: 23px;
+  border-right: 1px solid #565656;
+}
+.modal-container-2{
+  max-width: 345px;
+  padding-left: 16px;
+  position: relative;
+}
+.close{
+  position: absolute;
+  font-size: 43px;
+  left: 185px;
+  color: #565656;
+}
+#email{
+  width: 159px;
+}
+#passw{
+  width: 159px;
+}
+.modal-container-2{
+  max-width: 345px;
+  padding-left: 16px;
+  position: relative;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+.widthEmail{
+  min-width: 338px;
+  display: inline-flex;
+}
+/*--------Sidebar--------*/
+.three-lines{
+  max-width: 50px;
+  width: 100%;
+  height: 50px;
+  padding-left: 11px;
+  box-sizing: border-box;
+  background-color: #2d2b2b;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 99999;
+  cursor: pointer;
+  margin-left: 0;
+}
+.move-right {
+  margin-left: 280px;
+  visibility: visible;
+  z-index: 999999;
+}
+.line-1 {
+  bottom: 0;
+  top: 15px;
+}
+.line-2 {
+  background-color: #FFFFFF;
+  width: 28px;
+  height: 3px;
+  position: absolute;
+  top: 44%;
+  z-index: 99999;
+}
+.line-3 {
+  top: 29px;
+}
+.change .line-1{
+  transform: rotate(-45deg) translate(-9px, 5px);
+  z-index: 99999;
+  transition: 0.4s;
+}
+.change .line-2 {
+  opacity: 0;
+  z-index: 99999;
+  transition: 0.4s;
+}
+.change .line-3 {
+  transform: rotate(45deg) translate(-5px, -1px);
+  z-index: 99999;
+  transition: 0.4s;
+}
+/*------Main--------*/
+main{
+  overflow: hidden;
+}
+.main-information-container{
+  padding-top: 52px;
+  max-width: 728px;
+  width: 100%;
+}
+.text-4{
+  margin-top: 17px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.text-5{
+  font-size: 14px;
+  line-height: 17px;
+}
+.text-6{
+  font-size: 14px;
+  line-height: 17px;
+}
+.advantages-containers-layer-1{
+  max-width: 685px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.advantages-container-1{
+   max-width: 200px;
+   width: 100%;
+   max-height: 230px;
+}
+.advantages-container-2{
+  max-width: 200px;
+  width: 100%;
+  max-height: 230px;
+}
+.advantages-container-3{
+  max-width: 200px;
+  width: 100%;
+  max-height: 230px;
+}
+.text-8-two{
+  line-height: 17px;
+}
+.text-9-two{
+  line-height: 17px;
+}
+.text-10-two{
+  line-height: 17px;
+}
+.message-container{
+  margin-top: 94px;
+}
+#group-message{
+  margin-top: 47px;
+  padding-top: 63px;
+}
+#code-container label {
+  position: absolute;
+  /*top: 36.6666666667px;*/
+  top: 29px;
+  color: rgba(198, 198, 198, 0.5);
+  cursor: text;
+  transition: .25s ease;
+}
+.group input {
+  display: block;
+  width: 100%;
+  /*padding-top: 36.6666666667px;*/
+  padding-top: 10px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #d1d1d1;
+  color: #c6c6c6;
+  font-size: 14px;
+  transition: .3s ease;
+}
+#code-container input:valid ~ label {
+  top: 36px;
+  font: 700 22px Roboto;
+  color: rgba(255, 255, 255, 0.5);
+}
+#code-container input:focus {
+  outline: none;
+}
+#code-container input:focus ~ label {
+  top: 15px;
+  font-size: 12px;
+  color: #000000;
+}
+#code-container input:focus ~ .bar:before {
+  transform: translateX(0);
+}
+#code-container input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #333 inset;
+  -webkit-text-fill-color: white !important;
+}
+#code-container{
+  margin-top: 20px;
+  padding-top: 0;
+  top: 0;
+}
+#code-container input{
+  padding-top: 0;
+  height: 16px;
+}
+#button-plane{
+  margin-bottom: 135px;
+  max-width: 160px;
+  width: 100%;
+  padding: 0;
+}
+.main-bottom-img-1-two{
+  bottom: -10px;
+  top: 1135px;
+}
+.main-bottom-img-2-two{
+  top: 1165px;
+}
+}
+
+/*======================================================================================================================================================================*/
+@media only screen and (max-width: 480px) {
+
+/*----------Header------------*/
+.wrapper-header{
+  max-height: 40px;
+}
+.container-menu-inside{
+  height: 40px;
+}
+.container-menu-nav-1024px{
+  max-width: 480px;
+  width: 100%;
+}
+.three-lines{
+  left: 10px;
+  padding-left: 0;
+  margin-left: 0;
+  height: 40px;
+}
+.line-1{
+  max-width: 20px;
+  top: 13px;
+}
+.line-2{
+  max-width: 20px;
+  top: 20px;
+}
+.line-3{
+  max-width: 20px;
+  top: 27px;
+}
+.change .line-1{
+  transform: rotate(-45deg) translate(-9px, 3px);
+  z-index: 99999;
+  transition: 0.4s;
+}
+.change .line-3{
+  transform: rotate(45deg) translate(-7px, -1px);
+  z-index: 99999;
+  transition: 0.4s;
+}
+.container-centre-logo{
+  left: 36%;
+}
+.mini-logo-text a{
+  font-size: 26px;
+}
+.mini-logo{
+  width: 28px;
+  height: 25px;
+  padding-top: 7px;
+}
+.mini-logo-text{
+  padding-left: 7px;
+  margin-top: 0;
+  line-height: 42px;
+  font-size: 26px;
+}
+.user-log-icon{
+  width: 25px;
+  height: 21px;
+}
+.move-right{
+  left: 293px
+}
+/*------Modal window-----*/
+.modal{
+  max-width: 480px;
+  width: 100%;
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 40px;
+  height: 234px;
+  background: #3e3d3d;
+  box-shadow: 0 2px 5px -2px #000 inset;
+  padding: 2px 0;
+  overflow: hidden;
+  z-index: 25;
+}
+.modal-container-1{
+  max-width: 340px;
+  width: 100%;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-right: none;
+  position: relative;
+}
+.modal-contant{
+  display: block;
+}
+.modal-text-1{
+  margin-top: 25px;
+  font-size: 14px;
+  max-width: 340px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.input-container{
+  display: block;
+  max-width: 340px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#email{
+  width: 100%;
+  margin-right: 0;
+  max-width: 340px;
+  box-sizing: border-box;
+  height: 30px;
+}
+#passw{
+  width: 100%;
+  margin-right: 0;
+  margin-top: 10px;
+  max-width: 340px;
+  box-sizing: border-box;
+  height: 30px;
+}
+.modal-button{
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+}
+.modal-text-3{
+  position: absolute;
+  left: 0;
+  top: 117px;
+  height: 20px;
+  border-bottom: 1px solid #565656;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.modal-text-2{
+  top: 142px;
+}
+.modal-container-2{
+  max-width: 400px;
+  width: 100%;
+  padding-top: 0;
+  padding-left: 0;
+  margin-left:  auto;
+  margin-right:  auto;
+  display: flex;
+  justify-content: space-between;
+}
+#modal-text-4{
+  text-align: left;
+  margin-left: 0;
+  max-width: 125px;
+  width: 100%;
+  margin-top: 21px;
+}
+#registration-but{
+  margin-top: 13px;
+}
+.close{
+  display: none;
+}
+.close-window-modal{
+  display: none;
+  z-index: 99999;
+}
+/*-----------Main------------*/
+.head-text-container{
+  max-width: 480px;
+  width: 100%;
+  max-height: 35px;
+  overflow: hidden;
+}
+.text-1{
+  font-size: 14px;
+  padding-top: 13px;
+}
+.main-information-container{
+  padding-top: 21px;
+  max-width: 480px;
+  width: 100%;
+}
+.heading-1{
+  font-size: 16px;
+}
+.main-text-container{
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.advantages-containers{
+  margin-top: 41px;
+  max-width: 295px;
+  width: 100%;
+}
+.advantages-containers-layer-1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.advantages-container-1{
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 130px;
+  overflow: hidden;
+}
+.advantages-container-2{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 130px;
+  overflow: hidden;
+}
+.advantages-container-3{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 130px;
+  overflow: hidden;
+}
+.message-container{
+  margin-top: 65px;
+  max-width: 480px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-13{
+  font-size: 14px;
+}
+.form-container{
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-on-top{
+  display: block;
+}
+.group{
+  width: 100%;
+}
+#mail-adress{
+  margin-top: 50px;
+}
+#button-plane{
+  margin-top: 22px;
+  margin-bottom: 23px;
+}
+.main-bottom-img-1-two{
+  top: 1341px;
+}
+.main-bottom-img-2-two{
+  width: 60px;
+  top: 1349px;
+}
+}
+
+/*======================================================================================================================================================================*/
+@media only screen and (max-width: 412px) {
+/*---------Main----------*/
+.main-bottom-img-1-two{
+  top: 1375px;
+}
+.main-bottom-img-2-two{
+  top: 1353px;
+}
+}
+
+/*======================================================================================================================================================================*/
+@media only screen and (max-width: 367px) {
+  /*---------Main----------*/
+  .main-bottom-img-1-two{
+    top: 1400px;
+  }
+  .main-bottom-img-2-two{
+    top: 1392px;
+  }
+}
+
+/*======================================================================================================================================================================*/
+@media only screen and (max-width: 320px) {
+/*-------header----------*/
+.user-log-icon{
+  margin-right: 8px;
+}
+.side-bar-container{
+  max-width: 280px;
+}
+.move-right{
+  padding-left: 15px;
+  left: 281px;
+  width: 45px;
+  height: 40px;
+  margin-left: 0;
+}
+.container-text-top img{
+  width: 36px;
+  height: 32px;
+}
+.container-text-bottom p{
+  font-size: 12px;
+}
+/*------------Main---------------*/
+.shadow-container{
+  max-height: 35px;
+}
+.main-information-container{
+  max-width: 320px;
+  width: 100%;
+  padding-top: 17px;
+}
+.main-text-container{
+  max-width: 308px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 253px;
+  overflow: hidden;
+}
+.advantages-container-1{
+  max-width: 295px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 117px;
+  overflow: hidden;
+}
+.text-8-two{
+  margin-top: 13px;
+  font-size: 12px;
+}
+.advantages-container-2{
+  margin-top: 50px;
+  max-width: 295px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 112px;
+  overflow: hidden;
+}
+.text-9-two{
+  margin-top: 13px;
+  font-size: 12px;
+}
+.advantages-container-3{
+  margin-top: 50px;
+  max-width: 295px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 119px;
+  overflow: hidden;
+}
+.text-10-two{
+  margin-top: 13px;
+  font-size: 12px;
+}
+.message-container{
+  margin-top: 103px;
+  max-width: 320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-container{
+  max-width: 310px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#button-plane{
+  max-width: 160px;
+  width: 100%;
+  max-height: 35px;
+  overflow: hidden;
+}
+.send-button{
+  height: 35px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  line-height: 15px;
+}
+.main-bottom-img-1-two{
+  width: 42px;
+  height: 110px;
+  top: 1334px;
+}
+.main-bottom-img-2-two{
+  width: 47px;
+  top: 1330px;
+}
+/*----------Modal menu-----------*/
+.modal{
+  width: 100%;
+}
+.modal-contant{
+  max-width: 225px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.modal-text-3{
+  font-size: 11px;
+  top: 120px;
+  height: 11px;
+  margin-left: 20px;
+}
+.modal-text-1{
+  font-size: 12px;
+}
+#registration-but{
+  max-width: 94px;
+  width: 100%;
+  margin-left: 0;
+}
+#modal-text-4{
+  font-size: 12px;
+  max-width: 120px;
+  width: 100%;
 }
 }

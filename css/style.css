@@ -1418,6 +1418,17 @@ z-index: 1000;
     padding-left: 11px;
     box-sizing: border-box;
     background-color: #2d2b2b;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 99999;
+    cursor: pointer;
+    margin-left: 0;
+}
+.move-right {
+    margin-left: 280px;
+    visibility: visible;
+    z-index: 999999;
 }
 .line-1{
     bottom: 0;
@@ -1435,6 +1446,9 @@ z-index: 1000;
     transform: rotate(45deg) translate(-5px, -1px);
     z-index: 99999;
     transition: 0.4s;
+}
+.user-log-icon{
+    margin-right: 10px;
 }
 /*------------Main--------------*/
 .container-coffee-left p{
