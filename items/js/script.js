@@ -1,3 +1,4 @@
+//==================================================================================================================================================================Full
  //Modal window for REST OF PAGES
  function ModalAll() {
      // Get modal element
@@ -7,17 +8,23 @@
      var modalImgAll = document.getElementsByClassName('log-img')[0];
      // Get close button
      var closeBtnAll = document.getElementById('close');
+     var lines768px = document.getElementsByClassName('three-lines')[0];
      // Get filter
      var filter = document.getElementsByClassName('wrapper')[0];
      var lolll = document.getElementsByTagName('body')[0];
 
+    //Get open modal on 1024px
+     var modal1024px = document.getElementsByClassName('user-log-icon')[0];
+     var menuBar = document.getElementsByClassName('menu-bar')[0];
 
      // Listen for open click
      modalBtnAll.addEventListener('click', openModalAll);
      modalImgAll.addEventListener('click', openModalAll);
+     modal1024px.addEventListener('click', openModalAll);
 
      // Listen for close click
      closeBtnAll.addEventListener('click', closeModalAll);
+     lines768px.addEventListener('click',closeModalAll);
      // Listen for outside click
      window.addEventListener('click', outsideClickAll);
 
@@ -25,22 +32,22 @@
      function openModalAll(){
          modalAll.style.display = 'block';
          //Get dark background filter for page
+         $('.menu-bar').addClass('back-grey');
             filter.style.backgroundColor = 'rgba(62,62,62,.5)';
          $('.item-container').addClass('back');
          // $('.main-information-container').addClass('back');              not right
 
-
          //Get scroll OFF
          var curScrollTop = $(window).scrollTop();
          $('html').toggleClass('noscroll').css('top', '-' + curScrollTop + 'px');
-//==================================================================================================================================================================
      }
 
      // Function to close modal
      function closeModalAll(){
          modalAll.style.display = 'none';
-         filter.style.filter = 'none';
+         // filter.style.filter = 'none';
          //Get OFF dark background filter for page
+         $('.menu-bar').removeClass('back-grey');
          filter.style.backgroundColor = 'rgba(0,0,0,0)';
          //Get  scroll ON
          $('html').toggleClass('noscroll');
@@ -50,17 +57,24 @@
 
      // Function to close modal if outside click
      function outsideClickAll(e){
-         if(e.target === modalAll){
+         if(e.target === modalAll || e.target === menuBar){
              modalAll.style.display = 'none';
-             filter.style.filter = 'none';
+             $('#registration-modal').toggleClass('close-window-modal');
+             // filter.style.filter = 'none';
              //Get OFF dark background filter for page
              filter.style.backgroundColor = 'rgba(0,0,0,0)';
              //Get  scroll ON
+             $('#registration-modal').css('display','none');
+             $('.menu-bar').removeClass('back-grey');
              $('html').toggleClass('noscroll');
              $('.item-container').removeClass('back');
              // $('.main-information-container').removeClass('back');               not right
          }
      }
+     //Function to get no-scroll on three-lines click
+     $('.three-lines').on('click', function () {
+         $('html').toggleClass('noscroll');
+     })
  }
  ModalAll();
 
@@ -81,7 +95,7 @@
 
 
 
-//----------------------------------------------------===============================================================
+//----------------------------------------------------===============================================================Full
 //Pagination function
  var nombrePage = $(".page").length;
 
@@ -109,7 +123,7 @@
 
  showPage(0);
 
- //----------------------------------------------------===============================================================
+ //----------------------------------------------------===============================================================Full
 //Text collapse-1
  $(document).ready(function(){
      $("#arrow-up").click(function(){
@@ -117,7 +131,7 @@
      })
  });
 
- //----------------------------------------------------===============================================================
+ //----------------------------------------------------===============================================================Full
 //Change arrow up and down for text collapse-1
  $("#arrow-up").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/downwards-arrow-key-down.png")
@@ -127,13 +141,13 @@
 
  });
 
- //----------------------------------------------------===============================================================
+ //----------------------------------------------------===============================================================Full
  //Change arrow up and down position
 $('#arrow-up').on('click',function () {
     $(this).toggleClass('arrow-up-down');
 });
 
- //----------------------------------------------------===============================================================
+ //----------------------------------------------------===============================================================Full
  //Display none for word "more" for collapse-2
  $(document).ready(function(){
      $(".img-arrow-up").click(function(){
@@ -141,7 +155,7 @@ $('#arrow-up').on('click',function () {
      })
  });
 
- //----------------------------------------------------===============================================================
+ //----------------------------------------------------===============================================================Full
  //Text collapse-2
  $(document).ready(function(){
      $(".img-arrow-up").click(function(){
@@ -149,7 +163,7 @@ $('#arrow-up').on('click',function () {
      })
  });
 
- //----------------------------------------------------===============================================================
+ //----------------------------------------------------===============================================================Full
  //Change arrow up and down for text collapse-2
  $(".img-arrow-up").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/downwards-arrow-key-down.png")
@@ -158,7 +172,7 @@ $('#arrow-up').on('click',function () {
      $(this).attr("src", src);
  });
 
- //----------------------------------------------------===============================================================
+ //----------------------------------------------------===============================================================Full
  //Change icon to share
  $(".soc-img-1").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/sharing-interface.png")
@@ -167,7 +181,7 @@ $('#arrow-up').on('click',function () {
      $(this).attr("src", src);
  });
 
- //----------------------------------------------------===============================================================
+ //----------------------------------------------------===============================================================Full
  //Change icon to love
  $(".soc-img-2").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/love.png")
@@ -176,7 +190,7 @@ $('#arrow-up').on('click',function () {
      $(this).attr("src", src);
  });
 
- //----------------------------------------------------===============================================================
+ //----------------------------------------------------===============================================================Full
 //Filter by type GROUND COFFEE
  $(document).ready(function () {
 
@@ -198,7 +212,7 @@ $('#arrow-up').on('click',function () {
 
      });
 
- //----------------------------------------------------===============================================================
+ //----------------------------------------------------===============================================================Full
  //Filter by type COFFEE BEANS
  $(document).ready(function () {
 
@@ -228,7 +242,7 @@ $('#arrow-up').on('click',function () {
 
  });
 
- //----------------------------------------------------===============================================================
+ //----------------------------------------------------===============================================================Full
  //Filter by BRAND
 
 $(document).ready(function () {
@@ -311,7 +325,7 @@ $(document).ready(function () {
     });
 });
 
- //-----------------------------------===============================
+ //-----------------------------------===============================Full
  //Scroll on all page
  $(function() {
 
@@ -319,14 +333,14 @@ $(document).ready(function () {
 
  });
 
- //-----------------------------------===============================
+ //-----------------------------------===============================Full
  //Transition function for preloader on modal window
  $('#modal-button').on('click',function () {
      $('#linePreloader').toggleClass("lineClick");
      console.log('bvhdfabvdffd');
  });
 
- //-----------------------------------===============================
+ //-----------------------------------===============================Full
  //Function for validation form on modal menu
  var email = $('#email').val();
  var password = $('#passw').val();
@@ -346,7 +360,7 @@ $(document).ready(function () {
      setInterval(myInterval,5000);
  });
 
- //-----------------------------------===============================
+ //-----------------------------------===============================Full
  //Function to open and close input password on modal window in case when user forgot password
  $('.modal-text-3').on('click',function () {
      $(this).text(function(i, v){
@@ -360,6 +374,39 @@ $(document).ready(function () {
      $('#email').toggleClass('widthEmail');
  });
 
+ //-----------------------------------===============================1024
+ //Scroll show and hide footer back on top button
+ // $(window).scroll(function(){
+ //     var top = $(window).scrollTop();
+ //     if( top > 1450) {
+ //         $(".container-back-to-top-1024px").css('visibility', 'visible');
+ //     } else {
+ //         $(".container-back-to-top-1024px").css('visibility', 'hidden');
+ //     }
+ // });
+ //-----------------------------------===============================1024
+ //Function to get on top when user will make a click on arrow up icon or under this icon text
+ $('.back-icon').on('click', function () {
+     $("html, body").animate({ scrollTop: 0 }, 600);
+     return false;
+ });
+
+ $('.back-text').on('click', function () {
+     $("html, body").animate({ scrollTop: 0 }, 600);
+     return false;
+ });
+
+ //-----------------------------------===============================1024
+ //Function to open left modal window and grey background on main page(working version with animation cross)
+ $(document).ready(function(){
+     $('.three-lines').click(function(){
+         $('.side-bar-container').toggleClass('ground-grey');
+         $('.menu-bar').toggleClass('background-grey-color');
+         $(this).toggleClass('move-right');
+         $('html').toggleClass('noscroll');
+         $(this).toggleClass('change');
+     });
+ });
 
 
 

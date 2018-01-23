@@ -942,7 +942,7 @@ visibility: hidden;
     margin-bottom: auto;
     z-index: 99999;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 18px;
 }
 .line-1{
     background-color: #FFFFFF;
@@ -1050,7 +1050,7 @@ visibility: hidden;
     transition: all 0.1s ease;
 }
 .move-right{
-    margin-left: 283px;
+    margin-left: 285px;
     visibility: visible;
     z-index: 999999;
 }
@@ -1409,10 +1409,10 @@ z-index: 1000;
     display: flex;
     margin: auto;
     position: absolute;
-    left: 40%;
+    left: 33%;
 }
 .three-lines{
-    max-width: 50px;
+    /*max-width: 50px;*/
     width: 100%;
     height: 50px;
     padding-left: 11px;
@@ -1426,16 +1426,23 @@ z-index: 1000;
     margin-left: 0;
 }
 .move-right {
-    margin-left: 280px;
+    margin-left: 277px;
     visibility: visible;
     z-index: 999999;
+    padding-right: 17px;
+    max-width: 50px;
+    width: 100%;
+    padding-left: 15px;
 }
 .line-1{
     bottom: 0;
-    top: 15px;
+    top: 17px;
+}
+.line-2{
+    top: 25px;
 }
 .line-3{
-    top: 29px;
+    top: 33px;
 }
 .change .line-1{
     transform: rotate(-45deg) translate(-9px, 5px);
@@ -1443,7 +1450,7 @@ z-index: 1000;
     transition: 0.4s;
 }
 .change .line-3 {
-    transform: rotate(45deg) translate(-5px, -1px);
+    transform: rotate(45deg) translate(-6px, -2px);
     z-index: 99999;
     transition: 0.4s;
 }
@@ -1772,10 +1779,12 @@ z-index: 1000;
     width: 100%;
 }
 .three-lines{
+    max-width: 40px;
+    width: 100%;
     left: 10px;
-    padding-left: 0;
     margin-left: 0;
     height: 40px;
+    padding-left: 0;
 }
 .line-1{
    max-width: 20px;
@@ -1821,7 +1830,9 @@ z-index: 1000;
     height: 21px;
 }
 .move-right{
-    left: 293px
+    left: 276px;
+    padding-left: 14px;
+    padding-right: 10px;
 }
 .scroll{
     width: 24px;

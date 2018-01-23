@@ -83,6 +83,7 @@
          //Get dark background filter for page
          $('.menu-bar').addClass('back-grey');
          // filter.style.backgroundColor = 'rgba(0,0,0,.3)'; This is working so do not delete. May it be here for the first time
+
          //Get scroll OFF
          var curScrollTop = $(window).scrollTop();
          $('html').toggleClass('noscroll').css('top', '-' + curScrollTop + 'px');
