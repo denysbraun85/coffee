@@ -928,7 +928,7 @@ header{
   display: flex;
   margin: auto;
   position: absolute;
-  left: 43%;
+  left: 39.5%;
 }
 .wrapper-grey{
   max-width: 1024px;
@@ -1199,10 +1199,6 @@ main{
 
 /*======================================================================================================================================================================*/
 @media only screen and (max-width: 768px) {
-  /*------Header------*/
-.container-centre-logo{
-  left: 40%;
-}
 /*----------Modal menu----------*/
 .modal{
   max-width: 768px;
@@ -1253,7 +1249,7 @@ main{
   display: flex;
   margin: auto;
   position: absolute;
-  left: 33%;
+  left: 39.5%;
 }
 .three-lines{
   /*max-width: 50px;*/
@@ -1479,7 +1475,7 @@ main{
   transition: 0.4s;
 }
 .container-centre-logo{
-  left: 36%;
+  left: 39.5%;
 }
 .mini-logo-text a{
   font-size: 26px;

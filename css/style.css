@@ -1198,7 +1198,7 @@ visibility: hidden;
     display: flex;
     margin: auto;
     position: absolute;
-    left: 44%;
+    left: 39.5%;
 }
 .wrapper-grey{
     max-width: 1024px;
@@ -1409,7 +1409,7 @@ z-index: 1000;
     display: flex;
     margin: auto;
     position: absolute;
-    left: 33%;
+    left: 39.5%;
 }
 .three-lines{
     /*max-width: 50px;*/
@@ -1809,7 +1809,7 @@ z-index: 1000;
     transition: 0.4s;
 }
 .container-centre-logo{
-    left: 36%;
+    left: 39.5%;
 }
 .mini-logo-text a{
     font-size: 26px;
