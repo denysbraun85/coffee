@@ -1770,6 +1770,24 @@ z-index: 1000;
 }
 /*======================================================================================================================================================================*/
 @media only screen and (max-width: 480px) {
+
+/*------Sidebar style------*/
+.side-bar-container{
+    padding-bottom: 200px;
+}
+.container-push{
+    margin-top: 19px;
+}
+.pages{
+    margin-top: 40px;
+}
+.container-language{
+    margin-top: 39px;
+}
+.social-links{
+    margin-top: 16px;
+    margin-bottom: 14px;
+}
 /*----------Header------------*/
 .container-menu-inside{
     height: 40px;
@@ -1997,6 +2015,23 @@ header{
 }
 .container-text-bottom p{
     font-size: 12px;
+}
+/*------Sidebar style------*/
+.side-bar-container{
+    padding-bottom: 200px;
+}
+.container-push{
+    margin-top: 19px;
+}
+.pages{
+    margin-top: 40px;
+}
+.container-language{
+    margin-top: 39px;
+}
+.social-links{
+    margin-top: 16px;
+    margin-bottom: 14px;
 }
 /*---------Main-----------*/
 .container-coffee{

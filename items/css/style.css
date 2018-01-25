@@ -1477,6 +1477,23 @@ footer{
 
 /*======================================================================================================================================================================*/
 @media only screen and (max-width: 480px) {
+  /*------Sidebar style------*/
+  .side-bar-container{
+    padding-bottom: 200px;
+  }
+  .container-push{
+    margin-top: 19px;
+  }
+  .pages{
+    margin-top: 40px;
+  }
+  .container-language{
+    margin-top: 39px;
+  }
+  .social-links{
+    margin-top: 16px;
+    margin-bottom: 14px;
+  }
   /*----------Header------------*/
   .wrapper-header{
     max-height: 40px;
@@ -1646,6 +1663,38 @@ footer{
   .close-window-modal{
     display: none;
     z-index: 99999;
+  }
+/*-----------Main-----------*/
+.head-text-container{
+  max-width: 480px;
+  width: 100%;
+  max-height: 35px;
+  overflow: hidden;
+}
+.text-1{
+  font-size: 14px;
+  padding-top: 13px;
+}
+}
+
+/*======================================================================================================================================================================*/
+@media only screen and (max-width: 320px) {
+  /*------Sidebar style------*/
+  .side-bar-container{
+    padding-bottom: 200px;
+  }
+  .container-push{
+    margin-top: 19px;
+  }
+  .pages{
+    margin-top: 40px;
+  }
+  .container-language{
+    margin-top: 39px;
+  }
+  .social-links{
+    margin-top: 16px;
+    margin-bottom: 14px;
   }
 }
 
