@@ -7,6 +7,7 @@
     <title>Items</title>
     <link rel="stylesheet" type="text/css" href="../libs/slick-1.8.0/slick-1.8.0/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="../libs/slick-1.8.0/slick-1.8.0/slick/slick-theme.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link type="text/css" rel="stylesheet" href="../libs/flaviusmatis-simplePagination.js-e32c66e/simplePagination.css"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -122,7 +123,38 @@
     </div>
     <div class="wrapper">
         <div class="main-information-container">
+            <!--480px-->
+            <div class="filter-container">
+                <div class="filter-brand">
+                    <form action="">
+                        <select name="" id="brand-select" size="1">
+                            <option value="LAVAZZA" selected>LAVAZZA</option>
+                            <option value="KIMBO">KIMBO</option>
+                            <option value="DALMAYR">DALMAYR</option>
+                            <option value="GIMOKA">GIMOKA</option>
+                            <option value="EILLES">EILLES</option>
+                            <option value="MOVENPICK">MOVENPICK</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="filter-type">
+                    <form action="">
+                        <select name="" id="type-select" size="1">
+                            <option value="GROUND" selected>GROUND</option>
+                            <option value="BEANS">BEANS</option>
+                            <option value="ALL">ALL</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="item-info">
+                    <img id="ic" src="../img/main/ic_info_outline_black_18px.png" alt="ic_info">
+                    <p class="item-info-text">box \ pallet price info</p>
+                    <img id="keyboard-arrow" src="../img/main/ic_keyboard_arrow_left_black_18px.png" alt="ic_keyboard">
+                </div>
+            </div>
+            <!--------->
             <div class="item-container">
+
                 <div class="check-bar">
                     <div class="filter-brand-container">
                         <p class="head-text-1">filter brand</p>
@@ -156,24 +188,36 @@
                            <div class="item-cell" id="cell-1">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/Lavazza-Crema-e--Aroma-Espresso-Blue--beans-1-kg.png" alt="Lavazza-Crema-e--Aroma-Espresso-Blue--beans-1-kg">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
                            <div class="item-cell" id="cell-2">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
                            <div class="item-cell" id="cell-3">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/kimbo_premium_base.png" alt="kimbo_premium_base">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
                            <div class="item-cell" id="cell-4">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                                <!--768px--->
@@ -183,6 +227,9 @@
                            <div class="item-cell" id="cell-5">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                                <!--768px--->
@@ -192,6 +239,9 @@
                            <div class="item-cell" id="cell-6">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                                <!--768px--->
@@ -201,12 +251,18 @@
                            <div class="item-cell" id="cell-7">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/kimbo_premium_base.png" alt="kimbo_premium_base">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
                            <div class="item-cell" id="cell-8">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
@@ -215,24 +271,36 @@
                            <div class="item-cell" id="cell-9">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/Lavazza-Crema-e--Aroma-Espresso-Blue--beans-1-kg.png" alt="Lavazza-Crema-e--Aroma-Espresso-Blue--beans-1-kg">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2"></b></p>
                            </div>
                            <div class="item-cell" id="cell-10">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2"></b></p>
                            </div>
                            <div class="item-cell" id="cell-11">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/kimbo_premium_base.png" alt="kimbo_premium_base">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
                            <div class="item-cell" id="cell-12">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                                <!--768px--->
@@ -242,6 +310,9 @@
                            <div class="item-cell" id="cell-13">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                                <!--768px--->
@@ -251,6 +322,9 @@
                            <div class="item-cell" id="cell-14">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                                <!--768px--->
@@ -260,12 +334,18 @@
                            <div class="item-cell" id="cell-15">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/kimbo_premium_base.png" alt="kimbo_premium_base">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
                            <div class="item-cell" id="cell-16">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
@@ -274,24 +354,36 @@
                            <div class="item-cell" id="cell-17">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/Lavazza-Crema-e--Aroma-Espresso-Blue--beans-1-kg.png" alt="Lavazza-Crema-e--Aroma-Espresso-Blue--beans-1-kg">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
                            <div class="item-cell" id="cell-18">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
                            <div class="item-cell" id="cell-19">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/kimbo_premium_base.png" alt="kimbo_premium_base">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
                            <div class="item-cell" id="cell-20">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                                <!--768px--->
@@ -301,6 +393,9 @@
                            <div class="item-cell" id="cell-21">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                                <!--768px--->
@@ -310,6 +405,9 @@
                            <div class="item-cell" id="cell-22">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                                <!--768px--->
@@ -319,12 +417,18 @@
                            <div class="item-cell" id="cell-23">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/kimbo_premium_base.png" alt="kimbo_premium_base">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
                            <div class="item-cell" id="cell-24">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
@@ -333,24 +437,36 @@
                            <div class="item-cell" id="cell-25">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/Lavazza-Crema-e--Aroma-Espresso-Blue--beans-1-kg.png" alt="Lavazza-Crema-e--Aroma-Espresso-Blue--beans-1-kg">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
                            <div class="item-cell" id="cell-26">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
                            <div class="item-cell" id="cell-27">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/kimbo_premium_base.png" alt="kimbo_premium_base">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
                            <div class="item-cell" id="cell-28">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                                <!--768px--->
@@ -360,6 +476,9 @@
                            <div class="item-cell" id="cell-29">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                                <!--768px--->
@@ -369,6 +488,9 @@
                            <div class="item-cell" id="cell-30">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                                <!--768px--->
@@ -378,12 +500,18 @@
                            <div class="item-cell" id="cell-31">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/kimbo_premium_base.png" alt="kimbo_premium_base">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
                            <div class="item-cell" id="cell-32">
                                <p class="head-text-2">Lavazza Crema e <br> Aroma Espresso Blue <br> beans 1 kg</p>
                                <img class="item-cell-icon" src="../img/main/lavazza_grand_espresso_copy.png" alt="lavazza_grand_espresso_copy">
+                               <!--480px-->
+                               <img class="item-cell-icon-480px" src="../img/main/lavazza_grand_espresso-480px.png" alt="lavazza_grand_espresso">
+                               <!--------->
                                <p class="box-price">box price<b class="price-1">1,86 €</b></p>
                                <p class="pallet-price">pallet price<b class="rice-2">1,43 €</b></p>
                            </div>
@@ -486,6 +614,7 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="../libs/slick-1.8.0/slick-1.8.0/slick/slick.min.js"></script>
 <script src="../libs/flaviusmatis-simplePagination.js-e32c66e/jquery.simplePagination.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 <script src="../libs/jQuery-Plugin-For-Smooth-Mouse-Scrolling-scrollSpeed/jQuery.scrollSpeed.js"></script>
 <script src="./js/script.js"></script>
 

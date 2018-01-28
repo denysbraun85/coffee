@@ -44,6 +44,15 @@ header ul {
 .conrainer-img-768px{
   display: none;
 }
+.filter-container{
+  display: none;
+}
+.price-log{
+  display: none;
+}
+.item-cell-icon-480px{
+  display: none;
+}
 /*-------For background on modal open----------*/
 .back{
   position: relative;
@@ -1665,6 +1674,9 @@ footer{
     z-index: 99999;
   }
 /*-----------Main-----------*/
+  .shadow-container{
+    max-height: 35px;
+  }
 .head-text-container{
   max-width: 480px;
   width: 100%;
@@ -1675,6 +1687,88 @@ footer{
   font-size: 14px;
   padding-top: 13px;
 }
+/*---------Brand select------*/
+  .check-bar{
+    display: none;
+  }
+  .main-information-container{
+    padding-top: 0;
+  }
+  .menu-bar{
+    position: inherit;
+  }
+  .filter-container{
+    display: flex;
+    max-width: 480px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9000;
+    max-height: 30px;
+  }
+  .item-info{
+    max-width: 252px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .item-info-text{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .item-info img{
+    height: fit-content;
+  }
+  .item-container{
+    max-width: 460px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+  }
+  .page-container{
+    margin-top: 0;
+  }
+  .item-cell {
+    max-width: 150px;
+    overflow: hidden;
+    padding: 13px 6px 8px;
+    max-height: 251px;
+    margin-right: 5px;
+    margin-bottom: 6px;
+    margin-left: 0;
+  }
+  .item-cell-icon{
+   display: none;
+  }
+  .item-cell-icon-480px{
+    display: block;
+    margin: 26px auto 17px;
+  }
+  .head-text-2{
+    font-size: 12px;
+  }
+  .box-price{
+    font-size: 11px;
+    padding-bottom: 8px;
+  }
+  .pallet-price{
+    font-size: 11px;
+  }
+  .price-1{
+    font-size: 14px;
+    padding-left: 43px;
+  }
+  .rice-2{
+    font-size: 14px;
+    padding-left: 26px;
+  }
+
+
+
 }
 
 /*======================================================================================================================================================================*/
@@ -1696,5 +1790,6 @@ footer{
     margin-top: 16px;
     margin-bottom: 14px;
   }
+
 }
 

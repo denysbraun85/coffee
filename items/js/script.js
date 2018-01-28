@@ -408,6 +408,32 @@ $(document).ready(function () {
      });
  });
 
+//-----------------------------------===============================480
+//Function for select brand
+ $(document).ready(function () {
+         $('#brand-select').select2({
+             placeholder: 'Select an option',
+             width: '150px',
+             minimumResultsForSearch: -1
+             // theme: "example"
+         })
+ }
+ );
+
+//-----------------------------------===============================480
+//Function for select type
+$(document).ready(function () {
+        $('#type-select').select2({
+            placeholder: 'Select an option',
+            width: '80px',
+            minimumResultsForSearch: -1
+            // theme: "example"
+        })
+    }
+);
+
+
+
 
 
 
