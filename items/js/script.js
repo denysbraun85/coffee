@@ -425,7 +425,7 @@ $(document).ready(function () {
 $(document).ready(function () {
         $('#type-select').select2({
             placeholder: 'Select an option',
-            width: '80px',
+            width: '90px',
             minimumResultsForSearch: -1
             // theme: "example"
         })

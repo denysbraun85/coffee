@@ -53,6 +53,18 @@ header ul {
 .item-cell-icon-480px{
   display: none;
 }
+.page-container-480px{
+  display: none;
+}
+.text-4-480px{
+  display: none;
+}
+.text-7-480px{
+  display: none;
+}
+.conrainer-img-480px{
+  display: none;
+}
 /*-------For background on modal open----------*/
 .back{
   position: relative;
@@ -1695,7 +1707,8 @@ footer{
     padding-top: 0;
   }
   .menu-bar{
-    position: inherit;
+    /*position: inherit;*/
+    position: relative;
   }
   .filter-container{
     display: flex;
@@ -1704,6 +1717,9 @@ footer{
     overflow: hidden;
     z-index: 9000;
     max-height: 30px;
+  }
+  .page-container{
+    display: none;
   }
   .item-info{
     max-width: 252px;
@@ -1737,7 +1753,7 @@ footer{
     overflow: hidden;
     padding: 13px 6px 8px;
     max-height: 251px;
-    margin-right: 5px;
+    /*margin-right: 5px;*/
     margin-bottom: 6px;
     margin-left: 0;
   }
@@ -1766,9 +1782,73 @@ footer{
     font-size: 14px;
     padding-left: 26px;
   }
-
-
-
+.page-container-480px{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 460px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+/*---------------------------*/
+.text-4{
+  display: none;
+}
+.text-4-480px{
+  display: block;
+  line-height: 16px;
+}
+.text-5{
+  margin-top: 10px;
+  margin-bottom: 11px;
+}
+.img-arrow-up{
+  padding-right: 0;
+}
+.last-news-container{
+  margin-top: 22px;
+  padding-bottom: 12px;
+}
+.text-7{
+  display: none;
+}
+.text-7-480px{
+  display: block;
+  color: #494949;
+  max-width: 915px;
+  width: 100%;
+  border-bottom: 1px solid #2d2b2b;
+  text-align: right;
+  font-size: 12px;
+  margin-top: auto;
+  padding-bottom: 9px;
+}
+.text-7-480px a{
+    color: #494949;
+}
+.text-7-480px img{
+    padding-left: 8px;
+    vertical-align: middle;
+}
+.text-7-480px:hover{
+    cursor: pointer;
+}
+.news-container{
+  display: flex;
+  flex-direction: column;
+}
+.news-container-item{
+  max-width: 462px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 11px;
+}
+.conrainer-img-768px{
+  display: none;
+}
+.conrainer-img-480px{
+  display: block;
+}
 }
 
 /*======================================================================================================================================================================*/
