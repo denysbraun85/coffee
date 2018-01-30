@@ -432,6 +432,74 @@ $(document).ready(function () {
     }
 );
 
+//-----------------------------------===============================480
+//Function for filter type
+
+$(document).ready(function () {
+
+$("#cell-33").css('display', 'block');
+$("#cell-34").css('display', 'block');
+$("#cell-35").css('display', 'block');
+$("#cell-36").css('display', 'none');
+$("#cell-37").css('display', 'none');
+$("#cell-38").css('display', 'none');
+$("#cell-39").css('display', 'none');
+$("#cell-40").css('display', 'none');
+$("#cell-41").css('display', 'none');
+$("#cell-42").css('display', 'none');
+$("#cell-43").css('display', 'none');
+$("#cell-44").css('display', 'none');
+
+    $('#type-select').on('change', function () {
+        if($(this).val() === 'GROUND') {
+            $("#cell-33").css('display', 'block');
+            $("#cell-34").css('display', 'block');
+            $("#cell-35").css('display', 'block');
+            $("#cell-36").css('display', 'none');
+            $("#cell-37").css('display', 'none');
+            $("#cell-38").css('display', 'none');
+            $("#cell-39").css('display', 'none');
+            $("#cell-40").css('display', 'none');
+            $("#cell-41").css('display', 'none');
+            $("#cell-42").css('display', 'none');
+            $("#cell-43").css('display', 'none');
+            $("#cell-44").css('display', 'none');
+            console.log('2222222222222222222');
+        }
+        if($(this).val() === 'BEANS'){
+            $("#cell-33").css('display','none');
+            $("#cell-34").css('display','none');
+            $("#cell-35").css('display','none');
+            $("#cell-36").css('display','block');
+            $("#cell-37").css('display','block');
+            $("#cell-38").css('display','block');
+            $("#cell-39").css('display','block');
+            $("#cell-40").css('display','none');
+            $("#cell-41").css('display','none');
+            $("#cell-42").css('display','none');
+            $("#cell-43").css('display','none');
+            $("#cell-44").css('display','none');
+        }
+        if($(this).val() === 'ALL'){
+            $("#cell-33").css('display','block');
+            $("#cell-34").css('display','block');
+            $("#cell-35").css('display','block');
+            $("#cell-36").css('display','block');
+            $("#cell-37").css('display','block');
+            $("#cell-38").css('display','block');
+            $("#cell-39").css('display','block');
+            $("#cell-40").css('display','block');
+            $("#cell-41").css('display','block');
+            $("#cell-42").css('display','block');
+            $("#cell-43").css('display','block');
+            $("#cell-44").css('display','block');
+        }
+    });
+
+ }
+);
+
+
 
 
 
