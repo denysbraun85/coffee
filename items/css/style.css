@@ -65,6 +65,9 @@ header ul {
 .conrainer-img-480px{
   display: none;
 }
+.modal-dialog-container{
+  display: none;
+}
 /*-------For background on modal open----------*/
 .back{
   position: relative;
@@ -1707,7 +1710,10 @@ footer{
     padding-top: 0;
   }
   .menu-bar{
-    /*position: inherit;*/
+    position: inherit;
+    /*position: relative;*/
+  }
+  .menu-bar-position{
     position: relative;
   }
   .filter-container{
@@ -1732,9 +1738,11 @@ footer{
   .item-info-text{
     margin-left: 5px;
     margin-right: 5px;
+    cursor: pointer;
   }
   .item-info img{
     height: fit-content;
+    cursor: pointer;
   }
   .item-container{
     max-width: 460px;
@@ -1788,6 +1796,9 @@ footer{
   max-width: 460px;
   width: 100%;
   justify-content: space-evenly;
+}
+.item-cell{
+  cursor: pointer;
 }
 /*---------------------------*/
 .text-4{
@@ -1852,6 +1863,70 @@ footer{
 .display-none{
   display: none;
 }
+/*-----------Modal window info--------*/
+  .modal-dialog-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 435px;
+    width: 100%;
+    /*overflow: hidden;*/
+    margin-top: 115px;
+    left: 10px;
+    position: fixed;
+    border-radius: 6px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    background-color: #ffffff;
+    opacity: 0;
+    box-sizing: border-box;
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    z-index: 90;
+  }
+  .modal-head-container{
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .modal-head-text-1{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .close-modal-480px{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    right: 11px;
+    top: 5px;
+  }
+  .modal-info-text-container{
+    position: relative;
+    padding: 15px;
+    line-height: 18px;
+  }
+  .modal-head-text-2{
+    color: #646464;
+  }
+  .show{
+    opacity: 1;
+    -webkit-transition: opacity .25s linear;
+    -o-transition: opacity .25s linear;
+    transition: opacity .25s linear;
+  }
 }
 
 /*======================================================================================================================================================================*/
@@ -1873,6 +1948,12 @@ footer{
     margin-top: 16px;
     margin-bottom: 14px;
   }
-
+/*---------*/
+  .filter-brand .select2{
+    width: 98% !important;
+  }
+  .filter-type .select2{
+    width: 90% !important;
+  }
 }
 

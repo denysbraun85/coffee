@@ -402,6 +402,7 @@ $(document).ready(function () {
      $('.three-lines').click(function(){
          $('.side-bar-container').toggleClass('ground-grey');
          $('.menu-bar').toggleClass('background-grey-color');
+         $('.menu-bar').toggleClass('menu-bar-position');
          $(this).toggleClass('move-right');
          $('html').toggleClass('noscroll');
          $(this).toggleClass('change');
@@ -415,7 +416,7 @@ $(document).ready(function () {
              placeholder: 'Select an option',
              width: '150px',
              minimumResultsForSearch: -1
-             // theme: "example"
+
          })
  }
  );
@@ -427,14 +428,13 @@ $(document).ready(function () {
             placeholder: 'Select an option',
             width: '90px',
             minimumResultsForSearch: -1
-            // theme: "example"
+
         })
     }
 );
 
 //-----------------------------------===============================480
 //Function for filter type
-
 $(document).ready(function () {
 
 $("#cell-33").css('display', 'block');
@@ -499,10 +499,130 @@ $("#cell-44").css('display', 'none');
  }
 );
 
+//-----------------------------------===============================480
+//Function for filter brand
 
+$(document).ready(function () {
 
+$("#cell-33").css('display', 'block');
+$("#cell-34").css('display', 'block');
+$("#cell-35").css('display', 'none');
+$("#cell-36").css('display', 'none');
+$("#cell-37").css('display', 'none');
+$("#cell-38").css('display', 'none');
+$("#cell-39").css('display', 'none');
+$("#cell-40").css('display', 'none');
+$("#cell-41").css('display', 'block');
+$("#cell-42").css('display', 'none');
+$("#cell-43").css('display', 'none');
+$("#cell-44").css('display', 'none');
 
+        $('#brand-select').on('change', function () {
+            if($(this).val() === 'LAVAZZA') {
+                $("#cell-33").css('display', 'block');
+                $("#cell-34").css('display', 'block');
+                $("#cell-35").css('display', 'none');
+                $("#cell-36").css('display', 'none');
+                $("#cell-37").css('display', 'none');
+                $("#cell-38").css('display', 'block');
+                $("#cell-39").css('display', 'none');
+                $("#cell-40").css('display', 'none');
+                $("#cell-41").css('display', 'block');
+                $("#cell-42").css('display', 'none');
+                $("#cell-43").css('display', 'block');
+                $("#cell-44").css('display', 'none');
+                console.log('2222222222222222222');
+            }
+            if($(this).val() === 'KIMBO'){
+                $("#cell-33").css('display','none');
+                $("#cell-34").css('display','none');
+                $("#cell-35").css('display','block');
+                $("#cell-36").css('display','block');
+                $("#cell-37").css('display','none');
+                $("#cell-38").css('display','none');
+                $("#cell-39").css('display','none');
+                $("#cell-40").css('display','block');
+                $("#cell-41").css('display','none');
+                $("#cell-42").css('display','block');
+                $("#cell-43").css('display','block');
+                $("#cell-44").css('display','none');
+            }
+            if($(this).val() === 'DALMAYR'){
+                $("#cell-33").css('display','block');
+                $("#cell-34").css('display','none');
+                $("#cell-35").css('display','none');
+                $("#cell-36").css('display','none');
+                $("#cell-37").css('display','block');
+                $("#cell-38").css('display','block');
+                $("#cell-39").css('display','none');
+                $("#cell-40").css('display','none');
+                $("#cell-41").css('display','block');
+                $("#cell-42").css('display','none');
+                $("#cell-43").css('display','none');
+                $("#cell-44").css('display','none');
+            }
+            if($(this).val() === 'GIMOKA'){
+                $("#cell-33").css('display','none');
+                $("#cell-34").css('display','none');
+                $("#cell-35").css('display','blocknone');
+                $("#cell-36").css('display','none');
+                $("#cell-37").css('display','none');
+                $("#cell-38").css('display','none');
+                $("#cell-39").css('display','block');
+                $("#cell-40").css('display','block');
+                $("#cell-41").css('display','none');
+                $("#cell-42").css('display','block');
+                $("#cell-43").css('display','none');
+                $("#cell-44").css('display','none');
+            }
+            if($(this).val() === 'EILLES'){
+                $("#cell-33").css('display','none');
+                $("#cell-34").css('display','none');
+                $("#cell-35").css('display','none');
+                $("#cell-36").css('display','block');
+                $("#cell-37").css('display','none');
+                $("#cell-38").css('display','none');
+                $("#cell-39").css('display','none');
+                $("#cell-40").css('display','none');
+                $("#cell-41").css('display','block');
+                $("#cell-42").css('display','block');
+                $("#cell-43").css('display','none');
+                $("#cell-44").css('display','none');
+            }
+            if($(this).val() === 'MOVENPICK'){
+                $("#cell-33").css('display','none');
+                $("#cell-34").css('display','block');
+                $("#cell-35").css('display','none');
+                $("#cell-36").css('display','block');
+                $("#cell-37").css('display','block');
+                $("#cell-38").css('display','none');
+                $("#cell-39").css('display','block');
+                $("#cell-40").css('display','none');
+                $("#cell-41").css('display','none');
+                $("#cell-42").css('display','none');
+                $("#cell-43").css('display','block');
+                $("#cell-44").css('display','block');
+            }
+        });
 
+    }
+);
 
+//-----------------------------------===============================480
+//Function for open and close modal window info
+$('.item-info').on('click',function () {
+    $('.modal-dialog-container').css('display','block');
+    $('.modal-dialog-container').toggleClass('show');
+    $('.menu-bar').toggleClass('background-grey-color');
+    $('.menu-bar').toggleClass('menu-bar-position');
+    $('html').toggleClass('noscroll');
+});
 
+$('.close-modal-480px').on('click',function () {
+    $('.modal-dialog-container').css('display','none');
+    $('.modal-dialog-container').toggleClass('show');
+    $('.menu-bar').removeClass('background-grey-color');
+    $('.menu-bar').removeClass('menu-bar-position');
+    $('html').removeClass('noscroll');
+});
 
