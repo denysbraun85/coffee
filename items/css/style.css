@@ -1501,6 +1501,9 @@ footer{
 
 /*======================================================================================================================================================================*/
 @media only screen and (max-width: 480px) {
+    .item-info-text-2{
+        display: none;
+    }
   /*------Sidebar style------*/
   .side-bar-container{
     padding-bottom: 200px;
@@ -1865,13 +1868,13 @@ footer{
 }
 /*-----------Modal window info--------*/
   .modal-dialog-container{
-    display: flex;
+    display: none;
     flex-direction: column;
     max-width: 435px;
-    width: 100%;
+    width: 90%;
     /*overflow: hidden;*/
     margin-top: 115px;
-    left: 10px;
+    /*left: 10px;*/
     position: fixed;
     border-radius: 6px;
     box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
@@ -1886,6 +1889,10 @@ footer{
     -o-transform: translate(0, -25%);
     transform: translate(0, -25%);
     z-index: 90;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+      left: 0;
   }
   .modal-head-container{
     padding: 15px;
@@ -1930,30 +1937,57 @@ footer{
 }
 
 /*======================================================================================================================================================================*/
+@media only screen and (max-width: 363px) {
+    #ic{
+        display: none;
+    }
+    .item-info-text{
+        display: none;
+    }
+    .item-info-text-2{
+        display: block;
+        font-size: 11px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+/*======================================================================================================================================================================*/
 @media only screen and (max-width: 320px) {
-  /*------Sidebar style------*/
-  .side-bar-container{
-    padding-bottom: 200px;
-  }
-  .container-push{
-    margin-top: 19px;
-  }
-  .pages{
-    margin-top: 40px;
-  }
-  .container-language{
-    margin-top: 39px;
-  }
-  .social-links{
-    margin-top: 16px;
-    margin-bottom: 14px;
-  }
-/*---------*/
-  .filter-brand .select2{
-    width: 98% !important;
-  }
-  .filter-type .select2{
-    width: 90% !important;
-  }
+/*----------Main-----------*/
+.text-container{
+    margin-top: 137px;
+}
+.text-4-480px{
+    max-height: 62px;
+    overflow:  hidden;
+}
+.text-5{
+    cursor: pointer;
+}
+/*------Sidebar style------*/
+.side-bar-container{
+  padding-bottom: 200px;
+}
+.container-push{
+  margin-top: 19px;
+}
+.pages{
+  margin-top: 40px;
+}
+.container-language{
+  margin-top: 39px;
+}
+.social-links{
+  margin-top: 16px;
+  margin-bottom: 14px;
+}
+/*------Select width-------*/
+.filter-brand .select2{
+  width: 148px !important;
+}
+.filter-type .select2{
+  width: 80px !important;
+}
 }
 

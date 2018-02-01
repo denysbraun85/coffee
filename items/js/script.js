@@ -33,6 +33,7 @@
          modalAll.style.display = 'block';
          //Get dark background filter for page
          $('.menu-bar').addClass('back-grey');
+         $('.menu-bar').addClass('menu-bar-position');
             filter.style.backgroundColor = 'rgba(62,62,62,.5)';
          $('.item-container').addClass('back');
          // $('.main-information-container').addClass('back');              not right
@@ -48,6 +49,7 @@
          // filter.style.filter = 'none';
          //Get OFF dark background filter for page
          $('.menu-bar').removeClass('back-grey');
+         $('.menu-bar').removeClass('menu-bar-position');
          filter.style.backgroundColor = 'rgba(0,0,0,0)';
          //Get  scroll ON
          $('html').toggleClass('noscroll');
@@ -59,6 +61,7 @@
      function outsideClickAll(e){
          if(e.target === modalAll || e.target === menuBar){
              modalAll.style.display = 'none';
+             $('.menu-bar').removeClass('menu-bar-position');
              $('#registration-modal').toggleClass('close-window-modal');
              // filter.style.filter = 'none';
              //Get OFF dark background filter for page
@@ -611,7 +614,7 @@ $("#cell-44").css('display', 'none');
 //-----------------------------------===============================480
 //Function for open and close modal window info
 $('.item-info').on('click',function () {
-    $('.modal-dialog-container').css('display','block');
+    $('.modal-dialog-container').css('display','flex');
     $('.modal-dialog-container').toggleClass('show');
     $('.menu-bar').toggleClass('background-grey-color');
     $('.menu-bar').toggleClass('menu-bar-position');
