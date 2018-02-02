@@ -72,6 +72,10 @@
              $('html').toggleClass('noscroll');
              $('.item-container').removeClass('back');
              // $('.main-information-container').removeClass('back');               not right
+             $('.modal-dialog-container').css('display','none');
+             $('.menu-bar').removeClass('menu-bar-position');
+             $('.menu-bar').removeClass('background-grey-color');
+
          }
      }
      //Function to get no-scroll on three-lines click
@@ -615,9 +619,9 @@ $("#cell-44").css('display', 'none');
 //Function for open and close modal window info
 $('.item-info').on('click',function () {
     $('.modal-dialog-container').css('display','flex');
-    $('.modal-dialog-container').toggleClass('show');
-    $('.menu-bar').toggleClass('background-grey-color');
-    $('.menu-bar').toggleClass('menu-bar-position');
+    $('.modal-dialog-container').addClass('show');
+    $('.menu-bar').addClass('background-grey-color');
+    $('.menu-bar').addClass('menu-bar-position');
     $('html').toggleClass('noscroll');
 });
 
