@@ -38,8 +38,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/about-company/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1571">
-              <caret line="1310" column="1" lean-forward="true" selection-start-line="1198" selection-start-column="0" selection-end-line="1310" selection-end-column="1" />
+            <state relative-caret-position="28518">
+              <caret line="1310" column="1" lean-forward="false" selection-start-line="1198" selection-start-column="0" selection-end-line="1310" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -68,7 +68,7 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/items/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+            <state relative-caret-position="29652">
               <caret line="1364" column="1" lean-forward="false" selection-start-line="1238" selection-start-column="0" selection-end-line="1364" selection-end-column="1" />
               <folding />
             </state>
@@ -87,23 +87,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="414" column="98" lean-forward="false" selection-start-line="414" selection-start-column="98" selection-end-line="414" selection-end-column="98" />
+            <state relative-caret-position="361">
+              <caret line="599" column="139" lean-forward="false" selection-start-line="599" selection-start-column="139" selection-end-line="599" selection-end-column="139" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="739">
-              <caret line="1597" column="112" lean-forward="false" selection-start-line="1597" selection-start-column="112" selection-end-line="1597" selection-end-column="112" />
-              <caret line="1613" column="112" lean-forward="false" selection-start-line="1613" selection-start-column="112" selection-end-line="1613" selection-end-column="112" />
-              <caret line="1629" column="112" lean-forward="false" selection-start-line="1629" selection-start-column="112" selection-end-line="1629" selection-end-column="112" />
+            <state relative-caret-position="-36070">
+              <caret line="90" column="18" lean-forward="false" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -132,10 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>modal</find>
-      <find>tabs-container</find>
-      <find>noscroll</find>
-      <find>emails</find>
       <find>email</find>
       <find>container-menu-inside</find>
       <find>ground-grey</find>
@@ -162,6 +156,10 @@
       <find>menu-bar-position</find>
       <find>.menu-bar</find>
       <find>text-14</find>
+      <find>tab-content</find>
+      <find>container-tag</find>
+      <find>tab-container-left-1-768px</find>
+      <find>tab-container-right-2-768px</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -222,8 +220,8 @@
         <option value="$PROJECT_DIR$/partnership/index.html" />
         <option value="$PROJECT_DIR$/partnership/css/style.css" />
         <option value="$PROJECT_DIR$/news/js/script.js" />
-        <option value="$PROJECT_DIR$/news/index.html" />
         <option value="$PROJECT_DIR$/news/css/style.css" />
+        <option value="$PROJECT_DIR$/news/index.html" />
       </list>
     </option>
   </component>
@@ -633,11 +631,12 @@
       <workItem from="1517740362418" duration="2820000" />
       <workItem from="1517743413955" duration="6895000" />
       <workItem from="1517861107657" duration="6596000" />
+      <workItem from="1518014050212" duration="15206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1091305000" />
+    <option name="totallyTimeSpent" value="1106511000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -658,8 +657,8 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27922815" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287827" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27846673" sideWeight="0.49702382" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19830777" sideWeight="0.37469587" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27846673" sideWeight="0.49702382" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.4920635" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280363" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19830777" sideWeight="0.375" order="3" side_tool="true" content_ui="tabs" />
@@ -941,7 +940,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/items/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
+        <state relative-caret-position="29652">
           <caret line="1364" column="1" lean-forward="false" selection-start-line="1238" selection-start-column="0" selection-end-line="1364" selection-end-column="1" />
           <folding />
         </state>
@@ -949,26 +948,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/about-company/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1571">
-          <caret line="1310" column="1" lean-forward="true" selection-start-line="1198" selection-start-column="0" selection-end-line="1310" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="414" column="98" lean-forward="false" selection-start-line="414" selection-start-column="98" selection-end-line="414" selection-end-column="98" />
+        <state relative-caret-position="28518">
+          <caret line="1310" column="1" lean-forward="false" selection-start-line="1198" selection-start-column="0" selection-end-line="1310" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="1597" column="112" lean-forward="false" selection-start-line="1597" selection-start-column="112" selection-end-line="1597" selection-end-column="112" />
-          <caret line="1613" column="112" lean-forward="false" selection-start-line="1613" selection-start-column="112" selection-end-line="1613" selection-end-column="112" />
-          <caret line="1629" column="112" lean-forward="false" selection-start-line="1629" selection-start-column="112" selection-end-line="1629" selection-end-column="112" />
+        <state relative-caret-position="-36070">
+          <caret line="90" column="18" lean-forward="false" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="599" column="139" lean-forward="false" selection-start-line="599" selection-start-column="139" selection-end-line="599" selection-end-column="139" />
           <folding />
         </state>
       </provider>
