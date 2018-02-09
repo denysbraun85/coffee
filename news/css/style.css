@@ -93,6 +93,15 @@ html.noscroll{
 .wallpaper-768px{
     display: none;
 }
+.tab-container-480px .tab-container-left-1{
+    display: none;
+}
+.warehous-icon-480px{
+    display: none;
+}
+.info-icon-480px{
+    display: none;
+}
 /*-------For background on modal open----------*/
 .back{
     position: relative;
@@ -2105,6 +2114,109 @@ main{
     font-size: 14px;
     padding-top: 13px;
 }
-
-
+/*-------Tab 1------*/
+.main-information-container{
+    max-width: 480px;
+    width: 100%;
+    margin-top: 19px;
 }
+#tabs{
+    max-width: 287px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tab-content{
+    margin-top: 9px;
+    margin-bottom: 25px;
+    padding-bottom: 43px;
+}
+.nav-tabs li:first-child{
+    margin-right: 43px;
+}
+.nav-tabs li:nth-child(2){
+    margin-right: 47px;
+}
+.nav-tabs li:nth-child(3){
+    margin-right: 0;
+}
+.tab-container-480px .tab-container-left-1{
+    display: block;
+    max-height: 240px;
+    margin-top: 11px;
+}
+.tab-container-480px .tab-container-left-1:first-child{
+    margin-top: 0;
+}
+.tab-container-left-side{
+    display: none;
+}
+.tab-container-right-side{
+    display: none;
+}
+.tab-container-480px{
+    max-width: 460px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tab-container-480px .container-inside-1{
+    margin-top: 6px;
+    max-width: 460px;
+    width: 100%;
+}
+.tab-container-480px .head-text{
+    margin-top: 0;
+}
+.tab-container-480px .container-tags {
+    max-width: 460px;
+    width: 100%;
+}
+#pagin{
+    left: 38%;
+}
+/*-------Tab 2------*/
+.warehous-icon-480px{
+    display: block;
+}
+#tab_default_2 .container-head{
+    display: none;
+}
+#tab_default_2 .main-name{
+    margin-bottom: 0;
+}
+#tab_default_2 .main-information-container{
+    margin-top: 11px;
+    max-width: 480px;
+    width: 100%;
+    overflow: hidden;
+}
+#tab_default_2 .info-container-head{
+    margin-top: 15px;
+    max-width: 480px;
+    width: 100%;
+    font-size: 16px;
+}
+.info-icon-480px{
+    display: block;
+    cursor: pointer;
+}
+.warehouse-768px{
+    display: none;
+}
+#tab_default_2 .info-container-icon{
+    padding-right: 12px;
+    padding-left: 11px;
+    padding-top: 13px;
+}
+.info-container-main-text{
+    padding-top: 45px;
+}
+#tab_default_2 .info-container-1 {
+    width: 100%;
+    border: none;
+    max-height: 289px;
+    overflow: hidden;
+}
+}
+
+

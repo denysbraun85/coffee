@@ -38,8 +38,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/about-company/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="1713" column="0" lean-forward="true" selection-start-line="1432" selection-start-column="0" selection-end-line="1713" selection-end-column="0" />
+            <state relative-caret-position="36981">
+              <caret line="1713" column="0" lean-forward="false" selection-start-line="1432" selection-start-column="0" selection-end-line="1713" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,7 +48,7 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/about-company/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4326">
+            <state relative-caret-position="4305">
               <caret line="206" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
               <folding />
             </state>
@@ -88,8 +88,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="617" column="64" lean-forward="true" selection-start-line="617" selection-start-column="64" selection-end-line="617" selection-end-column="80" />
+            <state relative-caret-position="197">
+              <caret line="529" column="64" lean-forward="true" selection-start-line="529" selection-start-column="64" selection-end-line="529" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -98,8 +98,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="2107" column="0" lean-forward="true" selection-start-line="2107" selection-start-column="0" selection-end-line="2107" selection-end-column="0" />
+            <state relative-caret-position="653">
+              <caret line="2214" column="16" lean-forward="false" selection-start-line="2214" selection-start-column="16" selection-end-line="2214" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -108,8 +108,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1554">
-              <caret line="75" column="58" lean-forward="false" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="58" />
+            <state relative-caret-position="0">
+              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -126,8 +126,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>container-menu-inside</find>
-      <find>ground-grey</find>
       <find>top-container-menu-nav-1024px</find>
       <find>move-right</find>
       <find>.container-back-to-top-768px</find>
@@ -156,6 +154,8 @@
       <find>tab-container-left-1-768px</find>
       <find>tab-container-right-2-768px</find>
       <find>tab-container-right-1</find>
+      <find>tab-container-left-side</find>
+      <find>container-head</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -630,11 +630,12 @@
       <workItem from="1518014050212" duration="15206000" />
       <workItem from="1518123767294" duration="5000" />
       <workItem from="1483910864710" duration="3630000" />
+      <workItem from="1518208708923" duration="6104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1110146000" />
+    <option name="totallyTimeSpent" value="1116250000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -903,16 +904,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/about-company/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4326">
+        <state relative-caret-position="4305">
           <caret line="206" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1554">
-          <caret line="75" column="58" lean-forward="false" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -940,26 +933,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news/index.html">
+    <entry file="file://$PROJECT_DIR$/about-company/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="617" column="64" lean-forward="true" selection-start-line="617" selection-start-column="64" selection-end-line="617" selection-end-column="80" />
+        <state relative-caret-position="36981">
+          <caret line="1713" column="0" lean-forward="false" selection-start-line="1432" selection-start-column="0" selection-end-line="1713" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about-company/css/style.css">
+    <entry file="file://$PROJECT_DIR$/news/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="1713" column="0" lean-forward="true" selection-start-line="1432" selection-start-column="0" selection-end-line="1713" selection-end-column="0" />
+        <state relative-caret-position="197">
+          <caret line="529" column="64" lean-forward="true" selection-start-line="529" selection-start-column="64" selection-end-line="529" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="2107" column="0" lean-forward="true" selection-start-line="2107" selection-start-column="0" selection-end-line="2107" selection-end-column="0" />
+        <state relative-caret-position="653">
+          <caret line="2214" column="16" lean-forward="false" selection-start-line="2214" selection-start-column="16" selection-end-line="2214" selection-end-column="16" />
           <folding />
         </state>
       </provider>
