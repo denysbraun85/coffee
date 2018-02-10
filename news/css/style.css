@@ -102,6 +102,12 @@ html.noscroll{
 .info-icon-480px{
     display: none;
 }
+.info-container-3{
+    display: none;
+}
+.card-icon-480px{
+    display: none;
+}
 /*-------For background on modal open----------*/
 .back{
     position: relative;
@@ -386,9 +392,12 @@ header{
   padding-right: 2px;
   padding-left: 2px;
   margin-top: 36px;
-  padding-bottom: 2px;
+  /*padding-bottom: 2px;*/
   border-radius: 5px;
   box-sizing: border-box;
+
+
+
 }
 /* Tabs panel */
 .tabbable-line{
@@ -426,7 +435,9 @@ header{
   color: #2d2b2b;
   border-bottom: 4px solid #ef524b;
 }
-
+#tabs li:nth-child(3){
+    margin-right: 0;
+}
 /*----------------------------Tab 1---------------------*/
 .tab-content{
   margin-top: 20px;
@@ -445,6 +456,9 @@ header{
   justify-content: space-between;
   margin-top: 15px;
     padding-bottom: 530px;
+}
+.tab-container-left-side{
+    margin-right: 10px;
 }
 .tab-container-left-side, .tab-container-right-side{
   max-width: 495px;
@@ -595,7 +609,7 @@ header{
     display: block;
     position: absolute;
     bottom: 0;
-    left: 45%;
+    left: 44.5%;
     max-width: 120px;
 }
 #pagin nav{
@@ -2189,6 +2203,10 @@ main{
     max-width: 480px;
     width: 100%;
     overflow: hidden;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
 }
 #tab_default_2 .info-container-head{
     margin-top: 15px;
@@ -2217,6 +2235,133 @@ main{
     max-height: 289px;
     overflow: hidden;
 }
+#tab_default_2 .info-container-2{
+    padding-top: 16px;
+    margin-top: 0;
+    padding-bottom: 24px;
+    border: none;
+}
+#tab_default_2 .container-picture{
+    display: none;
+}
+#tab_default_2 .container-text-3{
+    margin-top: 0;
+    max-width: 430px;
+}
+.info-container-3{
+    display: block;
+    max-width: 480px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=0, Color=#E4E4E4)";/*IE 8*/
+    -moz-box-shadow: 0 3px 3px #E4E4E4;/*FF 3.5+*/
+    -webkit-box-shadow: 0 3px 3px #E4E4E4;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 0 3px 3px #E4E4E4;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#E4E4E4); /*IE 5.5-7*/
+}
+.container-tags-480px{
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+    height: 40px;
+}
+.container-tags-480px .text-15{
+    width: 100%;
+    line-height: 40px;
+    max-height: 38px;
+}
+.social-icons-container{
+    max-height: 35px;
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.social-icons-container .social-share-img2{
+    margin-right: 0;
+}
+#tab_default_2 .main-information-container-bottom{
+    margin-top: 34px;
+}
+#tab_default_2 .text-6{
+    color: #2d2b2b;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+#tab_default_2 .left-img-480px{
+    display: none;
+}
+#tab_default_2 .card-icon-480px{
+    display: block;
+}
+#tab_default_2 .tab-container-left-1{
+    max-height: 240px;
+    margin-top: 11px;
+}
+#tab_default_2 .container-inside-1{
+    margin-top: 6px;
+    max-width: 460px;
+    width: 100%;
+}
+#tab_default_2 .head-text{
+    margin-top: 0;
+}
+#tab_default_2 .container-tags {
+    max-width: 460px;
+    width: 100%;
+}
+#tab_default_2 .head-text-top{
+    max-width: 450px;
+}
+#tab_default_2 .tab-content{
+    margin-bottom: 22px;
+    padding-bottom: 0;
+}
+/*------Tab 3-------*/
+#tab_default_3 .tab-container-left-side{
+    display: block;
+}
+#tab_default_3 .head-tag-top{
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+#tab_default_3 .container-tag{
+    margin-top: 10px;
+}
+    #tab_default_3 .tab-container-left-1{
+        max-height: 240px;
+        margin-top: 11px;
+    }
+    #tab_default_3 .container-inside-1{
+        margin-top: 6px;
+        max-width: 460px;
+        width: 100%;
+    }
+    #tab_default_3 .head-text{
+        margin-top: 0;
+    }
+    #tab_default_3 .container-tags {
+        max-width: 460px;
+        width: 100%;
+    }
+    #tab_default_3 .head-text-top{
+        max-width: 450px;
+    }
+    #tab_default_3  .tab-container-left-side{
+        max-width:  460px;
+        margin-left:  auto;
+        margin-right:  auto;
+        width: 100%;
+    }
 }
 
 
