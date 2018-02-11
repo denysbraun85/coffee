@@ -2192,7 +2192,7 @@ main{
     width: 100%;
 }
 #pagin{
-    left: 38%;
+    left: 34.5%;
 }
 /*-------Tab 2------*/
 .warehous-icon-480px{
@@ -2238,7 +2238,7 @@ main{
 #tab_default_2 .info-container-1 {
     width: 100%;
     border: none;
-    max-height: 289px;
+    max-height: 295px;
     overflow: hidden;
 }
 #tab_default_2 .info-container-2{
@@ -2246,6 +2246,7 @@ main{
     margin-top: 0;
     padding-bottom: 24px;
     border: none;
+    max-height: 354px;
 }
 #tab_default_2 .container-picture{
     display: none;
@@ -2416,7 +2417,7 @@ main{
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#E4E4E4); /*IE 5.5-7*/
 }
 #pagin-2{
-    left: 38%;
+    left: 34.5%;
 }
 }
 
