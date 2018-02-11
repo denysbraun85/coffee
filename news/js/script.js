@@ -373,12 +373,3 @@ $(document).ready(function(){
         $(this).toggleClass('change');
     });
 });
-
-    //
-    // if($('#tabs').find('li:nth-child(2) a').hasClass('selected')){
-    //      // $('.tab-content').css('paddingBottom','0','marginBottom','22');
-    //     console.log('sjahdsfkghkdfhgkufhdukhkdfg');
-    // }else{
-    //     console.log('999999999');
-    // }
-
