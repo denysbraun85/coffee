@@ -2241,6 +2241,9 @@ main{
     max-height: 300px;
     overflow: hidden;
 }
+#tab_default_2 info-container-main-text{
+    max-height: 249px;
+}
 #tab_default_2 .info-container-2{
     padding-top: 16px;
     margin-top: 0;
