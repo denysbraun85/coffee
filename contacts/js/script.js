@@ -84,8 +84,8 @@
          //Get dark background filter for page
          $('.menu-bar').addClass('back-grey');
          $('.menu-bar').addClass('menu-bar-position');
-         filter.style.filter = 'brightness(50%)';
-         filter.style.backgroundColor = 'rgba(0,0,0,.3)';
+         // filter.style.filter = 'brightness(50%)';
+         // filter.style.backgroundColor = 'rgba(0,0,0,.3)';
          $('.main-information-container').addClass('back');
 
          //Get scroll OFF
@@ -216,8 +216,6 @@ $(document).ready(function(){
         $(this).toggleClass('change');
     });
 });
-
-
 
 
 
