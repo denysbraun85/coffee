@@ -398,12 +398,9 @@ header{
   padding-right: 2px;
   padding-left: 2px;
   margin-top: 36px;
-  /*padding-bottom: 2px;*/
+  padding-bottom: 2px;
   border-radius: 5px;
   box-sizing: border-box;
-
-
-
 }
 /* Tabs panel */
 .tabbable-line{
@@ -615,21 +612,32 @@ header{
     display: block;
     position: absolute;
     bottom: 0;
-    left: 44.5%;
-    max-width: 120px;
+    /*left: 44.5%;*/
+    /*max-width: 120px;*/
+    width: 100%;
 }
 #pagin nav{
     margin-top: 25px;
+    width:  100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 111px;
 }
 #pagin-2{
     display: block;
     position: absolute;
     bottom: 0;
-    left: 45%;
-    max-width: 120px;
+    /*left: 45%;*/
+    /*max-width: 120px;*/
+    width:  100%;
 }
 #pagin-2 nav{
     margin-top: 25px;
+    width:  100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 111px;
+
 }
 .pagin-page-number{
     display: inline-flex;
@@ -1803,7 +1811,7 @@ main{
     margin-top: 16px;
 }
 #pagin{
-    left: 42.5%;
+    /*left: 42.5%;*/
     height: 42px;
 }
 /*------Tab 2------*/
@@ -1889,6 +1897,10 @@ main{
 .warehouse-768px{
     display: block;
 }
+#tab_default_2 .text-3{
+    max-height:  156px;
+    overflow:  hidden;
+}
 /*------Tab 3-------*/
 
 #tab_default_3 .tab-container-left-2{
@@ -1900,7 +1912,7 @@ main{
     max-height: 270px;
 }
 #pagin-2{
-    left: 42.5%;
+    /*left: 42.5%;*/
     height: 42px;
 }
 .warehouse-small-768px{
@@ -2192,7 +2204,7 @@ main{
     width: 100%;
 }
 #pagin{
-    left: 34.5%;
+    /*left: 34.5%;*/
 }
 /*-------Tab 2------*/
 .warehous-icon-480px{
@@ -2420,7 +2432,7 @@ main{
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#E4E4E4); /*IE 5.5-7*/
 }
 #pagin-2{
-    left: 34.5%;
+    /*left: 34.5%;*/
 }
 }
 
@@ -2481,7 +2493,7 @@ main{
     margin-right: auto;
 }
 #pagin {
-    left: 31%;
+    /*left: 31%;*/
 }
 /*-----Tab 2------*/
 #tab_default_2 .main-name{
@@ -2544,7 +2556,7 @@ main{
 }
 /*-----Tab 3------*/
 #pagin-2 {
-    left: 31%;
+    /*left: 31%;*/
 }
 /*----------Modal menu-----------*/
 .modal{

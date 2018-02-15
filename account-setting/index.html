@@ -13,46 +13,103 @@
 </head>
 <body>
 <header>
-    <!----Modal registration-->
-    <div id="registration-modal" class="modal">
-        <div class="linePreloader" id="linePreloader"></div>
-        <div class="modal-contant" id="simpleModal">
-            <div class="modal-container-1">
-                <p class="modal-text-1" id="modalText-1"><b>Please log in to use account tools:</b></p>
-                <form class="input-container"  method="post">
-                    <label for="email"><input id="email" type="email"  placeholder="Email"></label>
-                    <label for="passw"><input id="passw" type="password"  placeholder="Password"></label>
-                    <button class="modal-button" id="modal-button" type="button">Login</button>
-                </form>
-                <p class="modal-text-2" id="modal-text-2">Please supply your username and password.</p>
-                <p class="modal-text-3">forgot password?</p>
+    <div class="wrapper-header">
+        <!-----Sidebar 1024px----->
+        <div class="menu-bar">
+            <div class="side-bar-container">
+                <div class="container-push">
+                    <div class="container-head-logo">
+                        <div class="head-logo-top">
+                            <p class="head-logo-text-1"><a href="../index.html">SMM</a></p>
+                            <a href="../index.html" class="head-link"><img class="head-logo-icon" src="../img/main/minilogo-1024px.png" alt="minilogo-1024px"></a>
+                        </div>
+                        <div class="head-logo-bottom">
+                            <p class="head-logo-text-2"><a href="../index.html">import-export</a></p>
+                            <p class="head-logo-text-3"><a href="../index.html">wholesale coffee</a></p>
+                        </div>
+                    </div>
+                    <nav class="pages">
+                        <ul class="pages-list">
+                            <li><a href="../about-company/index.html">COMPANY</a></li>
+                            <li><a href="../items/index.html">COFFEE</a></li>
+                            <li><a href="../partnership/index.html">PARTNERSHIP</a></li>
+                            <li><a href="../news/index.html">NEWS</a></li>
+                            <li><a href="../contacts/index.html">CONTACTS</a></li>
+                        </ul>
+                    </nav>
+                    <div class="container-language">
+                        <p class="head-logo-text-4">Change language on:</p>
+                        <p class="head-logo-text-5">En</p>
+                    </div>
+                    <div class="social-links">
+                        <img src="../img/footer/google-plus-effect.png" alt="google-plus">
+                        <img src="../img/footer/linkedin-effect.png" alt="linkedin">
+                        <img src="../img/footer/facebook-effect.png" alt="facebook">
+                    </div>
+                    <span class="head-logo-text-6">© 2016 all right reserved.smm.coffee</span>
+                </div>
             </div>
-            <div class="modal-container-2">
-                <span class="close" id="close">×</span>
-                <p class="modal-text-1"><b>I don't have account:</b></p>
-                <button class="modal-button" id="registration-but">Register</button>
+            <!--Container nav 1024px-->
+            <div class="container-menu-nav-1024px" id="top-container-menu-nav-1024px">
+                <div class="container-menu-inside">
+                    <!--<img class="three-lines-icon" src="./img/main/ic_menu_black_48px.png" alt="ic_menu_black">-->
+                    <div class="three-lines" id="three-lines-480px">
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                        <span class="line-3"></span>
+                    </div>
+                    <div class="container-centre-logo">
+                        <a href="../index.html"><img class="mini-logo" src="../img/main/minilogo-1024px.png" alt="minilogo"></a>
+                        <p class="mini-logo-text"><a href="../index.html">SMM</a></p>
+                    </div>
+                    <img class="user-log-icon" src="../img/main/user-silhouette.png" alt="user-silhouette">
+                </div>
+            </div>
+            <!--====================-->
+        </div>
+        <!--====================-->
+        <!----Modal registration-->
+        <div id="registration-modal" class="modal">
+            <div class="linePreloader" id="linePreloader"></div>
+            <div class="modal-contant" id="simpleModal">
+                <div class="modal-container-1">
+                    <p class="modal-text-1" id="modalText-1"><b>Please log in to use account tools:</b></p>
+                    <form class="input-container"  method="post">
+                        <label for="email"><input id="email" type="email"  placeholder="Email"></label>
+                        <label for="passw"><input id="passw" type="password"  placeholder="Password"></label>
+                        <button class="modal-button" id="modal-button" type="button">Login</button>
+                    </form>
+                    <p class="modal-text-2" id="modal-text-2">Please supply your username and password.</p>
+                    <p class="modal-text-3">forgot password?</p>
+                </div>
+                <div class="modal-container-2">
+                    <span class="close" id="close">×</span>
+                    <p class="modal-text-1"><b>I don't have account:</b></p>
+                    <button class="modal-button" id="registration-but">Register</button>
+                </div>
             </div>
         </div>
+        <!------------------------->
+        <nav class="navigation">
+            <div class="logo">
+                <a href="../account-setting/index.html"><img src="../img/header/logoSmall.png" alt="logo"></a>
+            </div>
+            <div class="menu-header">
+                <ul>
+                    <li class="menu-item-1"><a href="../about-company/index.html">COMPANY</a></li>
+                    <li class="menu-item-2"><a href="../items/index.html">COFFEE</a></li>
+                    <li class="menu-item-3"><a href="../partnership/index.html">PARTNERSHIP</a></li>
+                    <li class="menu-item-4"><a href="../news/index.html">NEWS</a></li>
+                    <li class="menu-item-5"><a href="../contacts/index.html">CONTACTS</a></li>
+                </ul>
+            </div>
+            <div class="registration-block">
+                <p class="registration-block-item-1"><a href="../account-setting/index.html" class="account">Account <img class="red-point" src="../img/header/red-point.png" alt=""></a></p>
+                <button class="registration-block-item-2"><a href="#" class="reg">Login</a><img class="log-img" id="log-img" src="../img/header/log-out-hover.png" alt="log-out"></button>
+            </div>
+        </nav>
     </div>
-    <!------------------------->
-    <nav class="navigation">
-        <div class="logo">
-            <a href="../index.html"><img src="../img/header/logoSmall.png" alt="logo"></a>
-        </div>
-        <div class="menu-header">
-            <ul>
-                <li class="menu-item-1"><a href="../about-company/index.html">COMPANY</a></li>
-                <li class="menu-item-2"><a href="../items/index.html">COFFEE</a></li>
-                <li class="menu-item-3"><a href="../partnership/index.html">PARTNERSHIP</a></li>
-                <li class="menu-item-4"><a href="../news/index.html">NEWS</a></li>
-                <li class="menu-item-5"><a href="../contacts/index.html">CONTACTS</a></li>
-            </ul>
-        </div>
-        <div class="registration-block">
-            <p class="registration-block-item-1"><a href="../account-setting/index.html" class="account">Account <img class="red-point" src="../img/header/red-point.png" alt=""></a></p>
-            <button class="registration-block-item-2"><a href="#" class="reg">Login</a><img class="log-img" id="log-img" src="../img/header/log-out-hover.png" alt="log-out"></button>
-        </div>
-    </nav>
+
 </header>
 <main>
     <div class="head-text-container">
@@ -346,6 +403,12 @@
         </div>
 </main>
 <footer>
+    <div class="container-back-to-top-1024px">
+        <div class="container-back-inside">
+            <img class="back-icon" src="../img/main/up-chevron.png" alt="up-chevron">
+            <p class="back-text">back to top</p>
+        </div>
+    </div>
     <div class="bottom-information-container">
         <p class="info-text-11">В© 2017 all right reserved</p>
         <p class="info-text-12"><a href="../index.html"><img src="../img/footer/minilogo.png" alt="minilogo"></a></p>
