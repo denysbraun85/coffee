@@ -53,6 +53,15 @@ header ul {
 .main-bottom-img-2-two{
   display: none;
 }
+.text-9-two{
+  display: none;
+}
+.text-8-two{
+  display: none;
+}
+.text-10-two{
+  display: none;
+}
 /*Stop scroll*/
 html.noscroll{
   position: fixed;
