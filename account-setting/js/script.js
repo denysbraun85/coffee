@@ -506,3 +506,23 @@ $(document).ready(function(){
         $(this).toggleClass('change');
     });
 });
+
+//-----------------------------------===============================1024
+//Slider for main page
+// $(document).ready(function(){
+//     $('.tab-slider-1024px').slick({
+//
+//         responsive: [
+//             {
+//                 breakpoint: 1024,
+//                 settings: {
+//                     // autoplay: true,
+//                     // autoplaySpeed: 3000,
+//                     arrows: false,
+//                     slidesToScroll: 1,
+//                     slidesToShow: 1
+//                 }
+//             }
+//         ]
+//     });
+// });

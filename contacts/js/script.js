@@ -217,5 +217,67 @@ $(document).ready(function(){
     });
 });
 
+//-----------------------------------===============================1024
+//Function to get left slide-menu
+$(document).ready(function() {
+
+    var cX;
+    var cY;
+    var nC;
+    var nY;
+
+    $(this).mousedown(function(e) {
+        cX = e.pageX;
+        cY = e.pageY;
+    });
+
+    $(this).mouseup(function(e) {
+        nX = e.pageX;
+        nY = e.pageY;
+
+        var x = getDiff(cX, nX);
+        var y = getDiff(cY, nY);
+
+        if (x > y) {
+            // Left/Right Swipe
+            if (cX > nX) {
+                // Swipe from right to left
+                $('.side-bar-container').removeClass('ground-grey');
+                $('.three-lines').removeClass('move-right');
+                $('.three-lines').removeClass('change');
+                $('.menu-bar').removeClass('back-grey');
+                $('.menu-bar').removeClass('menu-bar-position');
+                $('.main-information-container').removeClass('back');
+                $('html').toggleClass('noscroll');
+                console.log('11111111111111111');
+            } else {
+                // Swipe from left to right
+                $('.side-bar-container').addClass('ground-grey');
+                $('.three-lines').addClass('move-right');
+                $('.three-lines').addClass('change');
+                $('.menu-bar').addClass('back-grey');
+                $('.menu-bar').addClass('menu-bar-position');
+                $('.main-information-container').addClass('back');
+                $('html').toggleClass('noscroll');
+                console.log('22222222222222');
+            }
+         }
+            // else {
+        //     // Up/Down Swipe
+        //     if (cY > nY) {
+        //         // Swipe from down to up
+        //         $('div').html("To da up!");
+        //     } else {
+        //         // Swipe from up to down
+        //         $('div').html("To da down!");
+        //     }
+        // }
+    });
+
+    function getDiff(a, b) {
+        return Math.abs(a - b);
+    }
+});
+
 
 
