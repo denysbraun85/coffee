@@ -1705,6 +1705,10 @@ footer{
   font-size: 14px;
   padding-top: 13px;
 }
+.filter-container{
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
 /*---------Brand select------*/
   .check-bar{
     display: none;

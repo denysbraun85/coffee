@@ -1720,6 +1720,13 @@ z-index: 1000;
     height: 60px;
     bottom: 5px;
 }
+.tab-list {
+    margin-bottom: 20px;
+    max-width: 422px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*------------------Footer--------------*/
 .container-information{
     display: block;
@@ -1772,31 +1779,38 @@ z-index: 1000;
 @media only screen and (max-width: 480px) {
 
 /*------Sidebar style------*/
-.side-bar-container{
+.side-bar-container {
     padding-bottom: 200px;
 }
-.container-push{
+
+.container-push {
     margin-top: 19px;
 }
-.pages{
+
+.pages {
     margin-top: 40px;
 }
-.container-language{
+
+.container-language {
     margin-top: 39px;
 }
-.social-links{
+
+.social-links {
     margin-top: 16px;
     margin-bottom: 14px;
 }
+
 /*----------Header------------*/
-.container-menu-inside{
+.container-menu-inside {
     height: 40px;
 }
-.container-menu-nav-1024px{
+
+.container-menu-nav-1024px {
     max-width: 480px;
     width: 100%;
 }
-.three-lines{
+
+.three-lines {
     max-width: 40px;
     width: 100%;
     left: 10px;
@@ -1804,75 +1818,89 @@ z-index: 1000;
     height: 40px;
     padding-left: 0;
 }
-.line-1{
-   max-width: 20px;
+
+.line-1 {
+    max-width: 20px;
     top: 13px;
 }
-.line-2{
-   max-width: 20px;
-   top: 20px;
+
+.line-2 {
+    max-width: 20px;
+    top: 20px;
 }
-.line-3{
-   max-width: 20px;
-   top: 27px;
+
+.line-3 {
+    max-width: 20px;
+    top: 27px;
 }
-.change .line-1{
+
+.change .line-1 {
     transform: rotate(-45deg) translate(-9px, 3px);
     z-index: 99999;
     transition: 0.4s;
 }
-.change .line-3{
+
+.change .line-3 {
     transform: rotate(45deg) translate(-7px, -1px);
     z-index: 99999;
     transition: 0.4s;
 }
-.container-centre-logo{
+
+.container-centre-logo {
     left: 39.5%;
 }
-.mini-logo-text a{
+
+.mini-logo-text a {
     font-size: 26px;
 }
-.mini-logo{
+
+.mini-logo {
     width: 28px;
     height: 25px;
     padding-top: 7px;
 }
-.mini-logo-text{
+
+.mini-logo-text {
     padding-left: 7px;
     margin-top: 0;
     line-height: 42px;
     font-size: 26px;
 }
-.user-log-icon{
+
+.user-log-icon {
     width: 25px;
     height: 21px;
 }
-.move-right{
+
+.move-right {
     left: 276px;
     padding-left: 14px;
     padding-right: 10px;
 }
-.scroll{
+
+.scroll {
     width: 24px;
     height: 33px;
     background-size: cover;
     bottom: 10px;
 }
-.circle-icon{
+
+.circle-icon {
     width: 9px;
     height: 11px;
     right: 8px;
 }
-    @keyframes move {
-        from {
-            bottom: 2px;
-        }
-        to {
-            bottom: 20px;
-        }
+
+@keyframes move {
+    from {
+        bottom: 2px;
     }
+    to {
+        bottom: 20px;
+    }
+}
 /*------Modal window-----*/
-.modal{
+.modal {
     max-width: 480px;
     width: 100%;
     display: none;
@@ -1887,7 +1915,8 @@ z-index: 1000;
     overflow: hidden;
     z-index: 25;
 }
-.modal-container-1{
+
+.modal-container-1 {
     max-width: 340px;
     width: 100%;
     padding-right: 0;
@@ -1896,10 +1925,12 @@ z-index: 1000;
     border-right: none;
     position: relative;
 }
-.modal-contant{
+
+.modal-contant {
     display: block;
 }
-.modal-text-1{
+
+.modal-text-1 {
     margin-top: 25px;
     font-size: 14px;
     max-width: 340px;
@@ -1908,21 +1939,24 @@ z-index: 1000;
     margin-left: auto;
     margin-right: auto;
 }
-.input-container{
+
+.input-container {
     display: block;
     max-width: 340px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-#email{
+
+#email {
     width: 100%;
     margin-right: 0;
     max-width: 340px;
     box-sizing: border-box;
     height: 30px;
 }
-#passw{
+
+#passw {
     width: 100%;
     margin-right: 0;
     margin-top: 10px;
@@ -1930,12 +1964,14 @@ z-index: 1000;
     box-sizing: border-box;
     height: 30px;
 }
-.modal-button{
+
+.modal-button {
     display: block;
     margin-top: 10px;
     margin-left: auto;
 }
-.modal-text-3{
+
+.modal-text-3 {
     position: absolute;
     left: 0;
     top: 117px;
@@ -1944,40 +1980,66 @@ z-index: 1000;
     padding-bottom: 0;
     padding-top: 0;
 }
-.modal-text-2{
+
+.modal-text-2 {
     top: 142px;
 }
-.modal-container-2{
+
+.modal-container-2 {
     max-width: 400px;
     width: 100%;
     padding-top: 0;
     padding-left: 0;
-    margin-left:  auto;
-    margin-right:  auto;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: space-between;
 }
-#modal-text-4{
+
+#modal-text-4 {
     text-align: left;
     margin-left: 0;
     max-width: 125px;
     width: 100%;
     margin-top: 21px;
 }
-#registration-but{
+
+#registration-but {
     margin-top: 13px;
 }
-.close{
+
+.close {
     display: none;
 }
-.close-window-modal{
+
+.close-window-modal {
     display: none;
     z-index: 99999;
 }
+
+/*----------Main---------*/
+.tabs-container {
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+.tab-list a{
+    font-size: 13px;
+}
+.tab-list{
+    overflow: hidden;
+}
+}
+
 /*======================================================================================================================================================================*/
 @media only screen and (max-width: 343px) {
 header{
+    overflow: hidden;
+}
+.tab-list{
     overflow: hidden;
 }
 }

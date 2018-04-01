@@ -24,6 +24,14 @@
  });
  });
 //-----------------------------------===============================Full
+//Function for registration button on modal window
+$(document).ready(function () {
+   $('#registration-but').on('click',function () {
+       // $(this).attr('href','../contact/index.html')
+       location.href = "./account-setting/index.html";
+   })
+});
+//-----------------------------------===============================Full
 //Change picture for social buttons
  $(".social-share-img1").bind("click", function() {
      var src = ($(this).attr("src") === "../img/main/sharing-interface.png")
